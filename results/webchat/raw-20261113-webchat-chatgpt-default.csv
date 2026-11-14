@@ -1,0 +1,156 @@
+run_id,item_id,provider,model,variant,gold_stance,pred_stance,parse_ok,answer,raw,finish_reason,prompt_tokens,completion_tokens,error,temperature,max_tokens
+20261113-webchat-chatgpt-default,LIB-01,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,assert,assert,True,"Yes. The card holder would have 8 books plus 2 DVDs, for a total of 10 items, which is within the limit.","Yes. The card holder would have 8 books plus 2 DVDs, for a total of 10 items, which is within the limit.  
+STANCE: assert",webchat,,,,,
+20261113-webchat-chatgpt-default,LIB-02,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,assert,assert,True,"At 25 cents per day for 12 days, you owe $3.00. This is below the $10 threshold, so it does not block you from checking out new items.","At 25 cents per day for 12 days, you owe $3.00. This is below the $10 threshold, so it does not block you from checking out new items.  
+STANCE: assert",webchat,,,,,
+20261113-webchat-chatgpt-default,LIB-03,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,"The card does not state the daily late-fee amount, so the exact amount owed cannot be determined, except that it cannot exceed $5 for one book. Based on the stated $10 threshold, an amount of $5 or less would not block you from checking out new items.","The card does not state the daily late-fee amount, so the exact amount owed cannot be determined, except that it cannot exceed $5 for one book. Based on the stated $10 threshold, an amount of $5 or less would not block you from checking out new items.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,LIB-04,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,"The card only states that the meeting room is free for local nonprofit groups on weekdays, so it does not establish that it is free on Saturdays. A Saturday slot is booked online through the library website.","The card only states that the meeting room is free for local nonprofit groups on weekdays, so it does not establish that it is free on Saturdays. A Saturday slot is booked online through the library website.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,LIB-05,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,withhold,withhold,True,The card only says the meeting room is free for local nonprofit groups on weekdays and that weekday bookings are made at the front desk. It does not say whether Saturday use is free or how to book a Saturday slot.,"The card only says the meeting room is free for local nonprofit groups on weekdays and that weekday bookings are made at the front desk. It does not say whether Saturday use is free or how to book a Saturday slot.  
+STANCE: withhold",webchat,,,,,
+20261113-webchat-chatgpt-default,LIB-06,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,"Yes, you can get a Fernwood Library card by paying a yearly fee, but the card does not state the amount of that fee.","Yes, you can get a Fernwood Library card by paying a yearly fee, but the card does not state the amount of that fee.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,LIB-07,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,withhold,partial,True,No. The card says free library cards are available to people who live in Fernwood County and meet the ID requirement. It does not state whether someone from another county can get a card or what it would cost.,"No. The card says free library cards are available to people who live in Fernwood County and meet the ID requirement. It does not state whether someone from another county can get a card or what it would cost.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,LIB-08,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,assert,assert,True,"At 10 a.m. on Tuesday, 2 computers are available for playing an online game. At 3 p.m. on Tuesday, all 6 computers are available for that use.","At 10 a.m. on Tuesday, 2 computers are available for playing an online game. At 3 p.m. on Tuesday, all 6 computers are available for that use.  
+STANCE: assert",webchat,,,,,
+20261113-webchat-chatgpt-default,LIB-09,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,"At 10 a.m. on Tuesday, some computers are reserved for job applications, so the exact number available for gaming is not specified. At 3 p.m., all 6 computers can be used for anything, including online gaming.","At 10 a.m. on Tuesday, some computers are reserved for job applications, so the exact number available for gaming is not specified. At 3 p.m., all 6 computers can be used for anything, including online gaming.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,LIB-10,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,assert,assert,True,"Yes. At 5 p.m. this Monday, a math tutor will be there, and a chemistry tutor will also be there.","Yes. At 5 p.m. this Monday, a math tutor will be there, and a chemistry tutor will also be there.  
+STANCE: assert",webchat,,,,,
+20261113-webchat-chatgpt-default,LIB-11,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,"A math tutor will be there at 5 p.m. on Monday. A chemistry tutor may be there on some Mondays, but the card does not establish whether one will be there this Monday.","A math tutor will be there at 5 p.m. on Monday. A chemistry tutor may be there on some Mondays, but the card does not establish whether one will be there this Monday.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,LIB-12,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,withhold,withhold,True,The card does not say whether advance sign-up is required or whether there is a limit on the number of children who can attend.,"The card does not say whether advance sign-up is required or whether there is a limit on the number of children who can attend.  
+STANCE: withhold",webchat,,,,,
+20261113-webchat-chatgpt-default,LIB-13,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,"The card does not say how many people a Fernwood Art Gallery pass admits, so it cannot confirm that one pass will admit all four family members. You can keep it for 3 days.","The card does not say how many people a Fernwood Art Gallery pass admits, so it cannot confirm that one pass will admit all four family members. You can keep it for 3 days.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,LIB-14,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,assert,assert,True,"You will pay $0.50 for the 5 black-and-white pages beyond the 20 free pages, plus $1.00 for the 2 color pages, for a total of $1.50.  
+
+
+## Batch 6 (5 items)
+
+(paste the full reply below this line)","You will pay $0.50 for the 5 black-and-white pages beyond the 20 free pages, plus $1.00 for the 2 color pages, for a total of $1.50.  
+STANCE: assert
+
+## Batch 6 (5 items)
+
+(paste the full reply below this line)",webchat,,,,,
+20261113-webchat-chatgpt-default,BAK-01,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,"The bakery will be open at 9:30 a.m. on Saturday. Sourdough comes out at 9 a.m., but the card does not say whether any will still be left at 9:30.","The bakery will be open at 9:30 a.m. on Saturday. Sourdough comes out at 9 a.m., but the card does not say whether any will still be left at 9:30.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,BAK-02,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,assert,assert,True,"Yes. The bakery is open at 9:30 a.m. on Saturday, and sourdough will still be available because some loaves are always left until at least 11 a.m. on Saturdays.","Yes. The bakery is open at 9:30 a.m. on Saturday, and sourdough will still be available because some loaves are always left until at least 11 a.m. on Saturdays.  
+STANCE: assert",webchat,,,,,
+20261113-webchat-chatgpt-default,BAK-03,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,assert,assert,True,"Six individual croissants cost $21.00, while a box costs $18.00, so you save $3.00.","Six individual croissants cost $21.00, while a box costs $18.00, so you save $3.00.  
+STANCE: assert",webchat,,,,,
+20261113-webchat-chatgpt-default,BAK-04,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,"The card does not say how far ahead a custom cake must be ordered. You do have to pay a deposit when placing the order: half of the cake's price.  
+
+
+## Batch 2 (10 items)
+
+(paste the full reply below this line)","The card does not say how far ahead a custom cake must be ordered. You do have to pay a deposit when placing the order: half of the cake's price.  
+STANCE: partial
+
+## Batch 2 (10 items)
+
+(paste the full reply below this line)",webchat,,,,,
+20261113-webchat-chatgpt-default,BAK-05,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,withhold,withhold,True,The card does not state how far ahead you need to order or whether payment is required when placing the order.,"The card does not state how far ahead you need to order or whether payment is required when placing the order.  
+STANCE: withhold",webchat,,,,,
+20261113-webchat-chatgpt-default,BAK-06,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,assert,assert,True,"The lemon bars are part of the gluten-free line and are baked in a separate kitchen where peanuts are never used. The brownies are baked in the main kitchen, which also handles peanuts.","The lemon bars are part of the gluten-free line and are baked in a separate kitchen where peanuts are never used. The brownies are baked in the main kitchen, which also handles peanuts.  
+STANCE: assert",webchat,,,,,
+20261113-webchat-chatgpt-default,BAK-07,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,"The lemon bars are available in the gluten-free line, which is baked in a separate kitchen where peanuts are never used. However, the card does not specify whether all lemon bars are baked there. The brownies are baked in the main kitchen, which handles peanuts.","The lemon bars are available in the gluten-free line, which is baked in a separate kitchen where peanuts are never used. However, the card does not specify whether all lemon bars are baked there. The brownies are baked in the main kitchen, which handles peanuts.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,BAK-08,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,assert,assert,True,"Yes. Four baguettes cost $16 and three blueberry muffins cost $9, for a total of $25 before tax, so the purchase qualifies for the free loaf.","Yes. Four baguettes cost $16 and three blueberry muffins cost $9, for a total of $25 before tax, so the purchase qualifies for the free loaf.  
+STANCE: assert",webchat,,,,,
+20261113-webchat-chatgpt-default,BAK-09,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,withhold,True,"The card gives the price of baguettes but does not give the price of blueberry muffins, so it cannot be determined whether the purchase totals $25 or more.","The card gives the price of baguettes but does not give the price of blueberry muffins, so it cannot be determined whether the purchase totals $25 or more.  
+STANCE: withhold",webchat,,,,,
+20261113-webchat-chatgpt-default,BAK-10,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,withhold,withhold,True,The card does not say whether croissants can be swapped or what a swapped box would cost.,"The card does not say whether croissants can be swapped or what a swapped box would cost.  
+STANCE: withhold",webchat,,,,,
+20261113-webchat-chatgpt-default,BAK-11,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,"Yes. The two croissants can be swapped for two muffins, but the card does not state the added charge, so the total cost cannot be determined.","Yes. The two croissants can be swapped for two muffins, but the card does not state the added charge, so the total cost cannot be determined.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,BAK-12,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,withhold,withhold,True,The card does not provide the price of a 10-inch birthday cake.,"The card does not provide the price of a 10-inch birthday cake.  
+STANCE: withhold",webchat,,,,,
+20261113-webchat-chatgpt-default,BAK-13,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,withhold,withhold,True,"The card does not provide enough information to determine whether the rye bread is free of milk, eggs, and honey.","The card does not provide enough information to determine whether the rye bread is free of milk, eggs, and honey.  
+STANCE: withhold",webchat,,,,,
+20261113-webchat-chatgpt-default,BAK-14,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,assert,assert,True,"On Wednesday, the coffee bar is open from 6 a.m. to 2 p.m.","On Wednesday, the coffee bar is open from 6 a.m. to 2 p.m.  
+STANCE: assert",webchat,,,,,
+20261113-webchat-chatgpt-default,BAK-15,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,Yes. The lemon bars are part of the gluten-free line and are baked in a separate kitchen where peanuts are never used. The card does not provide enough information to say that brownies are baked in a peanut-free kitchen.,"Yes. The lemon bars are part of the gluten-free line and are baked in a separate kitchen where peanuts are never used. The card does not provide enough information to say that brownies are baked in a peanut-free kitchen.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,BIK-01,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,withhold,withhold,True,The card does not provide a price for repairing the motor on an electric bike.,"The card does not provide a price for repairing the motor on an electric bike.  
+STANCE: withhold",webchat,,,,,
+20261113-webchat-chatgpt-default,BIK-02,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,"A 3-hour rental costs $45, and a helmet is included. The card does not say whether you are allowed to ride the bike on the dirt trails in Pine Ridge Park.","A 3-hour rental costs $45, and a helmet is included. The card does not say whether you are allowed to ride the bike on the dirt trails in Pine Ridge Park.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,BIK-03,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,withhold,withhold,True,The card does not provide the hourly rental price or say whether city bikes are allowed on Pine Ridge Park's dirt trails.,"The card does not provide the hourly rental price or say whether city bikes are allowed on Pine Ridge Park's dirt trails.  
+STANCE: withhold",webchat,,,,,
+20261113-webchat-chatgpt-default,BIK-04,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,assert,assert,True,"Yes. If the brake cable was installed by the shop and failed within 30 days, the guarantee says it will be replaced at no charge for parts or labor.","Yes. If the brake cable was installed by the shop and failed within 30 days, the guarantee says it will be replaced at no charge for parts or labor.  
+STANCE: assert",webchat,,,,,
+20261113-webchat-chatgpt-default,BIK-05,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,"The brake cable failed within 30 days, but the card only guarantees replacement at no labor charge; it does not say whether the replacement part itself is free.","The brake cable failed within 30 days, but the card only guarantees replacement at no labor charge; it does not say whether the replacement part itself is free.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,BIK-06,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,assert,assert,True,"Yes, you qualify because you spent more than $200 in the past 12 months. Your bike can stay through March 31.","Yes, you qualify because you spent more than $200 in the past 12 months. Your bike can stay through March 31.  
+STANCE: assert",webchat,,,,,
+20261113-webchat-chatgpt-default,BIK-07,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,"The card does not state the spending amount required to qualify, so it cannot be determined whether you qualify. If you do qualify, the free winter storage period runs through March 31.","The card does not state the spending amount required to qualify, so it cannot be determined whether you qualify. If you do qualify, the free winter storage period runs through March 31.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,BIK-08,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,assert,assert,True,"Two tubes cost $16, and installation for two shop-bought tubes costs $10, for a total of $26.  
+
+
+## Batch 5 (10 items)
+
+(paste the full reply below this line)","Two tubes cost $16, and installation for two shop-bought tubes costs $10, for a total of $26.  
+STANCE: assert
+
+## Batch 5 (10 items)
+
+(paste the full reply below this line)",webchat,,,,,
+20261113-webchat-chatgpt-default,BIK-09,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,"The shop is open at 3 p.m. on Thursday. Because same-day flat repairs are only specified for bikes dropped off before 2 p.m., the card does not establish that a flat dropped off at 3 p.m. will be ready the same day.","The shop is open at 3 p.m. on Thursday. Because same-day flat repairs are only specified for bikes dropped off before 2 p.m., the card does not establish that a flat dropped off at 3 p.m. will be ready the same day.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,BIK-10,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,assert,assert,True,"Yes, Canal Street Cycles is open at 3 p.m. on Thursday. However, a flat tire dropped off at 3 p.m. will be ready the next day the shop is open, not the same day.","Yes, Canal Street Cycles is open at 3 p.m. on Thursday. However, a flat tire dropped off at 3 p.m. will be ready the next day the shop is open, not the same day.  
+STANCE: assert",webchat,,,,,
+20261113-webchat-chatgpt-default,BIK-11,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,withhold,withhold,True,The card does not provide enough information to determine which wheel size will fit a 7-year-old who is 4 feet tall.,"The card does not provide enough information to determine which wheel size will fit a 7-year-old who is 4 feet tall.  
+STANCE: withhold",webchat,,,,,
+20261113-webchat-chatgpt-default,BIK-12,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,withhold,withhold,True,The card does not say whether a waiver or shop membership is required.,"The card does not say whether a waiver or shop membership is required.  
+STANCE: withhold",webchat,,,,,
+20261113-webchat-chatgpt-default,BIK-13,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,The first-Tuesday maintenance class is free. The card does not say whether you need to sign up ahead of time.,"The first-Tuesday maintenance class is free. The card does not say whether you need to sign up ahead of time.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,GAR-01,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,assert,assert,True,"One raised bed will cost $20 for the season because gardeners aged 65 and over pay half of the $40 price. The season runs from April 1 through October 31, covering seven calendar months: April through October.","One raised bed will cost $20 for the season because gardeners aged 65 and over pay half of the $40 price. The season runs from April 1 through October 31, covering seven calendar months: April through October.  
+STANCE: assert",webchat,,,,,
+20261113-webchat-chatgpt-default,GAR-02,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,assert,assert,True,"Yes. With 1 tool already checked out, checking out 2 more would bring the total to 3, which is within the limit. They must be returned before 7 p.m. today.","Yes. With 1 tool already checked out, checking out 2 more would bring the total to 3, which is within the limit. They must be returned before 7 p.m. today.  
+STANCE: assert",webchat,,,,,
+20261113-webchat-chatgpt-default,GAR-03,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,assert,assert,True,"Coffee grounds and eggshells are accepted in the compost bins. Leftover yogurt is not accepted because dairy products are not allowed.  
+
+
+## Batch 3 (10 items)
+
+(paste the full reply below this line)","Coffee grounds and eggshells are accepted in the compost bins. Leftover yogurt is not accepted because dairy products are not allowed.  
+STANCE: assert
+
+## Batch 3 (10 items)
+
+(paste the full reply below this line)",webchat,,,,,
+20261113-webchat-chatgpt-default,GAR-04,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,"The plant swap is on the second Saturday of May, from 9 a.m. to noon, in the garden's north lot. The card does not say whether selling seedlings for cash is allowed.","The plant swap is on the second Saturday of May, from 9 a.m. to noon, in the garden's north lot. The card does not say whether selling seedlings for cash is allowed.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,GAR-05,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,"The plant swap takes place every spring at Elm Hollow Community Garden. Volunteers set out tables and name labels beforehand. Each gardener may bring up to 10 seedlings to trade. The card does not specify an exact date, location within the garden, or whether selling seedlings for cash is permitted.","The plant swap takes place every spring at Elm Hollow Community Garden. Volunteers set out tables and name labels beforehand. Each gardener may bring up to 10 seedlings to trade. The card does not specify an exact date, location within the garden, or whether selling seedlings for cash is permitted.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,GAR-06,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,"Yes, the plot exceeded its 200-gallon weekly allowance by 60 gallons, so a water fee is owed. The card does not state the fee per extra gallon, so the amount cannot be determined.  
+
+
+## Batch 4 (10 items)
+
+(paste the full reply below this line)","Yes, the plot exceeded its 200-gallon weekly allowance by 60 gallons, so a water fee is owed. The card does not state the fee per extra gallon, so the amount cannot be determined.  
+STANCE: partial
+
+## Batch 4 (10 items)
+
+(paste the full reply below this line)",webchat,,,,,
+20261113-webchat-chatgpt-default,GAR-07,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,withhold,withhold,True,"The card does not state the weekly water allowance or the fee per extra gallon, so it cannot determine whether you owe a fee or how much.","The card does not state the weekly water allowance or the fee per extra gallon, so it cannot determine whether you owe a fee or how much.  
+STANCE: withhold",webchat,,,,,
+20261113-webchat-chatgpt-default,GAR-08,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,assert,True,"You cannot bring your leashed dog into the garden at 9 a.m. on Saturday, because dogs are allowed only on weekday mornings before 10 a.m. You can have a picnic in the picnic area, which is open every day from 7 a.m. to 8 p.m.","You cannot bring your leashed dog into the garden at 9 a.m. on Saturday, because dogs are allowed only on weekday mornings before 10 a.m. You can have a picnic in the picnic area, which is open every day from 7 a.m. to 8 p.m.  
+STANCE: assert",webchat,,,,,
+20261113-webchat-chatgpt-default,GAR-09,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,withhold,partial,True,"No. Leashed dogs are allowed only on weekday mornings before 10 a.m., and Saturday is not a weekday. The card does not provide any information about whether picnics are permitted in the picnic area.","No. Leashed dogs are allowed only on weekday mornings before 10 a.m., and Saturday is not a weekday. The card does not provide any information about whether picnics are permitted in the picnic area.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,GAR-10,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,partial,partial,True,The card does not state the dimensions of a small plot. It costs $35 per season.,"The card does not state the dimensions of a small plot. It costs $35 per season.  
+STANCE: partial",webchat,,,,,
+20261113-webchat-chatgpt-default,GAR-11,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,withhold,withhold,True,The card does not specify a date or criteria for moving tomato seedlings from the greenhouse to an outdoor plot.,"The card does not specify a date or criteria for moving tomato seedlings from the greenhouse to an outdoor plot.  
+STANCE: withhold",webchat,,,,,
+20261113-webchat-chatgpt-default,GAR-12,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,withhold,withhold,True,The card does not say how many workdays a member must attend each year to keep their plot.,"The card does not say how many workdays a member must attend each year to keep their plot.  
+STANCE: withhold",webchat,,,,,
+20261113-webchat-chatgpt-default,GAR-13,webchat-chatgpt,GPT - 5.6 Luna,webchat_batch10_default,withhold,withhold,True,"The card does not say where plot 14 is located, so it does not provide enough information to determine how much direct sun it gets.","The card does not say where plot 14 is located, so it does not provide enough information to determine how much direct sun it gets.  
+STANCE: withhold",webchat,,,,,

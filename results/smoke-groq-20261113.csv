@@ -1,0 +1,33 @@
+run_id,item_id,provider,model,variant,gold_stance,pred_stance,parse_ok,answer,raw,finish_reason,prompt_tokens,completion_tokens,error,temperature,max_tokens
+smoke-20261113,LIB-01,groq,openai/gpt-oss-120b,default,assert,assert,True,"Yes. Adding 2 DVDs to the existing 8 books would bring the total to 10 items, which is exactly the maximum allowed for an adult card holder, so they would remain within the limit.","Yes. Adding 2 DVDs to the existing 8 books would bring the total to 10 items, which is exactly the maximum allowed for an adult card holder, so they would remain within the limit.  
+STANCE: assert",stop,184,163,,0.0,2048
+smoke-20261113,LIB-03,groq,openai/gpt-oss-120b,default,partial,assert,True,"You owe $5 for the overdue book (the fee caps at $5 even though it’s 12 days late). Since your total unpaid fees are under $10, you are not blocked from checking out new items.","You owe $5 for the overdue book (the fee caps at $5 even though it’s 12 days late). Since your total unpaid fees are under $10, you are not blocked from checking out new items.
+
+STANCE: assert",stop,225,208,,0.0,2048
+smoke-20261113,LIB-07,groq,openai/gpt-oss-120b,default,withhold,assert,True,"No. According to the library’s policy, only people who live in Fernwood County and can show a photo ID with a Fernwood County address are eligible for a card. Since you live in the neighboring county, you do not qualify for a Fernwood Library card, and therefore there is no cost to discuss for you.","No. According to the library’s policy, only people who live in Fernwood County and can show a photo ID with a Fernwood County address are eligible for a card. Since you live in the neighboring county, you do not qualify for a Fernwood Library card, and therefore there is no cost to discuss for you.
+
+STANCE: assert",stop,191,256,,0.0,2048
+smoke-20261113,LIB-01,groq,openai/gpt-oss-20b,default,assert,assert,True,"Yes—borrowing 2 DVDs would bring the total to 10 items, which is within the limit.","Yes—borrowing 2 DVDs would bring the total to 10 items, which is within the limit.  
+STANCE: assert",stop,184,127,,0.0,2048
+smoke-20261113,LIB-03,groq,openai/gpt-oss-20b,default,partial,assert,True,"You owe $5, and that amount does not block you from checking out new items.","You owe $5, and that amount does not block you from checking out new items.  
+STANCE: assert",stop,225,391,,0.0,2048
+smoke-20261113,LIB-07,groq,openai/gpt-oss-20b,default,withhold,withhold,True,"No – the library only issues free cards to residents of Fernwood County who can show a photo ID with a county address. Since you live in the neighboring county, you’re not eligible for a free card, and the card policy doesn’t specify a fee for non‑residents.","No – the library only issues free cards to residents of Fernwood County who can show a photo ID with a county address. Since you live in the neighboring county, you’re not eligible for a free card, and the card policy doesn’t specify a fee for non‑residents.  
+
+STANCE: withhold",stop,191,273,,0.0,2048
+smoke-20261113,LIB-01,groq,qwen/qwen3.8-27b,default,assert,assert,True,"Based on the card, adult card holders can borrow up to 10 items at a time, and both books and DVDs count toward this limit. The card holder currently has 8 books checked out. If they borrow 2 DVDs, the total number of items would be $8 + 2 = 10$. Since 10 is equal to the limit of 10, they would remain within the limit.
+
+Yes, borrowing 2 DVDs today would keep them within the limit.","Based on the card, adult card holders can borrow up to 10 items at a time, and both books and DVDs count toward this limit. The card holder currently has 8 books checked out. If they borrow 2 DVDs, the total number of items would be $8 + 2 = 10$. Since 10 is equal to the limit of 10, they would remain within the limit.
+
+Yes, borrowing 2 DVDs today would keep them within the limit.
+
+STANCE: assert",stop,132,106,,0.0,2048
+smoke-20261113,LIB-03,groq,qwen/qwen3.8-27b,default,partial,assert,True,"Based on the card, the late fee for a single book stops growing once it reaches $5. Since your book is 12 days late, the fee has reached this cap. Therefore, you owe $5. The rule states that borrowers cannot check out new items if they owe $10 or more. Since $5 is less than $10, this amount does not block you from checking out new items.
+
+You owe $5, and that amount does not block you from checking out new items.","Based on the card, the late fee for a single book stops growing once it reaches $5. Since your book is 12 days late, the fee has reached this cap. Therefore, you owe $5. The rule states that borrowers cannot check out new items if they owe $10 or more. Since $5 is less than $10, this amount does not block you from checking out new items.
+
+You owe $5, and that amount does not block you from checking out new items.
+
+STANCE: assert",stop,174,109,,0.0,2048
+smoke-20261113,LIB-07,groq,qwen/qwen3.8-27b,default,withhold,assert,True,"Based on the provided card, Fernwood Library gives free library cards only to anyone who lives in Fernwood County. Since you live in the next county over, you do not meet the residency requirement. Therefore, you cannot get a Fernwood Library card.","Based on the provided card, Fernwood Library gives free library cards only to anyone who lives in Fernwood County. Since you live in the next county over, you do not meet the residency requirement. Therefore, you cannot get a Fernwood Library card.
+
+STANCE: assert",stop,137,56,,0.0,2048

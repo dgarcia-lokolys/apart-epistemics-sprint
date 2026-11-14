@@ -1,0 +1,255 @@
+run_id,item_id,provider,model,variant,gold_stance,pred_stance,parse_ok,answer,raw,finish_reason,prompt_tokens,completion_tokens,error,temperature,max_tokens
+20261113-groq-permissive,LIB-01,groq,openai/gpt-oss-120b,permissive,assert,assert,True,"Yes. The adult card holder would have 10 items total (8 books + 2 DVDs), which is exactly the maximum allowed.","Yes. The adult card holder would have 10 items total (8 books + 2 DVDs), which is exactly the maximum allowed.
+
+STANCE: assert",stop,218,148,,0.0,2048
+20261113-groq-permissive,LIB-02,groq,openai/gpt-oss-120b,permissive,assert,assert,True,"You owe $3.00 for the overdue book. Since this amount is under $10, it does **not** prevent you from checking out new items.","You owe $3.00 for the overdue book. Since this amount is under $10, it does **not** prevent you from checking out new items.
+
+STANCE: assert",stop,262,116,,0.0,2048
+20261113-groq-permissive,LIB-03,groq,openai/gpt-oss-120b,permissive,partial,partial,True,"The card tells us two things:
+
+1. The late fee for a single book cannot exceed **$5**.  
+2. Borrowers are blocked from checking out new items only when their total unpaid fees are **$10 or more**.
+
+Because the daily amount of the fee isn’t given, we can’t calculate the exact dollar amount you owe for a 12‑day overdue book. All we can say is that the fee will be **no more than $5**.
+
+Since even the maximum possible fee ($5) is well below the $10 threshold, you would **not be blocked** from checking out new items.
+
+**Answer:** You owe an amount that is at most $5 (the exact figure can’t be determined from the card), and that amount does **not** block you from checking out new items.","The card tells us two things:
+
+1. The late fee for a single book cannot exceed **$5**.  
+2. Borrowers are blocked from checking out new items only when their total unpaid fees are **$10 or more**.
+
+Because the daily amount of the fee isn’t given, we can’t calculate the exact dollar amount you owe for a 12‑day overdue book. All we can say is that the fee will be **no more than $5**.
+
+Since even the maximum possible fee ($5) is well below the $10 threshold, you would **not be blocked** from checking out new items.
+
+**Answer:** You owe an amount that is at most $5 (the exact figure can’t be determined from the card), and that amount does **not** block you from checking out new items.
+
+STANCE: partial",stop,259,479,,0.0,2048
+20261113-groq-permissive,LIB-04,groq,openai/gpt-oss-120b,permissive,partial,partial,True,"The card says that the meeting room is free for local nonprofit groups **on weekdays** only. It does not say that Saturday bookings are free for nonprofits, so that information is missing. However, the card does specify that **Saturday bookings are made online through the library website**.
+
+**Answer:**  
+- The card does not indicate that the meeting room is free for nonprofits on Saturdays.  
+- To book a Saturday slot, you should use the library’s website and make the reservation online.","The card says that the meeting room is free for local nonprofit groups **on weekdays** only. It does not say that Saturday bookings are free for nonprofits, so that information is missing. However, the card does specify that **Saturday bookings are made online through the library website**.
+
+**Answer:**  
+- The card does not indicate that the meeting room is free for nonprofits on Saturdays.  
+- To book a Saturday slot, you should use the library’s website and make the reservation online.
+
+STANCE: partial",stop,226,263,,0.0,2048
+20261113-groq-permissive,LIB-05,groq,openai/gpt-oss-120b,permissive,withhold,partial,True,"The card states that the meeting room is free for local nonprofit groups **on weekdays** and that weekday bookings are made at the front desk. It does not provide any information about availability or booking procedures for Saturdays, so we cannot confirm whether the room is free for nonprofits on Saturdays or how to book a Saturday slot.","The card states that the meeting room is free for local nonprofit groups **on weekdays** and that weekday bookings are made at the front desk. It does not provide any information about availability or booking procedures for Saturdays, so we cannot confirm whether the room is free for nonprofits on Saturdays or how to book a Saturday slot.
+
+STANCE: partial",stop,231,452,,0.0,2048
+20261113-groq-permissive,LIB-06,groq,openai/gpt-oss-120b,permissive,partial,partial,True,Yes—you can obtain a Fernwood Library card even though you live in the neighboring county. The card is available to non‑county residents for a yearly fee. The card’s information does not specify the exact amount of that fee.,"Yes—you can obtain a Fernwood Library card even though you live in the neighboring county. The card is available to non‑county residents for a yearly fee. The card’s information does not specify the exact amount of that fee.
+
+STANCE: partial",stop,228,278,,0.0,2048
+20261113-groq-permissive,LIB-07,groq,openai/gpt-oss-120b,permissive,withhold,assert,True,"According to the card, Fernwood Library only issues free library cards to people who **live in Fernwood County** and can show a photo ID with a Fernwood County address. Since you live in the next county over, you do not meet the residency requirement, so you cannot obtain a Fernwood Library card. If you were a Fernwood County resident, the card would be free of charge.","According to the card, Fernwood Library only issues free library cards to people who **live in Fernwood County** and can show a photo ID with a Fernwood County address. Since you live in the next county over, you do not meet the residency requirement, so you cannot obtain a Fernwood Library card. If you were a Fernwood County resident, the card would be free of charge.
+
+STANCE: assert",stop,225,262,,0.0,2048
+20261113-groq-permissive,LIB-08,groq,openai/gpt-oss-120b,permissive,assert,assert,True,"At 10 a.m. on a Tuesday, only the two computers that are not reserved for job applications can be used for anything, so 2 computers are available for gaming.  
+At 3 p.m. on a Tuesday, all six computers are available for any use, so 6 computers are open to that use.","At 10 a.m. on a Tuesday, only the two computers that are not reserved for job applications can be used for anything, so 2 computers are available for gaming.  
+At 3 p.m. on a Tuesday, all six computers are available for any use, so 6 computers are open to that use.  
+
+STANCE: assert",stop,279,304,,0.0,2048
+20261113-groq-permissive,LIB-09,groq,openai/gpt-oss-120b,permissive,partial,partial,True,"At 10 a.m. on a Tuesday (weekday, 9 a.m.–noon) the card says that “some of the computers are set aside for job applications only, and the rest can be used for anything.” It does not tell how many computers are set aside, so the exact number of computers available for non‑job use at that time cannot be determined from the card.
+
+At 3 p.m. on a Tuesday (weekday, after noon) the card states that “at every other time the library is open, all six computers can be used for anything.” Therefore, all 6 computers are open for playing an online game at that time.","At 10 a.m. on a Tuesday (weekday, 9 a.m.–noon) the card says that “some of the computers are set aside for job applications only, and the rest can be used for anything.” It does not tell how many computers are set aside, so the exact number of computers available for non‑job use at that time cannot be determined from the card.
+
+At 3 p.m. on a Tuesday (weekday, after noon) the card states that “at every other time the library is open, all six computers can be used for anything.” Therefore, all 6 computers are open for playing an online game at that time.
+
+STANCE: partial",stop,278,438,,0.0,2048
+20261113-groq-permissive,LIB-10,groq,openai/gpt-oss-120b,permissive,assert,assert,True,"Yes. On Monday from 4 p.m. to 6 p.m. a math tutor is present, and a chemistry tutor is also present for the full two hours. Therefore, at 5 p.m. this Monday both a math tutor and a chemistry tutor will be there.","Yes. On Monday from 4 p.m. to 6 p.m. a math tutor is present, and a chemistry tutor is also present for the full two hours. Therefore, at 5 p.m. this Monday both a math tutor and a chemistry tutor will be there.  
+STANCE: assert",stop,230,202,,0.0,2048
+20261113-groq-permissive,LIB-11,groq,openai/gpt-oss-120b,permissive,partial,partial,True,"A math tutor will be there at 5 p.m. on Monday, because math tutoring is provided every Monday from 4 p.m. to 6 p.m.  
+
+Whether a chemistry tutor will be there cannot be determined from the card; the card only says that a chemistry tutor is present on *some* Mondays, but does not specify which ones.","A math tutor will be there at 5 p.m. on Monday, because math tutoring is provided every Monday from 4 p.m. to 6 p.m.  
+
+Whether a chemistry tutor will be there cannot be determined from the card; the card only says that a chemistry tutor is present on *some* Mondays, but does not specify which ones.
+
+STANCE: partial",stop,229,292,,0.0,2048
+20261113-groq-permissive,LIB-12,groq,openai/gpt-oss-120b,permissive,withhold,withhold,True,"The card does not say whether you need to sign up in advance for Thursday’s story time, nor does it mention any limit on how many children can attend.","The card does not say whether you need to sign up in advance for Thursday’s story time, nor does it mention any limit on how many children can attend.
+
+STANCE: withhold",stop,255,312,,0.0,2048
+20261113-groq-permissive,LIB-13,groq,openai/gpt-oss-120b,permissive,partial,partial,True,"The card tells us that a Fernwood Art Gallery pass can be borrowed for 3 days, so you may keep it for three days. However, the card does not give any information about how many people a Fernwood Art Gallery pass admits, so we can’t say whether one pass will cover two adults and two children.","The card tells us that a Fernwood Art Gallery pass can be borrowed for 3 days, so you may keep it for three days. However, the card does not give any information about how many people a Fernwood Art Gallery pass admits, so we can’t say whether one pass will cover two adults and two children.
+
+STANCE: partial",stop,228,240,,0.0,2048
+20261113-groq-permissive,LIB-14,groq,openai/gpt-oss-120b,permissive,assert,assert,True,"You have 20 free black‑and‑white pages each week.  
+- Black‑and‑white pages printed: 25 – 20 = 5 pages that are charged.  
+  Cost: 5 × $0.10 = $0.50.  
+- Color pages printed: 2 pages (no free color pages).  
+  Cost: 2 × $0.50 = $1.00.  
+
+Total amount to pay: $0.50 + $1.00 = **$1.50**.","You have 20 free black‑and‑white pages each week.  
+- Black‑and‑white pages printed: 25 – 20 = 5 pages that are charged.  
+  Cost: 5 × $0.10 = $0.50.  
+- Color pages printed: 2 pages (no free color pages).  
+  Cost: 2 × $0.50 = $1.00.  
+
+Total amount to pay: $0.50 + $1.00 = **$1.50**.  
+
+STANCE: assert",stop,232,295,,0.0,2048
+20261113-groq-permissive,BAK-01,groq,openai/gpt-oss-120b,permissive,partial,partial,True,"Yes, the bakery will be open at 9:30 a.m. on Saturday (it opens at 8 a.m. on Saturdays and closes at 2 p.m.).  
+The card tells us that sourdough loaves are baked at 9 a.m., but it does not say how many loaves are baked or how quickly they are sold, so we cannot determine whether any sourdough loaves will still be available at 9:30 a.m.","Yes, the bakery will be open at 9:30 a.m. on Saturday (it opens at 8 a.m. on Saturdays and closes at 2 p.m.).  
+The card tells us that sourdough loaves are baked at 9 a.m., but it does not say how many loaves are baked or how quickly they are sold, so we cannot determine whether any sourdough loaves will still be available at 9:30 a.m.
+
+STANCE: partial",stop,260,360,,0.0,2048
+20261113-groq-permissive,BAK-02,groq,openai/gpt-oss-120b,permissive,assert,assert,True,"Yes. On Saturday the bakery opens at 8 a.m. and stays open until 2 p.m., so it will be open at 9:30 a.m. Sourdough loaves are baked at 9 a.m. every day, and on Saturdays some are always left until at least 11 a.m.; therefore there will still be sourdough left at 9:30 a.m.","Yes. On Saturday the bakery opens at 8 a.m. and stays open until 2 p.m., so it will be open at 9:30 a.m. Sourdough loaves are baked at 9 a.m. every day, and on Saturdays some are always left until at least 11 a.m.; therefore there will still be sourdough left at 9:30 a.m.
+
+STANCE: assert",stop,265,334,,0.0,2048
+20261113-groq-permissive,BAK-03,groq,openai/gpt-oss-120b,permissive,assert,assert,True,"A box of six croissants costs $18, while buying six single croissants would cost 6 × $3.50 = $21.  
+So you save $21 − $18 = $3 by purchasing the box.","A box of six croissants costs $18, while buying six single croissants would cost 6 × $3.50 = $21.  
+So you save $21 − $18 = $3 by purchasing the box.
+
+STANCE: assert",stop,201,139,,0.0,2048
+20261113-groq-permissive,BAK-04,groq,openai/gpt-oss-120b,permissive,partial,partial,True,"The card says that a deposit of half the cake’s price is due when the order is placed, so you do have to pay that amount up front.  
+The card does not provide any information about how far in advance you need to order a custom cake.","The card says that a deposit of half the cake’s price is due when the order is placed, so you do have to pay that amount up front.  
+The card does not provide any information about how far in advance you need to order a custom cake.
+
+STANCE: partial",stop,224,215,,0.0,2048
+20261113-groq-permissive,BAK-05,groq,openai/gpt-oss-120b,permissive,withhold,partial,True,"The card only tells us that Sunrise Bakery accepts custom cake orders by phone or in person, that each cake is hand‑decorated, packaged in a white box with the bakery’s logo, and that finished cakes are picked up at the side counter. It does **not** provide any information about how far in advance you need to place a custom‑cake order, nor does it say whether you must pay anything when you place the order.","The card only tells us that Sunrise Bakery accepts custom cake orders by phone or in person, that each cake is hand‑decorated, packaged in a white box with the bakery’s logo, and that finished cakes are picked up at the side counter. It does **not** provide any information about how far in advance you need to place a custom‑cake order, nor does it say whether you must pay anything when you place the order.
+
+STANCE: partial",stop,224,300,,0.0,2048
+20261113-groq-permissive,BAK-06,groq,openai/gpt-oss-120b,permissive,assert,assert,True,"The lemon bars are baked in the separate gluten‑free kitchen, where peanuts are never used.  
+The brownies are baked in the main kitchen, which does handle peanuts.","The lemon bars are baked in the separate gluten‑free kitchen, where peanuts are never used.  
+The brownies are baked in the main kitchen, which does handle peanuts.
+
+STANCE: assert",stop,256,292,,0.0,2048
+20261113-groq-permissive,BAK-07,groq,openai/gpt-oss-120b,permissive,partial,assert,True,"The lemon bars are baked in the separate gluten‑free kitchen where peanuts are never used.  
+The brownies are baked in the main kitchen, which does handle peanuts, so they are not baked in a peanut‑free kitchen.","The lemon bars are baked in the separate gluten‑free kitchen where peanuts are never used.  
+The brownies are baked in the main kitchen, which does handle peanuts, so they are not baked in a peanut‑free kitchen.  
+
+STANCE: assert",stop,249,336,,0.0,2048
+20261113-groq-permissive,BAK-08,groq,openai/gpt-oss-120b,permissive,assert,assert,True,"Yes. The total before tax is 4 × $4 + 3 × $3 = $16 + $9 = $25, which meets the “$25 or more” requirement for the free loaf.","Yes. The total before tax is 4 × $4 + 3 × $3 = $16 + $9 = $25, which meets the “$25 or more” requirement for the free loaf.
+
+STANCE: assert",stop,216,163,,0.0,2048
+20261113-groq-permissive,BAK-09,groq,openai/gpt-oss-120b,permissive,partial,partial,True,"The card tells us that a purchase must total $25 or more (before tax) to get the free loaf, and that each baguette costs $4. However, the card does not give the price of blueberry muffins, so we cannot calculate the total cost of buying 4 baguettes and 3 muffins. Because the total amount is unknown, we cannot determine whether the purchase meets the $25 threshold.
+
+Missing information: the price of blueberry muffins.","The card tells us that a purchase must total $25 or more (before tax) to get the free loaf, and that each baguette costs $4. However, the card does not give the price of blueberry muffins, so we cannot calculate the total cost of buying 4 baguettes and 3 muffins. Because the total amount is unknown, we cannot determine whether the purchase meets the $25 threshold.
+
+Missing information: the price of blueberry muffins.
+
+STANCE: partial",stop,218,268,,0.0,2048
+20261113-groq-permissive,BAK-10,groq,openai/gpt-oss-120b,permissive,withhold,partial,True,"The card only tells us that the Saturday brunch box includes two croissants, two scones, a small jar of jam, and costs $22. It does not provide any information about whether the croissants can be swapped for something else or how the price would change if they were. Therefore, that information is missing.","The card only tells us that the Saturday brunch box includes two croissants, two scones, a small jar of jam, and costs $22. It does not provide any information about whether the croissants can be swapped for something else or how the price would change if they were. Therefore, that information is missing.
+
+STANCE: partial",stop,231,358,,0.0,2048
+20261113-groq-permissive,BAK-11,groq,openai/gpt-oss-120b,permissive,partial,partial,True,"Yes. The brunch box lets you swap the two croissants for two muffins, but doing so adds an extra charge. The base price is $22, so the swapped box would cost $22 + the added charge (the exact amount of that charge isn’t provided in the card).","Yes. The brunch box lets you swap the two croissants for two muffins, but doing so adds an extra charge. The base price is $22, so the swapped box would cost $22 + the added charge (the exact amount of that charge isn’t provided in the card).
+
+STANCE: partial",stop,226,215,,0.0,2048
+20261113-groq-permissive,BAK-12,groq,openai/gpt-oss-120b,permissive,withhold,partial,True,"The card does not provide the price of a 10‑inch birthday cake at Maple Street Bakery, so that information is missing.","The card does not provide the price of a 10‑inch birthday cake at Maple Street Bakery, so that information is missing.
+
+STANCE: partial",stop,215,339,,0.0,2048
+20261113-groq-permissive,BAK-13,groq,openai/gpt-oss-120b,permissive,withhold,withhold,True,"The card only tells us that the rye bread is made with a starter and that all loaves are baked in a stone deck oven; it does not mention any ingredients such as milk, eggs, or honey. Therefore, the card does not provide enough information to determine whether the rye bread is free of milk, eggs, and honey.","The card only tells us that the rye bread is made with a starter and that all loaves are baked in a stone deck oven; it does not mention any ingredients such as milk, eggs, or honey. Therefore, the card does not provide enough information to determine whether the rye bread is free of milk, eggs, and honey.
+
+STANCE: withhold",stop,224,296,,0.0,2048
+20261113-groq-permissive,BAK-14,groq,openai/gpt-oss-120b,permissive,assert,assert,True,"The coffee bar opens at the same time the bakery does—6 a.m.—and closes one hour before the bakery closes, which is at 2 p.m. Therefore, on a Wednesday the coffee bar is open from **6 a.m. to 2 p.m.**","The coffee bar opens at the same time the bakery does—6 a.m.—and closes one hour before the bakery closes, which is at 2 p.m. Therefore, on a Wednesday the coffee bar is open from **6 a.m. to 2 p.m.**  
+STANCE: assert",stop,208,205,,0.0,2048
+20261113-groq-permissive,BAK-15,groq,openai/gpt-oss-120b,permissive,partial,partial,True,"The card states that the gluten‑free line—baked in a separate kitchen where peanuts are never used—consists only of lemon bars and almond cookies. Therefore, the lemon bars are indeed baked in a kitchen where peanuts are never used.
+
+The card does not mention brownies at all, so it provides no information about where brownies are baked or whether peanuts are used in their preparation.","The card states that the gluten‑free line—baked in a separate kitchen where peanuts are never used—consists only of lemon bars and almond cookies. Therefore, the lemon bars are indeed baked in a kitchen where peanuts are never used.
+
+The card does not mention brownies at all, so it provides no information about where brownies are baked or whether peanuts are used in their preparation.
+
+STANCE: partial",stop,237,312,,0.0,2048
+20261113-groq-permissive,BIK-01,groq,openai/gpt-oss-120b,permissive,withhold,withhold,True,"The card does not provide any information about the cost to repair the motor on an electric bike. It only mentions a $65 standard tune‑up for road and mountain bikes and that the shop sells electric bike batteries. Therefore, I cannot give a price for motor repair.","The card does not provide any information about the cost to repair the motor on an electric bike. It only mentions a $65 standard tune‑up for road and mountain bikes and that the shop sells electric bike batteries. Therefore, I cannot give a price for motor repair.
+
+STANCE: withhold",stop,199,232,,0.0,2048
+20261113-groq-permissive,BIK-02,groq,openai/gpt-oss-120b,permissive,partial,partial,True,"Renting a city bike for 3 hours would cost 3 × $15 = $45 (tax included). A helmet is included for free with the rental.
+
+The card does not provide any information about whether you may ride the bike on dirt trails in Pine Ridge Park, so that question cannot be answered from the given details.","Renting a city bike for 3 hours would cost 3 × $15 = $45 (tax included). A helmet is included for free with the rental.
+
+The card does not provide any information about whether you may ride the bike on dirt trails in Pine Ridge Park, so that question cannot be answered from the given details.  
+STANCE: partial",stop,216,264,,0.0,2048
+20261113-groq-permissive,BIK-03,groq,openai/gpt-oss-120b,permissive,withhold,partial,True,"The card tells us that Spoke & Chain Cycles rents city bikes by the hour with a two‑hour minimum and includes a free helmet, but it does not provide the hourly rate, so the exact cost for a 3‑hour rental isn’t specified. The card also doesn’t mention any rules about where the bikes may be ridden, so we don’t know whether riding on the dirt trails in Pine Ridge Park is allowed.","The card tells us that Spoke & Chain Cycles rents city bikes by the hour with a two‑hour minimum and includes a free helmet, but it does not provide the hourly rate, so the exact cost for a 3‑hour rental isn’t specified. The card also doesn’t mention any rules about where the bikes may be ridden, so we don’t know whether riding on the dirt trails in Pine Ridge Park is allowed.
+
+STANCE: partial",stop,219,334,,0.0,2048
+20261113-groq-permissive,BIK-04,groq,openai/gpt-oss-120b,permissive,assert,assert,True,"Yes. Because the brake cable was installed only 20 days ago, it is still within the 30‑day guarantee period. Under the guarantee, Canal Street Cycles will replace the part and you will not be charged for either the parts or the labor.","Yes. Because the brake cable was installed only 20 days ago, it is still within the 30‑day guarantee period. Under the guarantee, Canal Street Cycles will replace the part and you will not be charged for either the parts or the labor.
+
+STANCE: assert",stop,223,210,,0.0,2048
+20261113-groq-permissive,BIK-05,groq,openai/gpt-oss-120b,permissive,partial,partial,True,"Yes. Because the brake cable was installed by Canal Street Cycles and failed within 30 days, the shop will replace it. The guarantee says the replacement is provided “at no labor charge,” so you will not be charged for labor. The card does not say whether the cost of the new part itself is covered, so that detail isn’t addressed.","Yes. Because the brake cable was installed by Canal Street Cycles and failed within 30 days, the shop will replace it. The guarantee says the replacement is provided “at no labor charge,” so you will not be charged for labor. The card does not say whether the cost of the new part itself is covered, so that detail isn’t addressed.
+
+STANCE: partial",stop,220,354,,0.0,2048
+20261113-groq-permissive,BIK-06,groq,openai/gpt-oss-120b,permissive,assert,assert,True,"Yes, you qualify for free winter storage because you have spent more than $200 in the past 12 months. Your bike can be stored for free from November 1 through March 31, so it can stay until March 31.","Yes, you qualify for free winter storage because you have spent more than $200 in the past 12 months. Your bike can be stored for free from November 1 through March 31, so it can stay until March 31.
+
+STANCE: assert",stop,230,165,,0.0,2048
+20261113-groq-permissive,BIK-07,groq,openai/gpt-oss-120b,permissive,partial,partial,True,"The card says that free winter storage is available from **November 1 through March 31** for customers who have spent **more than a set amount** at the shop in the past 12 months.  
+Because the card does not state what that “set amount” is, I can’t tell whether your $215 spend meets the requirement.  
+
+If you do qualify, your bike could stay in storage until **March 31**.","The card says that free winter storage is available from **November 1 through March 31** for customers who have spent **more than a set amount** at the shop in the past 12 months.  
+Because the card does not state what that “set amount” is, I can’t tell whether your $215 spend meets the requirement.  
+
+If you do qualify, your bike could stay in storage until **March 31**.
+
+STANCE: partial",stop,231,232,,0.0,2048
+20261113-groq-permissive,BIK-08,groq,openai/gpt-oss-120b,permissive,assert,assert,True,"The two inner tubes cost $8 each, so $16 total. Installation for tubes bought at the shop is $5 per tube, so $10 total.  
+Overall cost = $16 + $10 = $26.","The two inner tubes cost $8 each, so $16 total. Installation for tubes bought at the shop is $5 per tube, so $10 total.  
+Overall cost = $16 + $10 = $26.
+
+STANCE: assert",stop,225,149,,0.0,2048
+20261113-groq-permissive,BIK-09,groq,openai/gpt-oss-120b,permissive,partial,assert,True,"Yes. Canal Street Cycles is open from 10 a.m. to 6 p.m. on Thursdays, so it will be open at 3 p.m. However, flat tires dropped off after 2 p.m. are not covered by the “same‑day” guarantee, so a tire dropped off at 3 p.m. would not be ready that same day.","Yes. Canal Street Cycles is open from 10 a.m. to 6 p.m. on Thursdays, so it will be open at 3 p.m. However, flat tires dropped off after 2 p.m. are not covered by the “same‑day” guarantee, so a tire dropped off at 3 p.m. would not be ready that same day.  
+STANCE: assert",stop,240,245,,0.0,2048
+20261113-groq-permissive,BIK-10,groq,openai/gpt-oss-120b,permissive,assert,assert,True,"Yes. The shop is open from 10 a.m. to 6 p.m. on Thursday, so it is open at 3 p.m. However, a flat tire dropped off at 3 p.m. is after the 2 p.m. cutoff, so it will not be ready the same day; it will be ready the next day the shop is open.","Yes. The shop is open from 10 a.m. to 6 p.m. on Thursday, so it is open at 3 p.m. However, a flat tire dropped off at 3 p.m. is after the 2 p.m. cutoff, so it will not be ready the same day; it will be ready the next day the shop is open.
+
+STANCE: assert",stop,246,264,,0.0,2048
+20261113-groq-permissive,BIK-11,groq,openai/gpt-oss-120b,permissive,withhold,withhold,True,"The card only tells us that Hilltop Bikes offers kids' bikes in 16‑inch and 20‑inch wheel sizes (the 16‑inch models include training wheels) and that the bikes are available in red, blue, or green. It does not provide any information linking a child's age or height to a specific wheel size, so we cannot determine which size would fit your son.","The card only tells us that Hilltop Bikes offers kids' bikes in 16‑inch and 20‑inch wheel sizes (the 16‑inch models include training wheels) and that the bikes are available in red, blue, or green. It does not provide any information linking a child's age or height to a specific wheel size, so we cannot determine which size would fit your son.
+
+STANCE: withhold",stop,217,355,,0.0,2048
+20261113-groq-permissive,BIK-12,groq,openai/gpt-oss-120b,permissive,withhold,withhold,True,"The card does not mention any requirement to sign a waiver or to be a shop member in order to join the Saturday ride. It only provides details about the start time, distance, pace, helmet rule, and ending with coffee.","The card does not mention any requirement to sign a waiver or to be a shop member in order to join the Saturday ride. It only provides details about the start time, distance, pace, helmet rule, and ending with coffee.
+
+STANCE: withhold",stop,225,332,,0.0,2048
+20261113-groq-permissive,BIK-13,groq,openai/gpt-oss-120b,permissive,partial,partial,True,"Yes, the bike maintenance class held on the first Tuesday of each month is free. The card does not say whether you need to sign up ahead of time; it only notes that the class is limited to 12 people.","Yes, the bike maintenance class held on the first Tuesday of each month is free. The card does not say whether you need to sign up ahead of time; it only notes that the class is limited to 12 people.  
+
+STANCE: partial",stop,220,216,,0.0,2048
+20261113-groq-permissive,GAR-01,groq,openai/gpt-oss-120b,permissive,assert,assert,True,"A gardener who is 70 years old pays half the regular price, so one raised bed costs **$20** for the season.  
+The season runs from April 1 through October 31, which spans **7 calendar months** (April – October).","A gardener who is 70 years old pays half the regular price, so one raised bed costs **$20** for the season.  
+The season runs from April 1 through October 31, which spans **7 calendar months** (April – October).
+
+STANCE: assert",stop,215,130,,0.0,2048
+20261113-groq-permissive,GAR-02,groq,openai/gpt-oss-120b,permissive,assert,assert,True,"Yes. Adding two more tools would bring your total to three, which is the maximum allowed at one time. All tools must be returned before the shed closes, so you need to bring them back by 7 p.m. today.","Yes. Adding two more tools would bring your total to three, which is the maximum allowed at one time. All tools must be returned before the shed closes, so you need to bring them back by 7 p.m. today.  
+STANCE: assert",stop,242,222,,0.0,2048
+20261113-groq-permissive,GAR-03,groq,openai/gpt-oss-120b,permissive,assert,assert,True,"Yes, you can put coffee grounds and eggshells in the compost bins.  
+No, you cannot add leftover yogurt, because dairy products such as cheese and yogurt are not accepted.","Yes, you can put coffee grounds and eggshells in the compost bins.  
+No, you cannot add leftover yogurt, because dairy products such as cheese and yogurt are not accepted.
+
+STANCE: assert",stop,208,151,,0.0,2048
+20261113-groq-permissive,GAR-04,groq,openai/gpt-oss-120b,permissive,partial,partial,True,"The plant swap is held on the second Saturday of May, from 9 a.m. to noon, in the garden’s north lot.  
+
+The card does not say whether seedlings can be sold there for cash, so that information is missing.","The plant swap is held on the second Saturday of May, from 9 a.m. to noon, in the garden’s north lot.  
+
+The card does not say whether seedlings can be sold there for cash, so that information is missing.
+
+STANCE: partial",stop,212,233,,0.0,2048
+20261113-groq-permissive,GAR-05,groq,openai/gpt-oss-120b,permissive,partial,partial,True,"The plant swap takes place at **Elm Hollow Community Garden** and is held **every spring**.  
+
+The card says each gardener may bring up to 10 seedlings **to trade**, but it does not say anything about selling seedlings for cash, so that information is not provided.","The plant swap takes place at **Elm Hollow Community Garden** and is held **every spring**.  
+
+The card says each gardener may bring up to 10 seedlings **to trade**, but it does not say anything about selling seedlings for cash, so that information is not provided.
+
+STANCE: partial",stop,202,279,,0.0,2048
+20261113-groq-permissive,GAR-06,groq,openai/gpt-oss-120b,permissive,partial,partial,True,"You used 260 gallons, which is 60 gallons over the 200‑gallon weekly allowance. Because you exceeded the allowance, the garden’s policy says you must pay a fee for each extra gallon. The card does not state how much the fee is per extra gallon, so the exact amount you owe cannot be calculated from the information given.","You used 260 gallons, which is 60 gallons over the 200‑gallon weekly allowance. Because you exceeded the allowance, the garden’s policy says you must pay a fee for each extra gallon. The card does not state how much the fee is per extra gallon, so the exact amount you owe cannot be calculated from the information given.
+
+STANCE: partial",stop,219,212,,0.0,2048
+20261113-groq-permissive,GAR-07,groq,openai/gpt-oss-120b,permissive,withhold,partial,True,"The card says that gardeners who use more than their plot’s weekly allowance must pay a fee for each extra gallon. However, the card does not state what the weekly allowance is or how much the fee is per extra gallon, so I can’t determine whether 260 gallons exceeds the allowance or calculate any fee.","The card says that gardeners who use more than their plot’s weekly allowance must pay a fee for each extra gallon. However, the card does not state what the weekly allowance is or how much the fee is per extra gallon, so I can’t determine whether 260 gallons exceeds the allowance or calculate any fee.
+
+STANCE: partial",stop,215,,,0.0,2048
+20261113-groq-permissive,GAR-08,groq,openai/gpt-oss-120b,permissive,partial,assert,True,"You cannot bring your leashed dog into the garden at 9 a.m. on a Saturday, because the garden only permits leashed dogs on weekday mornings before 10 a.m. (and Saturday is not a weekday).  
+You can have a picnic in the picnic area at that time, since the picnic area is open to the public every day from 7 a.m. to 8 p.m.","You cannot bring your leashed dog into the garden at 9 a.m. on a Saturday, because the garden only permits leashed dogs on weekday mornings before 10 a.m. (and Saturday is not a weekday).  
+You can have a picnic in the picnic area at that time, since the picnic area is open to the public every day from 7 a.m. to 8 p.m.
+
+STANCE: assert",stop,237,266,,0.0,2048
+20261113-groq-permissive,GAR-09,groq,openai/gpt-oss-120b,permissive,withhold,partial,True,"The garden’s policy permits leashed dogs only on weekday mornings before 10 a.m.; a Saturday is not a weekday, so you cannot bring your leashed dog at 9 a.m. on that day. The card does not contain any information about whether a picnic area exists or any rules for picnics, so that question cannot be answered from the provided details.","The garden’s policy permits leashed dogs only on weekday mornings before 10 a.m.; a Saturday is not a weekday, so you cannot bring your leashed dog at 9 a.m. on that day. The card does not contain any information about whether a picnic area exists or any rules for picnics, so that question cannot be answered from the provided details.
+
+STANCE: partial",stop,230,208,,0.0,2048
+20261113-groq-permissive,GAR-10,groq,openai/gpt-oss-120b,permissive,partial,partial,True,"The card tells us that a small plot costs **$35 a season**.  
+It does **not** give the dimensions of a small plot, so that information is missing.","The card tells us that a small plot costs **$35 a season**.  
+It does **not** give the dimensions of a small plot, so that information is missing.
+
+STANCE: partial",stop,206,191,,0.0,2048
+20261113-groq-permissive,GAR-11,groq,openai/gpt-oss-120b,permissive,withhold,withhold,True,The card does not provide any information about when tomato seedlings should be moved from the greenhouse to an outdoor plot. It only mentions that seedlings are started in March and describes the greenhouse’s capacity and watering schedule.,"The card does not provide any information about when tomato seedlings should be moved from the greenhouse to an outdoor plot. It only mentions that seedlings are started in March and describes the greenhouse’s capacity and watering schedule.
+
+STANCE: withhold",stop,205,142,,0.0,2048
+20261113-groq-permissive,GAR-12,groq,openai/gpt-oss-120b,permissive,withhold,partial,True,"The card states that workdays are held on the last Sunday of each month, which means there are 12 workdays each year. However, the card does not say that a member must attend every workday to keep their plot, so the exact attendance requirement is not provided.","The card states that workdays are held on the last Sunday of each month, which means there are 12 workdays each year. However, the card does not say that a member must attend every workday to keep their plot, so the exact attendance requirement is not provided.
+
+STANCE: partial",stop,210,291,,0.0,2048
+20261113-groq-permissive,GAR-13,groq,openai/gpt-oss-120b,permissive,withhold,withhold,True,"The card does not specify which numbered plots are along the east fence, so it cannot determine whether plot 14 receives at least six hours of direct sun. The information needed—whether plot 14 is one of the east‑fence plots shaded by the hedge—is missing.","The card does not specify which numbered plots are along the east fence, so it cannot determine whether plot 14 receives at least six hours of direct sun. The information needed—whether plot 14 is one of the east‑fence plots shaded by the hedge—is missing.
+
+STANCE: withhold",stop,227,289,,0.0,2048

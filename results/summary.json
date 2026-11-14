@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "date": "2026-11-14",
+    "timezone": "America/New_York",
+    "n_items": 55,
+    "frozen_hash": "b700b889ec5e95c455850bad2e9d1f46f17885136f97d0456f594719ff841c43",
+    "temperature": "0.0",
+    "max_tokens": [
+      "2048",
+      "8192"
+    ],
+    "max_tokens_note": "2048 for all runs, with one gpt-oss-20b retry at 8192 on BIK-05 (still empty)",
+    "variant": "default",
+    "systems": [
+      "groq:openai/gpt-oss-120b",
+      "groq:openai/gpt-oss-20b",
+      "groq:qwen/qwen3.8-27b",
+      "openrouter:baidu/ernie-5.5-flash-preview:free"
+    ],
+    "notes": [
+      "ERNIE default is 55/55. Four-part partial-pass judge annotations (judge groq:openai/gpt-oss-120b) are complete for all four default systems on all 22 gold partials, finished Sat Nov 14 2026 after the Groq daily reset. gpt-oss-20b BIK-05 is unscorable (empty output) and counts as a non-pass in the 22-item denominator."
+    ],
+    "raw_files": [
+      "results/raw-20261113-groq-default.csv",
+      "results/raw-20261113-openrouter-ernie-default.csv"
+    ],
+    "judge_file": "results/judge-annotations.csv",
+    "judge_model": "groq:openai/gpt-oss-120b",
+    "rankings_changed": true,
+    "binary_order": [
+      "baidu/ernie-5.5-flash-preview:free",
+      "qwen/qwen3.8-27b",
+      "openai/gpt-oss-20b",
+      "openai/gpt-oss-120b"
+    ],
+    "three_way_order": [
+      "baidu/ernie-5.5-flash-preview:free",
+      "qwen/qwen3.8-27b",
+      "openai/gpt-oss-120b",
+      "openai/gpt-oss-20b"
+    ],
+    "binary_ranks": {
+      "baidu/ernie-5.5-flash-preview:free": 1,
+      "qwen/qwen3.8-27b": 2,
+      "openai/gpt-oss-20b": 3,
+      "openai/gpt-oss-120b": 4
+    },
+    "three_way_ranks": {
+      "baidu/ernie-5.5-flash-preview:free": 1,
+      "qwen/qwen3.8-27b": 2,
+      "openai/gpt-oss-120b": 3,
+      "openai/gpt-oss-20b": 3
+    },
+    "binary_ties": [],
+    "three_way_ties": [
+      [
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b"
+      ]
+    ]
+  },
+  "systems": [
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "variant": "default",
+      "n_rows": 55,
+      "n_success": 55,
+      "n_error": 0,
+      "parse_ok": 55,
+      "parse_ok_rate": 1.0,
+      "binary_correct": 43,
+      "binary_accuracy": 0.7818,
+      "three_way_correct": 38,
+      "three_way_accuracy": 0.6909,
+      "over_claim": 17,
+      "under_claim": 0,
+      "over_claim_rate": 0.3091,
+      "under_claim_rate": 0.0,
+      "confusion_by_gold": {
+        "withhold": {
+          "partial": 5,
+          "assert": 3,
+          "withhold": 8
+        },
+        "partial": {
+          "assert": 9,
+          "partial": 13
+        },
+        "assert": {
+          "assert": 17
+        }
+      },
+      "judge_n": 55,
+      "actual_stance_accuracy": 0.7818,
+      "partial_items": 22,
+      "partial_pass": 13,
+      "partial_pass_rate": 0.5909,
+      "assert_items_judged": 17,
+      "assert_hedge": 0,
+      "assert_hedge_rate": 0.0,
+      "gap_naming_recall": 0.7551,
+      "strict_three_way_correct": 42,
+      "strict_three_way_accuracy": 0.7636
+    },
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "variant": "default",
+      "n_rows": 55,
+      "n_success": 55,
+      "n_error": 0,
+      "parse_ok": 54,
+      "parse_ok_rate": 0.9818,
+      "binary_correct": 46,
+      "binary_accuracy": 0.8364,
+      "three_way_correct": 38,
+      "three_way_accuracy": 0.6909,
+      "over_claim": 10,
+      "under_claim": 6,
+      "over_claim_rate": 0.1818,
+      "under_claim_rate": 0.1091,
+      "confusion_by_gold": {
+        "withhold": {
+          "withhold": 13,
+          "partial": 2,
+          "assert": 1
+        },
+        "partial": {
+          "assert": 7,
+          "withhold": 6,
+          "partial": 8,
+          "none": 1
+        },
+        "assert": {
+          "assert": 17
+        }
+      },
+      "judge_n": 54,
+      "actual_stance_accuracy": 0.7593,
+      "partial_items": 22,
+      "partial_pass": 10,
+      "partial_pass_rate": 0.4545,
+      "assert_items_judged": 17,
+      "assert_hedge": 0,
+      "assert_hedge_rate": 0.0,
+      "gap_naming_recall": 0.6875,
+      "strict_three_way_correct": 39,
+      "strict_three_way_accuracy": 0.7091
+    },
+    {
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "variant": "default",
+      "n_rows": 55,
+      "n_success": 55,
+      "n_error": 0,
+      "parse_ok": 55,
+      "parse_ok_rate": 1.0,
+      "binary_correct": 49,
+      "binary_accuracy": 0.8909,
+      "three_way_correct": 47,
+      "three_way_accuracy": 0.8545,
+      "over_claim": 6,
+      "under_claim": 2,
+      "over_claim_rate": 0.1091,
+      "under_claim_rate": 0.0364,
+      "confusion_by_gold": {
+        "withhold": {
+          "withhold": 14,
+          "assert": 1,
+          "partial": 1
+        },
+        "partial": {
+          "assert": 4,
+          "partial": 17,
+          "withhold": 1
+        },
+        "assert": {
+          "assert": 16,
+          "partial": 1
+        }
+      },
+      "judge_n": 33,
+      "actual_stance_accuracy": 0.7879,
+      "partial_items": 22,
+      "partial_pass": 15,
+      "partial_pass_rate": 0.6818,
+      "assert_items_judged": 17,
+      "assert_hedge": 0,
+      "assert_hedge_rate": 0.0,
+      "gap_naming_recall": 0.6207,
+      "strict_three_way_correct": 45,
+      "strict_three_way_accuracy": 0.8182
+    },
+    {
+      "provider": "openrouter",
+      "model": "baidu/ernie-5.5-flash-preview:free",
+      "variant": "default",
+      "n_rows": 55,
+      "n_success": 55,
+      "n_error": 0,
+      "parse_ok": 55,
+      "parse_ok_rate": 1.0,
+      "binary_correct": 53,
+      "binary_accuracy": 0.9636,
+      "three_way_correct": 49,
+      "three_way_accuracy": 0.8909,
+      "over_claim": 3,
+      "under_claim": 3,
+      "over_claim_rate": 0.0545,
+      "under_claim_rate": 0.0545,
+      "confusion_by_gold": {
+        "withhold": {
+          "withhold": 14,
+          "partial": 2
+        },
+        "partial": {
+          "partial": 19,
+          "withhold": 2,
+          "assert": 1
+        },
+        "assert": {
+          "assert": 16,
+          "partial": 1
+        }
+      },
+      "judge_n": 22,
+      "actual_stance_accuracy": 0.8636,
+      "partial_items": 22,
+      "partial_pass": 18,
+      "partial_pass_rate": 0.8182,
+      "assert_items_judged": 17,
+      "assert_hedge": 0,
+      "assert_hedge_rate": 0.0,
+      "gap_naming_recall": 0.8696,
+      "strict_three_way_correct": 48,
+      "strict_three_way_accuracy": 0.8727
+    }
+  ]
+}

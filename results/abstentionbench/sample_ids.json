@@ -1,0 +1,812 @@
+{
+  "seed": 20261113,
+  "n_per_subset": 50,
+  "n_per_class": 25,
+  "subsets": [
+    "squad2",
+    "mediq"
+  ],
+  "license_note": "IDs and sampling metadata only. Passages are not stored. Rebuild prompts with fetch_and_sample.py. AbstentionBench CC BY-NC 4.0; SQuAD 2.0 CC BY-SA 4.0; MediQ CC BY 4.0.",
+  "items": [
+    {
+      "sample_id": "AB-001",
+      "subset": "squad2",
+      "source_id": "5ad40c62604f3c001a400067",
+      "official_index": 7969,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-002",
+      "subset": "squad2",
+      "source_id": "5a82325231013a001a3352bc",
+      "official_index": 6422,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-003",
+      "subset": "squad2",
+      "source_id": "5a8942233b2508001a72a56a",
+      "official_index": 8926,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-004",
+      "subset": "squad2",
+      "source_id": "5ad4bbbb5b96ef001a109e89",
+      "official_index": 10614,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-005",
+      "subset": "squad2",
+      "source_id": "5ad4f28c5b96ef001a10a733",
+      "official_index": 10885,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-006",
+      "subset": "squad2",
+      "source_id": "5a564c956349e2001acdcd1e",
+      "official_index": 4343,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-007",
+      "subset": "squad2",
+      "source_id": "5a665002846392001a1e1ab3",
+      "official_index": 5532,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-008",
+      "subset": "squad2",
+      "source_id": "5ad141e1645df0001a2d1404",
+      "official_index": 3156,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-009",
+      "subset": "squad2",
+      "source_id": "5ad0316177cf76001a686ddc",
+      "official_index": 10465,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-010",
+      "subset": "squad2",
+      "source_id": "5ad4fe635b96ef001a10a8b8",
+      "official_index": 10989,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-011",
+      "subset": "squad2",
+      "source_id": "5ad02f4977cf76001a686d72",
+      "official_index": 9630,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-012",
+      "subset": "squad2",
+      "source_id": "5ad4d0385b96ef001a10a17b",
+      "official_index": 8168,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-013",
+      "subset": "squad2",
+      "source_id": "5acfe6eb77cf76001a6863cb",
+      "official_index": 9897,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-014",
+      "subset": "squad2",
+      "source_id": "5ad50bb95b96ef001a10aab2",
+      "official_index": 10657,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-015",
+      "subset": "squad2",
+      "source_id": "5a3e51b6378766001a002585",
+      "official_index": 8687,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-016",
+      "subset": "squad2",
+      "source_id": "5ad02ef677cf76001a686d6a",
+      "official_index": 10416,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-017",
+      "subset": "squad2",
+      "source_id": "5ad3b1be604f3c001a3feceb",
+      "official_index": 11318,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-018",
+      "subset": "squad2",
+      "source_id": "5a678908f038b7001ab0c297",
+      "official_index": 6021,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-019",
+      "subset": "squad2",
+      "source_id": "5ad41260604f3c001a400240",
+      "official_index": 2056,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-020",
+      "subset": "squad2",
+      "source_id": "5a67986af038b7001ab0c313",
+      "official_index": 6083,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-021",
+      "subset": "squad2",
+      "source_id": "5ad5316b5b96ef001a10ab76",
+      "official_index": 215,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-022",
+      "subset": "squad2",
+      "source_id": "5acff5b077cf76001a68662b",
+      "official_index": 10290,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-023",
+      "subset": "squad2",
+      "source_id": "5a7b064b21c2de001afe9ce6",
+      "official_index": 4004,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-024",
+      "subset": "squad2",
+      "source_id": "5a592c9d3e1742001a15cfd9",
+      "official_index": 5158,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-025",
+      "subset": "squad2",
+      "source_id": "5ad568d35b96ef001a10ae1d",
+      "official_index": 520,
+      "source": null,
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-026",
+      "subset": "squad2",
+      "source_id": "572fec30947a6a140053cdf2",
+      "official_index": 9140,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-027",
+      "subset": "squad2",
+      "source_id": "5729de24af94a219006aa689",
+      "official_index": 6794,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-028",
+      "subset": "squad2",
+      "source_id": "57115f0a50c2381900b54aa7",
+      "official_index": 2139,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-029",
+      "subset": "squad2",
+      "source_id": "572a1ba46aef051400155292",
+      "official_index": 7141,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-030",
+      "subset": "squad2",
+      "source_id": "5733ef47d058e614000b662c",
+      "official_index": 11270,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-031",
+      "subset": "squad2",
+      "source_id": "570d4329fed7b91900d45dd8",
+      "official_index": 1320,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-032",
+      "subset": "squad2",
+      "source_id": "5730005db2c2fd1400568705",
+      "official_index": 9971,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-033",
+      "subset": "squad2",
+      "source_id": "5728d6f02ca10214002da911",
+      "official_index": 5500,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-034",
+      "subset": "squad2",
+      "source_id": "5729fefbaf94a219006aa73a",
+      "official_index": 8290,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-035",
+      "subset": "squad2",
+      "source_id": "5730b6592461fd1900a9cfcf",
+      "official_index": 10558,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-036",
+      "subset": "squad2",
+      "source_id": "5727fc37ff5b5019007d9a19",
+      "official_index": 6890,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-037",
+      "subset": "squad2",
+      "source_id": "57287b322ca10214002da3bf",
+      "official_index": 6931,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-038",
+      "subset": "squad2",
+      "source_id": "56dddf4066d3e219004dad60",
+      "official_index": 10,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-039",
+      "subset": "squad2",
+      "source_id": "5727f2714b864d1900164072",
+      "official_index": 6846,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-040",
+      "subset": "squad2",
+      "source_id": "5711648850c2381900b54ac3",
+      "official_index": 2226,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-041",
+      "subset": "squad2",
+      "source_id": "572750e8dd62a815002e9af0",
+      "official_index": 5921,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-042",
+      "subset": "squad2",
+      "source_id": "5733a2a9d058e614000b5f29",
+      "official_index": 11035,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-043",
+      "subset": "squad2",
+      "source_id": "57264845f1498d1400e8db0e",
+      "official_index": 4647,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-044",
+      "subset": "squad2",
+      "source_id": "5725d52f89a1e219009abf78",
+      "official_index": 4277,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-045",
+      "subset": "squad2",
+      "source_id": "5711163bb654c5140001fb14",
+      "official_index": 1774,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-046",
+      "subset": "squad2",
+      "source_id": "56e20a3ae3433e140042324a",
+      "official_index": 617,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-047",
+      "subset": "squad2",
+      "source_id": "573028fa04bcaa1900d77288",
+      "official_index": 10156,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-048",
+      "subset": "squad2",
+      "source_id": "5705e99452bb89140068968a",
+      "official_index": 669,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-049",
+      "subset": "squad2",
+      "source_id": "5725f190ec44d21400f3d773",
+      "official_index": 4136,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-050",
+      "subset": "squad2",
+      "source_id": "57377c98c3c5551400e51eff",
+      "official_index": 11664,
+      "source": null,
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-051",
+      "subset": "mediq",
+      "source_id": "iMEDQA:690",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-052",
+      "subset": "mediq",
+      "source_id": "iMEDQA:1205",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-053",
+      "subset": "mediq",
+      "source_id": "iMEDQA:525",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-054",
+      "subset": "mediq",
+      "source_id": "iMEDQA:116",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-055",
+      "subset": "mediq",
+      "source_id": "iMEDQA:59",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-056",
+      "subset": "mediq",
+      "source_id": "iCRAFT-MD:106",
+      "official_index": null,
+      "source": "iCRAFT-MD",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-057",
+      "subset": "mediq",
+      "source_id": "iMEDQA:1136",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-058",
+      "subset": "mediq",
+      "source_id": "iMEDQA:506",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-059",
+      "subset": "mediq",
+      "source_id": "iMEDQA:667",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-060",
+      "subset": "mediq",
+      "source_id": "iCRAFT-MD:25",
+      "official_index": null,
+      "source": "iCRAFT-MD",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-061",
+      "subset": "mediq",
+      "source_id": "iMEDQA:1067",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-062",
+      "subset": "mediq",
+      "source_id": "iMEDQA:750",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-063",
+      "subset": "mediq",
+      "source_id": "iMEDQA:512",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-064",
+      "subset": "mediq",
+      "source_id": "iMEDQA:310",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-065",
+      "subset": "mediq",
+      "source_id": "iMEDQA:1085",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-066",
+      "subset": "mediq",
+      "source_id": "iCRAFT-MD:41",
+      "official_index": null,
+      "source": "iCRAFT-MD",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-067",
+      "subset": "mediq",
+      "source_id": "iMEDQA:896",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-068",
+      "subset": "mediq",
+      "source_id": "iMEDQA:981",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-069",
+      "subset": "mediq",
+      "source_id": "iMEDQA:1023",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-070",
+      "subset": "mediq",
+      "source_id": "iMEDQA:860",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-071",
+      "subset": "mediq",
+      "source_id": "iMEDQA:183",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-072",
+      "subset": "mediq",
+      "source_id": "iMEDQA:763",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-073",
+      "subset": "mediq",
+      "source_id": "iMEDQA:49",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-074",
+      "subset": "mediq",
+      "source_id": "iMEDQA:630",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-075",
+      "subset": "mediq",
+      "source_id": "iMEDQA:692",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": true
+    },
+    {
+      "sample_id": "AB-076",
+      "subset": "mediq",
+      "source_id": "iMEDQA:219",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-077",
+      "subset": "mediq",
+      "source_id": "iMEDQA:772",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-078",
+      "subset": "mediq",
+      "source_id": "iMEDQA:89",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-079",
+      "subset": "mediq",
+      "source_id": "iMEDQA:597",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-080",
+      "subset": "mediq",
+      "source_id": "iMEDQA:694",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-081",
+      "subset": "mediq",
+      "source_id": "iMEDQA:527",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-082",
+      "subset": "mediq",
+      "source_id": "iMEDQA:864",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-083",
+      "subset": "mediq",
+      "source_id": "iCRAFT-MD:32",
+      "official_index": null,
+      "source": "iCRAFT-MD",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-084",
+      "subset": "mediq",
+      "source_id": "iMEDQA:669",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-085",
+      "subset": "mediq",
+      "source_id": "iMEDQA:119",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-086",
+      "subset": "mediq",
+      "source_id": "iMEDQA:110",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-087",
+      "subset": "mediq",
+      "source_id": "iMEDQA:124",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-088",
+      "subset": "mediq",
+      "source_id": "iMEDQA:450",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-089",
+      "subset": "mediq",
+      "source_id": "iMEDQA:713",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-090",
+      "subset": "mediq",
+      "source_id": "iCRAFT-MD:118",
+      "official_index": null,
+      "source": "iCRAFT-MD",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-091",
+      "subset": "mediq",
+      "source_id": "iMEDQA:759",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-092",
+      "subset": "mediq",
+      "source_id": "iMEDQA:1150",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-093",
+      "subset": "mediq",
+      "source_id": "iMEDQA:880",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-094",
+      "subset": "mediq",
+      "source_id": "iMEDQA:82",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-095",
+      "subset": "mediq",
+      "source_id": "iMEDQA:210",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-096",
+      "subset": "mediq",
+      "source_id": "iMEDQA:403",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-097",
+      "subset": "mediq",
+      "source_id": "iMEDQA:384",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-098",
+      "subset": "mediq",
+      "source_id": "iMEDQA:787",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-099",
+      "subset": "mediq",
+      "source_id": "iMEDQA:973",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    },
+    {
+      "sample_id": "AB-100",
+      "subset": "mediq",
+      "source_id": "iMEDQA:716",
+      "official_index": null,
+      "source": "iMEDQA",
+      "should_abstain": false
+    }
+  ]
+}

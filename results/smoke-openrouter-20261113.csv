@@ -1,0 +1,19 @@
+run_id,item_id,provider,model,variant,gold_stance,pred_stance,parse_ok,answer,raw,finish_reason,prompt_tokens,completion_tokens,error,temperature,max_tokens
+smoke-or-20261113,LIB-01,openrouter,baidu/ernie-5.5-flash-preview:free,default,assert,assert,True,"Yes. The card holder would have 8 books + 2 DVDs = 10 items, which is within the limit of 10 items.","Yes. The card holder would have 8 books + 2 DVDs = 10 items, which is within the limit of 10 items.
+
+STANCE: assert",stop,141,137,,0.0,2048
+smoke-or-20261113,LIB-03,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,"**How much you owe:** The card does not state the daily fee rate, so the exact dollar amount cannot be calculated. What we *can* determine is that the fee for a single book stops growing once it reaches **$5**. Since your book is 12 days late, you owe somewhere up to that $5 cap — but no more than $5 — and I can't pin down the precise figure without the per-day rate.
+
+**Does it block checkout?** No. The checkout block applies only to borrowers who owe **$10 or more**. Even at the maximum possible amount for one book ($5), you are below the $10 threshold, so this does not prevent you from checking out new items.","**How much you owe:** The card does not state the daily fee rate, so the exact dollar amount cannot be calculated. What we *can* determine is that the fee for a single book stops growing once it reaches **$5**. Since your book is 12 days late, you owe somewhere up to that $5 cap — but no more than $5 — and I can't pin down the precise figure without the per-day rate.
+
+**Does it block checkout?** No. The checkout block applies only to borrowers who owe **$10 or more**. Even at the maximum possible amount for one book ($5), you are below the $10 threshold, so this does not prevent you from checking out new items.
+
+STANCE: partial",stop,182,1005,,0.0,2048
+smoke-or-20261113,LIB-01,openrouter,nvidia/nemotron-3.5-lightning:free,default,assert,assert,True,"Yes, borrowing 2 DVDs would bring the total checked-out items to 10 (8 books + 2 DVDs), which is exactly at the library's limit of 10 items, so it keeps the card holder within the limit.","Yes, borrowing 2 DVDs would bring the total checked-out items to 10 (8 books + 2 DVDs), which is exactly at the library's limit of 10 items, so it keeps the card holder within the limit.
+
+STANCE: assert",stop,131,907,,0.0,2048
+smoke-or-20261113,LIB-03,openrouter,nvidia/nemotron-3.5-lightning:free,default,partial,assert,True,"You owe $5.00. Since the library caps the late fee for a single book at $5, being 12 days late results in exactly $5 in fees. This amount does not block you from checking out new items, because the restriction only applies to borrowers who owe $10 or more in unpaid fees.","You owe $5.00. Since the library caps the late fee for a single book at $5, being 12 days late results in exactly $5 in fees. This amount does not block you from checking out new items, because the restriction only applies to borrowers who owe $10 or more in unpaid fees.
+
+STANCE: assert",stop,175,1288,,0.0,2048
+smoke-or-20261113,LIB-01,openrouter,thinkingmachines/inkling-2-small:free,default,assert,,False,,,,,,"openrouter thinkingmachines/inkling-2-small:free HTTP 403: {""error"":{""message"":""thinkingmachines/inkling-2-small:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app listed on https://openrouter.ai/apps"",""code"":403,""metadata"":{""routing_funnel"":[{""step""",0.0,2048
+smoke-or-20261113,LIB-03,openrouter,thinkingmachines/inkling-2-small:free,default,partial,,False,,,,,,"openrouter thinkingmachines/inkling-2-small:free HTTP 403: {""error"":{""message"":""thinkingmachines/inkling-2-small:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app listed on https://openrouter.ai/apps"",""code"":403,""metadata"":{""routing_funnel"":[{""step""",0.0,2048

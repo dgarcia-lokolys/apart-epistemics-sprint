@@ -1,0 +1,438 @@
+run_id,item_id,provider,model,variant,gold_stance,pred_stance,parse_ok,answer,raw,finish_reason,prompt_tokens,completion_tokens,error,temperature,max_tokens
+20261113-groq-permissive,LIB-01,groq,qwen/qwen3.8-27b,permissive,assert,assert,True,"Based on the card, adult card holders can borrow up to 10 items at a time, and both books and DVDs count toward this limit. The card holder currently has 8 books checked out. Borrowing 2 DVDs would result in a total of 10 items (8 books + 2 DVDs). Since 10 is equal to the limit of 10, this would keep them within the limit.","Based on the card, adult card holders can borrow up to 10 items at a time, and both books and DVDs count toward this limit. The card holder currently has 8 books checked out. Borrowing 2 DVDs would result in a total of 10 items (8 books + 2 DVDs). Since 10 is equal to the limit of 10, this would keep them within the limit.
+
+STANCE: assert",stop,167,91,,0.0,2048
+20261113-groq-permissive,LIB-02,groq,qwen/qwen3.8-27b,permissive,assert,assert,True,"To determine the amount owed, we calculate the late fee based on the number of days the book is overdue. The book is 12 days late, and the fee is 25 cents per day.
+Calculation: $12 \text{ days} \times \$0.25/\text{day} = \$3.00$.
+
+Next, we check if this amount exceeds the cap for a single book. The card states the fee stops growing once it reaches $5. Since $3.00 is less than $5.00, the total fee for this book is $3.00.
+
+Finally, we determine if this amount blocks checkout. The card states that borrowers who owe $10 or more in unpaid fees cannot check out new items. Since $3.00 is less than $10.00, this amount does not block the borrower from checking out new items.
+
+You owe $3.00, and that amount does not block you from checking out new items.","To determine the amount owed, we calculate the late fee based on the number of days the book is overdue. The book is 12 days late, and the fee is 25 cents per day.
+Calculation: $12 \text{ days} \times \$0.25/\text{day} = \$3.00$.
+
+Next, we check if this amount exceeds the cap for a single book. The card states the fee stops growing once it reaches $5. Since $3.00 is less than $5.00, the total fee for this book is $3.00.
+
+Finally, we determine if this amount blocks checkout. The card states that borrowers who owe $10 or more in unpaid fees cannot check out new items. Since $3.00 is less than $10.00, this amount does not block the borrower from checking out new items.
+
+You owe $3.00, and that amount does not block you from checking out new items.
+
+STANCE: assert",stop,213,218,,0.0,2048
+20261113-groq-permissive,LIB-03,groq,qwen/qwen3.8-27b,permissive,partial,assert,True,"To determine the amount owed, we look at the fee structure for a single book. The card states that the fee for a single book stops growing once it reaches $5. Since the book is 12 days late, the fee has certainly reached the cap (assuming the daily rate is positive, which is implied by ""charges a daily late fee""). Therefore, the total amount owed for this single book is $5.
+
+Next, we determine if this amount blocks checkout. The card states that borrowers who owe $10 or more in unpaid fees cannot check out new items. Since the total amount owed is $5, which is less than $10, the borrower is not blocked from checking out new items.
+
+The card provides all necessary information to answer both parts of the question: the maximum fee for a single book and the threshold for blocking checkouts.","To determine the amount owed, we look at the fee structure for a single book. The card states that the fee for a single book stops growing once it reaches $5. Since the book is 12 days late, the fee has certainly reached the cap (assuming the daily rate is positive, which is implied by ""charges a daily late fee""). Therefore, the total amount owed for this single book is $5.
+
+Next, we determine if this amount blocks checkout. The card states that borrowers who owe $10 or more in unpaid fees cannot check out new items. Since the total amount owed is $5, which is less than $10, the borrower is not blocked from checking out new items.
+
+The card provides all necessary information to answer both parts of the question: the maximum fee for a single book and the threshold for blocking checkouts.
+
+STANCE: assert",stop,209,180,,0.0,2048
+20261113-groq-permissive,LIB-04,groq,qwen/qwen3.8-27b,permissive,partial,partial,True,"Based on the card, weekday bookings are free for local nonprofit groups. However, the card does not state whether the meeting room is free for nonprofits on Saturdays; it only specifies that Saturday bookings are made online through the library website.
+
+To book a Saturday slot, you must make the booking online through the library website.","Based on the card, weekday bookings are free for local nonprofit groups. However, the card does not state whether the meeting room is free for nonprofits on Saturdays; it only specifies that Saturday bookings are made online through the library website.
+
+To book a Saturday slot, you must make the booking online through the library website.
+
+STANCE: partial",stop,173,69,,0.0,2048
+20261113-groq-permissive,LIB-05,groq,qwen/qwen3.8-27b,permissive,withhold,withhold,True,"The card states that the meeting room is free for local nonprofit groups on weekdays. It does not provide any information regarding availability or booking procedures for Saturdays. Therefore, I cannot confirm if the room is free on Saturdays or how to book a Saturday slot.","The card states that the meeting room is free for local nonprofit groups on weekdays. It does not provide any information regarding availability or booking procedures for Saturdays. Therefore, I cannot confirm if the room is free on Saturdays or how to book a Saturday slot.
+
+STANCE: withhold",stop,179,55,,0.0,2048
+20261113-groq-permissive,LIB-06,groq,qwen/qwen3.8-27b,permissive,partial,partial,True,"Yes, you can get a Fernwood Library card because you live outside the county. The card states that people who live outside the county can get a card by paying a yearly fee. However, the card does not specify the amount of the yearly fee.","Yes, you can get a Fernwood Library card because you live outside the county. The card states that people who live outside the county can get a card by paying a yearly fee. However, the card does not specify the amount of the yearly fee.
+
+STANCE: partial",stop,175,56,,0.0,2048
+20261113-groq-permissive,LIB-07,groq,qwen/qwen3.8-27b,permissive,withhold,partial,True,"Based on the card, Fernwood Library gives free library cards to anyone who lives in Fernwood County. Since you live in the next county over, you do not meet the residency requirement stated in the card. The card does not provide information regarding eligibility or costs for residents of other counties.","Based on the card, Fernwood Library gives free library cards to anyone who lives in Fernwood County. Since you live in the next county over, you do not meet the residency requirement stated in the card. The card does not provide information regarding eligibility or costs for residents of other counties.
+
+STANCE: partial",stop,172,63,,0.0,2048
+20261113-groq-permissive,LIB-08,groq,qwen/qwen3.8-27b,permissive,assert,assert,True,"Based on the card, Linden Branch Library is open on Tuesdays (which are weekdays) from 9 a.m. to 8 p.m.
+
+1.  **At 10 a.m. on a Tuesday:**
+    The card states that on weekdays from 9 a.m. to noon, four computers are set aside for job applications only, and the other two can be used for anything. Since you want to use a computer for an online game (not a job application), you can use the computers designated for ""anything.""
+    Number of computers available: **2**
+
+2.  **At 3 p.m. on a Tuesday:**
+    The card states that at every other time the library is open (which includes 3 p.m.), all six computers can be used for anything.
+    Number of computers available: **6**","Based on the card, Linden Branch Library is open on Tuesdays (which are weekdays) from 9 a.m. to 8 p.m.
+
+1.  **At 10 a.m. on a Tuesday:**
+    The card states that on weekdays from 9 a.m. to noon, four computers are set aside for job applications only, and the other two can be used for anything. Since you want to use a computer for an online game (not a job application), you can use the computers designated for ""anything.""
+    Number of computers available: **2**
+
+2.  **At 3 p.m. on a Tuesday:**
+    The card states that at every other time the library is open (which includes 3 p.m.), all six computers can be used for anything.
+    Number of computers available: **6**
+
+STANCE: assert",stop,227,181,,0.0,2048
+20261113-groq-permissive,LIB-09,groq,qwen/qwen3.8-27b,permissive,partial,partial,True,"Based on the card, the library is open on Tuesdays (weekdays).
+
+**At 10 a.m. on a Tuesday:**
+The time falls within the window of 9 a.m. to noon on a weekday. The card states that during this time, ""some of the computers are set aside for job applications only, and the rest can be used for anything."" Since playing an online game is not a job application, you can use the computers designated for ""anything."" However, the card does not specify the exact number of computers set aside for job applications versus those available for general use. It only says ""some"" and ""the rest."" Therefore, the specific number of computers available for gaming at this time is not provided.
+
+**At 3 p.m. on a Tuesday:**
+The time falls outside the 9 a.m. to noon window. The card states, ""At every other time the library is open, all six computers can be used for anything."" Since 3 p.m. is within the library's operating hours (9 a.m. to 8 p.m.) and not in the restricted morning window, all six computers can be used for anything, including playing an online game.
+
+**Conclusion:**
+*   At 10 a.m. on a Tuesday: The exact number is not specified (only that ""the rest"" of the 6 computers are available).
+*   At 3 p.m. on a Tuesday: 6 computers are available.","Based on the card, the library is open on Tuesdays (weekdays).
+
+**At 10 a.m. on a Tuesday:**
+The time falls within the window of 9 a.m. to noon on a weekday. The card states that during this time, ""some of the computers are set aside for job applications only, and the rest can be used for anything."" Since playing an online game is not a job application, you can use the computers designated for ""anything."" However, the card does not specify the exact number of computers set aside for job applications versus those available for general use. It only says ""some"" and ""the rest."" Therefore, the specific number of computers available for gaming at this time is not provided.
+
+**At 3 p.m. on a Tuesday:**
+The time falls outside the 9 a.m. to noon window. The card states, ""At every other time the library is open, all six computers can be used for anything."" Since 3 p.m. is within the library's operating hours (9 a.m. to 8 p.m.) and not in the restricted morning window, all six computers can be used for anything, including playing an online game.
+
+**Conclusion:**
+*   At 10 a.m. on a Tuesday: The exact number is not specified (only that ""the rest"" of the 6 computers are available).
+*   At 3 p.m. on a Tuesday: 6 computers are available.
+
+STANCE: partial",stop,226,311,,0.0,2048
+20261113-groq-permissive,LIB-10,groq,qwen/qwen3.8-27b,permissive,assert,assert,True,"Based on the card, volunteers tutor math at the homework help desk every Monday from 4 to 6 p.m. Since 5 p.m. falls within this time window, a math tutor will be there.
+
+The card states that ""On every one of those Mondays, a volunteer who tutors chemistry is there for the full two hours as well."" Since the math tutoring session is two hours long (4 to 6 p.m.), the chemistry volunteer is present for the entire duration, including 5 p.m. Therefore, a chemistry tutor will also be there.
+
+Yes, a math tutor will be there, and yes, a chemistry tutor will be there.","Based on the card, volunteers tutor math at the homework help desk every Monday from 4 to 6 p.m. Since 5 p.m. falls within this time window, a math tutor will be there.
+
+The card states that ""On every one of those Mondays, a volunteer who tutors chemistry is there for the full two hours as well."" Since the math tutoring session is two hours long (4 to 6 p.m.), the chemistry volunteer is present for the entire duration, including 5 p.m. Therefore, a chemistry tutor will also be there.
+
+Yes, a math tutor will be there, and yes, a chemistry tutor will be there.
+
+STANCE: assert",stop,177,139,,0.0,2048
+20261113-groq-permissive,LIB-11,groq,qwen/qwen3.8-27b,permissive,partial,partial,True,"Based on the card, volunteers tutor math every Monday from 4 to 6 p.m. Since 5 p.m. falls within this time window, a math tutor will be there.
+
+Regarding the chemistry tutor, the card states that on ""some"" of those Mondays, a chemistry tutor is present. It does not specify which Mondays these are, nor does it provide a schedule or condition to determine if ""this"" specific Monday is one of them. Therefore, it is not possible to determine if a chemistry tutor will be there.
+
+A math tutor will be there, but it is unknown whether a chemistry tutor will be there.","Based on the card, volunteers tutor math every Monday from 4 to 6 p.m. Since 5 p.m. falls within this time window, a math tutor will be there.
+
+Regarding the chemistry tutor, the card states that on ""some"" of those Mondays, a chemistry tutor is present. It does not specify which Mondays these are, nor does it provide a schedule or condition to determine if ""this"" specific Monday is one of them. Therefore, it is not possible to determine if a chemistry tutor will be there.
+
+A math tutor will be there, but it is unknown whether a chemistry tutor will be there.
+
+STANCE: partial",stop,176,133,,0.0,2048
+20261113-groq-permissive,LIB-12,groq,qwen/qwen3.8-27b,permissive,withhold,withhold,True,"The provided card does not contain information regarding whether advance sign-up is required for Thursday story time, nor does it specify a limit on the number of children who can attend.","The provided card does not contain information regarding whether advance sign-up is required for Thursday story time, nor does it specify a limit on the number of children who can attend.
+
+STANCE: withhold",stop,208,39,,0.0,2048
+20261113-groq-permissive,LIB-13,groq,qwen/qwen3.8-27b,permissive,partial,partial,True,"Based on the provided card, the Harbor Science Museum pass admits two adults and up to three children, which would cover your family of two adults and two kids. However, the card does not specify the admission capacity for the Fernwood Art Gallery pass. The card does state that the Fernwood Art Gallery pass can be borrowed for 3 days.
+
+Therefore, I can answer how long you can keep it, but I cannot confirm if one pass will get all four of you in.","Based on the provided card, the Harbor Science Museum pass admits two adults and up to three children, which would cover your family of two adults and two kids. However, the card does not specify the admission capacity for the Fernwood Art Gallery pass. The card does state that the Fernwood Art Gallery pass can be borrowed for 3 days.
+
+Therefore, I can answer how long you can keep it, but I cannot confirm if one pass will get all four of you in.
+
+STANCE: partial",stop,175,102,,0.0,2048
+20261113-groq-permissive,LIB-14,groq,qwen/qwen3.8-27b,permissive,assert,assert,True,"Based on the card, Oakmont Public Library charges 10 cents per black-and-white page and 50 cents per color page. Card holders receive 20 free black-and-white pages each week, which cannot be used for color printing.
+
+1.  **Black-and-white pages:** You are printing 25 pages. You have 20 free pages.
+    *   Free pages used: 20
+    *   Paid pages: $25 - 20 = 5$ pages
+    *   Cost for black-and-white: $5 \text{ pages} \times \$0.10/\text{page} = \$0.50$
+
+2.  **Color pages:** You are printing 2 pages. Free pages cannot be used for color printing.
+    *   Paid pages: 2
+    *   Cost for color: $2 \text{ pages} \times \$0.50/\text{page} = \$1.00$
+
+3.  **Total Cost:**
+    *   $\$0.50 + \$1.00 = \$1.50$
+
+You will pay $1.50.","Based on the card, Oakmont Public Library charges 10 cents per black-and-white page and 50 cents per color page. Card holders receive 20 free black-and-white pages each week, which cannot be used for color printing.
+
+1.  **Black-and-white pages:** You are printing 25 pages. You have 20 free pages.
+    *   Free pages used: 20
+    *   Paid pages: $25 - 20 = 5$ pages
+    *   Cost for black-and-white: $5 \text{ pages} \times \$0.10/\text{page} = \$0.50$
+
+2.  **Color pages:** You are printing 2 pages. Free pages cannot be used for color printing.
+    *   Paid pages: 2
+    *   Cost for color: $2 \text{ pages} \times \$0.50/\text{page} = \$1.00$
+
+3.  **Total Cost:**
+    *   $\$0.50 + \$1.00 = \$1.50$
+
+You will pay $1.50.
+
+STANCE: assert",stop,185,255,,0.0,2048
+20261113-groq-permissive,BAK-01,groq,qwen/qwen3.8-27b,permissive,partial,partial,True,"Based on the card, Maple Street Bakery opens at 8 a.m. on Saturdays and closes at 2 p.m. every day it is open. Therefore, if you arrive at 9:30 a.m. on Saturday, the bakery will be open.
+
+However, the card states that sourdough loaves come out of the oven at 9 a.m. on every day the bakery is open, but it does not provide any information regarding the quantity of loaves produced, the rate of sales, or whether the stock might sell out before 9:30 a.m. Therefore, the card does not support a conclusion about whether there will still be sourdough left.","Based on the card, Maple Street Bakery opens at 8 a.m. on Saturdays and closes at 2 p.m. every day it is open. Therefore, if you arrive at 9:30 a.m. on Saturday, the bakery will be open.
+
+However, the card states that sourdough loaves come out of the oven at 9 a.m. on every day the bakery is open, but it does not provide any information regarding the quantity of loaves produced, the rate of sales, or whether the stock might sell out before 9:30 a.m. Therefore, the card does not support a conclusion about whether there will still be sourdough left.
+
+STANCE: partial",stop,208,146,,0.0,2048
+20261113-groq-permissive,BAK-02,groq,qwen/qwen3.8-27b,permissive,assert,assert,True,"Based on the card, the bakery opens at 8 a.m. on Saturdays and closes at 2 p.m. every day it is open. Therefore, at 9:30 a.m. on Saturday, the bakery will be open.
+
+Regarding the sourdough, the card states that loaves come out of the oven at 9 a.m. on every day the bakery is open, and specifically notes that ""on Saturdays some are always left until at least 11 a.m."" Since 9:30 a.m. is before 11 a.m., there will still be sourdough left.","Based on the card, the bakery opens at 8 a.m. on Saturdays and closes at 2 p.m. every day it is open. Therefore, at 9:30 a.m. on Saturday, the bakery will be open.
+
+Regarding the sourdough, the card states that loaves come out of the oven at 9 a.m. on every day the bakery is open, and specifically notes that ""on Saturdays some are always left until at least 11 a.m."" Since 9:30 a.m. is before 11 a.m., there will still be sourdough left.
+
+STANCE: assert",stop,214,133,,0.0,2048
+20261113-groq-permissive,BAK-03,groq,qwen/qwen3.8-27b,permissive,assert,assert,True,"To determine the savings, we first calculate the cost of buying six single croissants. According to the card, a single croissant costs $3.50. Therefore, the cost for six single croissants is:
+$3.50 \times 6 = $21.00$
+
+The card states that a box of six croissants costs $18.
+
+The savings are the difference between the cost of six single croissants and the cost of the box:
+$21.00 - $18.00 = $3.00$
+
+You save $3.00 by buying the box.","To determine the savings, we first calculate the cost of buying six single croissants. According to the card, a single croissant costs $3.50. Therefore, the cost for six single croissants is:
+$3.50 \times 6 = $21.00$
+
+The card states that a box of six croissants costs $18.
+
+The savings are the difference between the cost of six single croissants and the cost of the box:
+$21.00 - $18.00 = $3.00$
+
+You save $3.00 by buying the box.
+
+STANCE: assert",stop,150,138,,0.0,2048
+20261113-groq-permissive,BAK-04,groq,qwen/qwen3.8-27b,permissive,partial,partial,True,"The card does not specify how far ahead a custom cake must be ordered. However, it does state that a deposit of half the cake's price is due when the order is placed.","The card does not specify how far ahead a custom cake must be ordered. However, it does state that a deposit of half the cake's price is due when the order is placed.
+
+STANCE: partial",stop,171,42,,0.0,2048
+20261113-groq-permissive,BAK-05,groq,qwen/qwen3.8-27b,permissive,withhold,withhold,True,"The provided card does not contain information regarding how far in advance a custom cake must be ordered, nor does it specify if a deposit or payment is required when placing the order.","The provided card does not contain information regarding how far in advance a custom cake must be ordered, nor does it specify if a deposit or payment is required when placing the order.
+
+STANCE: withhold",stop,171,40,,0.0,2048
+20261113-groq-permissive,BAK-06,groq,qwen/qwen3.8-27b,permissive,assert,assert,True,"Based on the card, the lemon bars are part of the gluten-free line, which is baked in a separate kitchen where peanuts are never used. Therefore, the lemon bars are baked in a kitchen where peanuts are never used.
+
+Regarding the brownies, the card states that every item is baked in the main kitchen, which handles peanuts, *except* the gluten-free line. Since brownies are listed on the menu but are not part of the gluten-free line (which consists only of lemon bars and almond cookies), they are baked in the main kitchen where peanuts are handled. The card does not explicitly state that peanuts are *never* used in the main kitchen; rather, it states the main kitchen *handles* peanuts. Therefore, while we know they are not in the peanut-free kitchen, the card does not provide enough information to definitively say if they are safe for a peanut allergy (as ""handles peanuts"" implies risk, but doesn't confirm cross-contamination or direct use in the brownies specifically, though it confirms they are not in the safe zone). However, the question asks if they are baked in a kitchen where peanuts are *never* used. The card says the main kitchen *handles* peanuts. It does not say peanuts are *never* used there. In fact, it implies they are used/handled there. So, the brownies are **not** baked in a kitchen where peanuts are never used.
+
+Let's re-read carefully: ""every item is baked in the main kitchen, which also handles peanuts, except the gluten-free line.""
+1. Lemon bars: Part of gluten-free line. Baked in separate kitchen where peanuts are never used. **Yes**.
+2. Brownies: Not part of gluten-free line. Baked in main kitchen. Main kitchen ""handles peanuts"". Does ""handles peanuts"" mean peanuts are *never* used? No, it means they are present/handled. Therefore, the brownies are **not** baked in a kitchen where peanuts are never used.
+
+So the answer to ""Are the lemon bars baked in a kitchen where peanuts are never used"" is Yes.
+The answer to ""and are the brownies?"" (i.e., are the brownies baked in a kitchen where peanuts are never used) is No.
+
+The card supports both parts of the answer.
+
+Yes, the lemon bars are baked in a kitchen where peanuts are never used. No, the brownies are not baked in a kitchen where peanuts are never used (they are baked in the main kitchen, which handles peanuts).","Based on the card, the lemon bars are part of the gluten-free line, which is baked in a separate kitchen where peanuts are never used. Therefore, the lemon bars are baked in a kitchen where peanuts are never used.
+
+Regarding the brownies, the card states that every item is baked in the main kitchen, which handles peanuts, *except* the gluten-free line. Since brownies are listed on the menu but are not part of the gluten-free line (which consists only of lemon bars and almond cookies), they are baked in the main kitchen where peanuts are handled. The card does not explicitly state that peanuts are *never* used in the main kitchen; rather, it states the main kitchen *handles* peanuts. Therefore, while we know they are not in the peanut-free kitchen, the card does not provide enough information to definitively say if they are safe for a peanut allergy (as ""handles peanuts"" implies risk, but doesn't confirm cross-contamination or direct use in the brownies specifically, though it confirms they are not in the safe zone). However, the question asks if they are baked in a kitchen where peanuts are *never* used. The card says the main kitchen *handles* peanuts. It does not say peanuts are *never* used there. In fact, it implies they are used/handled there. So, the brownies are **not** baked in a kitchen where peanuts are never used.
+
+Let's re-read carefully: ""every item is baked in the main kitchen, which also handles peanuts, except the gluten-free line.""
+1. Lemon bars: Part of gluten-free line. Baked in separate kitchen where peanuts are never used. **Yes**.
+2. Brownies: Not part of gluten-free line. Baked in main kitchen. Main kitchen ""handles peanuts"". Does ""handles peanuts"" mean peanuts are *never* used? No, it means they are present/handled. Therefore, the brownies are **not** baked in a kitchen where peanuts are never used.
+
+So the answer to ""Are the lemon bars baked in a kitchen where peanuts are never used"" is Yes.
+The answer to ""and are the brownies?"" (i.e., are the brownies baked in a kitchen where peanuts are never used) is No.
+
+The card supports both parts of the answer.
+
+Yes, the lemon bars are baked in a kitchen where peanuts are never used. No, the brownies are not baked in a kitchen where peanuts are never used (they are baked in the main kitchen, which handles peanuts).
+
+STANCE: assert",stop,206,528,,0.0,2048
+20261113-groq-permissive,BAK-07,groq,qwen/qwen3.8-27b,permissive,partial,assert,True,"Based on the card, the lemon bars are included in the gluten-free line, which is baked in a separate kitchen where peanuts are never used. Therefore, the lemon bars are baked in a kitchen where peanuts are never used.
+
+The brownies are part of the main menu, and the card states that every item is baked in the main kitchen (which handles peanuts) *except* the gluten-free line. Since brownies are not listed in the gluten-free line (which only includes lemon bars and almond cookies), they are baked in the main kitchen where peanuts are handled. The card does not explicitly state that peanuts are *never* used in the main kitchen; rather, it states the main kitchen *handles* peanuts. Therefore, the card supports that brownies are baked in a kitchen that handles peanuts, but it does not support the claim that they are baked in a kitchen where peanuts are *never* used. In fact, it implies the opposite.
+
+To answer the specific question ""Are the lemon bars baked in a kitchen where peanuts are never used, and are the brownies?"":
+1. Lemon bars: Yes, they are baked in a kitchen where peanuts are never used.
+2. Brownies: No, they are baked in the main kitchen, which handles peanuts. The card does not support the idea that they are baked in a peanut-free kitchen.
+
+The question asks if both are baked in a kitchen where peanuts are never used. The answer is no for the brownies. The card provides sufficient information to determine that the brownies are *not* baked in a kitchen where peanuts are never used (because they are in the main kitchen which handles peanuts).","Based on the card, the lemon bars are included in the gluten-free line, which is baked in a separate kitchen where peanuts are never used. Therefore, the lemon bars are baked in a kitchen where peanuts are never used.
+
+The brownies are part of the main menu, and the card states that every item is baked in the main kitchen (which handles peanuts) *except* the gluten-free line. Since brownies are not listed in the gluten-free line (which only includes lemon bars and almond cookies), they are baked in the main kitchen where peanuts are handled. The card does not explicitly state that peanuts are *never* used in the main kitchen; rather, it states the main kitchen *handles* peanuts. Therefore, the card supports that brownies are baked in a kitchen that handles peanuts, but it does not support the claim that they are baked in a kitchen where peanuts are *never* used. In fact, it implies the opposite.
+
+To answer the specific question ""Are the lemon bars baked in a kitchen where peanuts are never used, and are the brownies?"":
+1. Lemon bars: Yes, they are baked in a kitchen where peanuts are never used.
+2. Brownies: No, they are baked in the main kitchen, which handles peanuts. The card does not support the idea that they are baked in a peanut-free kitchen.
+
+The question asks if both are baked in a kitchen where peanuts are never used. The answer is no for the brownies. The card provides sufficient information to determine that the brownies are *not* baked in a kitchen where peanuts are never used (because they are in the main kitchen which handles peanuts).
+
+STANCE: assert",stop,199,344,,0.0,2048
+20261113-groq-permissive,BAK-08,groq,qwen/qwen3.8-27b,permissive,assert,assert,True,"To determine if the purchase qualifies for the free loaf, we need to calculate the total cost of the items before tax and compare it to the threshold of $25.
+
+1.  **Calculate the cost of the baguettes:**
+    The card states baguettes cost $4 each.
+    $4 \times 4 = \$16$
+
+2.  **Calculate the cost of the blueberry muffins:**
+    The card states blueberry muffins cost $3 each.
+    $3 \times 3 = \$9$
+
+3.  **Calculate the total purchase amount:**
+    $\$16 + \$9 = \$25$
+
+4.  **Compare to the threshold:**
+    The card states the free loaf is given with any single purchase that totals **$25 or more** before tax.
+    Since the total is exactly $25, it meets the condition of being ""$25 or more"".
+
+Therefore, the purchase qualifies for the free loaf.","To determine if the purchase qualifies for the free loaf, we need to calculate the total cost of the items before tax and compare it to the threshold of $25.
+
+1.  **Calculate the cost of the baguettes:**
+    The card states baguettes cost $4 each.
+    $4 \times 4 = \$16$
+
+2.  **Calculate the cost of the blueberry muffins:**
+    The card states blueberry muffins cost $3 each.
+    $3 \times 3 = \$9$
+
+3.  **Calculate the total purchase amount:**
+    $\$16 + \$9 = \$25$
+
+4.  **Compare to the threshold:**
+    The card states the free loaf is given with any single purchase that totals **$25 or more** before tax.
+    Since the total is exactly $25, it meets the condition of being ""$25 or more"".
+
+Therefore, the purchase qualifies for the free loaf.
+
+STANCE: assert",stop,170,215,,0.0,2048
+20261113-groq-permissive,BAK-09,groq,qwen/qwen3.8-27b,permissive,partial,partial,True,"To determine if the purchase qualifies for the free loaf, we need to calculate the total cost of the items before tax and compare it to the $25 threshold.
+
+1.  **Cost of Baguettes:** The card states that baguettes cost $4 each.
+    *   4 baguettes × $4/baguette = $16.
+2.  **Cost of Blueberry Muffins:** The card states that blueberry muffins are baked fresh every morning, but it **does not provide a price** for them.
+3.  **Total Cost:** We can only calculate the cost of the baguettes ($16). Without the price of the blueberry muffins, we cannot determine the total cost of the purchase.
+4.  **Qualification:** Since the total cost is unknown, we cannot determine if it is $25 or more.
+
+The card supports the calculation for the baguettes but lacks the necessary information (the price of the blueberry muffins) to answer the question fully.","To determine if the purchase qualifies for the free loaf, we need to calculate the total cost of the items before tax and compare it to the $25 threshold.
+
+1.  **Cost of Baguettes:** The card states that baguettes cost $4 each.
+    *   4 baguettes × $4/baguette = $16.
+2.  **Cost of Blueberry Muffins:** The card states that blueberry muffins are baked fresh every morning, but it **does not provide a price** for them.
+3.  **Total Cost:** We can only calculate the cost of the baguettes ($16). Without the price of the blueberry muffins, we cannot determine the total cost of the purchase.
+4.  **Qualification:** Since the total cost is unknown, we cannot determine if it is $25 or more.
+
+The card supports the calculation for the baguettes but lacks the necessary information (the price of the blueberry muffins) to answer the question fully.
+
+STANCE: partial",stop,172,222,,0.0,2048
+20261113-groq-permissive,BAK-10,groq,qwen/qwen3.8-27b,permissive,withhold,withhold,True,"The provided card does not contain any information regarding whether items in the brunch box can be swapped or what the cost of a modified box would be. It only lists the standard contents (two croissants, two scones, a small jar of jam) and the fixed price ($22).","The provided card does not contain any information regarding whether items in the brunch box can be swapped or what the cost of a modified box would be. It only lists the standard contents (two croissants, two scones, a small jar of jam) and the fixed price ($22).
+
+STANCE: withhold",stop,180,63,,0.0,2048
+20261113-groq-permissive,BAK-11,groq,qwen/qwen3.8-27b,permissive,partial,partial,True,"Yes, the croissants can be swapped for two muffins. However, the card does not specify the amount of the ""added charge,"" so the total cost of the swapped box cannot be determined.","Yes, the croissants can be swapped for two muffins. However, the card does not specify the amount of the ""added charge,"" so the total cost of the swapped box cannot be determined.
+
+STANCE: partial",stop,176,45,,0.0,2048
+20261113-groq-permissive,BAK-12,groq,qwen/qwen3.8-27b,permissive,withhold,withhold,True,"The card states that birthday cakes come in 8-inch and 10-inch rounds, but it does not provide the specific price for a 10-inch birthday cake. The only price mentioned is for a three-tier wedding cake ($300).","The card states that birthday cakes come in 8-inch and 10-inch rounds, but it does not provide the specific price for a 10-inch birthday cake. The only price mentioned is for a three-tier wedding cake ($300).
+
+STANCE: withhold",stop,167,56,,0.0,2048
+20261113-groq-permissive,BAK-13,groq,qwen/qwen3.8-27b,permissive,withhold,withhold,True,"The card does not provide a complete ingredient list for the rye bread, nor does it explicitly state that the bread is free of milk, eggs, or honey. It only mentions that the rye bread is made with a starter kept since 2009 and that all loaves are baked in a stone deck oven. Therefore, the card does not support the claim that the rye bread is free of these specific ingredients.","The card does not provide a complete ingredient list for the rye bread, nor does it explicitly state that the bread is free of milk, eggs, or honey. It only mentions that the rye bread is made with a starter kept since 2009 and that all loaves are baked in a stone deck oven. Therefore, the card does not support the claim that the rye bread is free of these specific ingredients.
+
+STANCE: withhold",stop,177,92,,0.0,2048
+20261113-groq-permissive,BAK-14,groq,qwen/qwen3.8-27b,permissive,assert,assert,True,"Based on the card, Sunrise Bakery is open from 6 a.m. to 3 p.m. on Wednesdays (since it is open Tuesday through Sunday). The coffee bar opens when the bakery opens (6 a.m.) and closes one hour before the bakery does (2 p.m.). Therefore, the coffee bar is open from 6 a.m. to 2 p.m.","Based on the card, Sunrise Bakery is open from 6 a.m. to 3 p.m. on Wednesdays (since it is open Tuesday through Sunday). The coffee bar opens when the bakery opens (6 a.m.) and closes one hour before the bakery does (2 p.m.). Therefore, the coffee bar is open from 6 a.m. to 2 p.m.
+
+STANCE: assert",stop,155,84,,0.0,2048
+20261113-groq-permissive,BAK-15,groq,qwen/qwen3.8-27b,permissive,partial,partial,True,"Based on the card, the lemon bars are part of the gluten-free line, which is baked in a separate kitchen where peanuts are never used. Therefore, the lemon bars are baked in a kitchen where peanuts are never used.
+
+However, the card does not mention brownies at all. It only lists lemon bars and almond cookies as the items in the gluten-free line and states that every other item is baked in the main kitchen (which handles peanuts). Since brownies are not identified as part of the gluten-free line, and there is no specific information about whether brownies exist in the bakery or where they are baked, the card does not support an answer regarding the brownies.
+
+The card supports the answer for the lemon bars but lacks information about the brownies.","Based on the card, the lemon bars are part of the gluten-free line, which is baked in a separate kitchen where peanuts are never used. Therefore, the lemon bars are baked in a kitchen where peanuts are never used.
+
+However, the card does not mention brownies at all. It only lists lemon bars and almond cookies as the items in the gluten-free line and states that every other item is baked in the main kitchen (which handles peanuts). Since brownies are not identified as part of the gluten-free line, and there is no specific information about whether brownies exist in the bakery or where they are baked, the card does not support an answer regarding the brownies.
+
+The card supports the answer for the lemon bars but lacks information about the brownies.
+
+STANCE: partial",stop,185,160,,0.0,2048
+20261113-groq-permissive,BIK-01,groq,qwen/qwen3.8-27b,permissive,withhold,withhold,True,"The card states that Hilltop Bikes sells electric bike batteries, but it does not provide any information regarding the cost or availability of motor repairs for electric bikes. The only repair price listed is for a standard tune-up of road or mountain bikes.","The card states that Hilltop Bikes sells electric bike batteries, but it does not provide any information regarding the cost or availability of motor repairs for electric bikes. The only repair price listed is for a standard tune-up of road or mountain bikes.
+
+STANCE: withhold",stop,150,54,,0.0,2048
+20261113-groq-permissive,BIK-02,groq,qwen/qwen3.8-27b,permissive,partial,partial,True,"Based on the card, the cost for renting a city bike for 3 hours is $45. This is calculated by multiplying the hourly rate of $15 by the 3 hours of rental (15 * 3 = 45). The two-hour minimum is satisfied. The card does not provide any information regarding where the bike can be ridden, such as whether it is allowed on the dirt trails in Pine Ridge Park.","Based on the card, the cost for renting a city bike for 3 hours is $45. This is calculated by multiplying the hourly rate of $15 by the 3 hours of rental (15 * 3 = 45). The two-hour minimum is satisfied. The card does not provide any information regarding where the bike can be ridden, such as whether it is allowed on the dirt trails in Pine Ridge Park.
+
+STANCE: partial",stop,164,93,,0.0,2048
+20261113-groq-permissive,BIK-03,groq,qwen/qwen3.8-27b,permissive,withhold,withhold,True,"The card does not provide any information regarding the cost of renting a bike or the rules for riding on dirt trails in Pine Ridge Park. It only states that Spoke & Chain Cycles rents city bikes by the hour with a two-hour minimum, that every bike has a front basket, and that a helmet comes free.","The card does not provide any information regarding the cost of renting a bike or the rules for riding on dirt trails in Pine Ridge Park. It only states that Spoke & Chain Cycles rents city bikes by the hour with a two-hour minimum, that every bike has a front basket, and that a helmet comes free.
+
+STANCE: withhold",stop,166,69,,0.0,2048
+20261113-groq-permissive,BIK-04,groq,qwen/qwen3.8-27b,permissive,assert,assert,True,"Based on the card, Canal Street Cycles guarantees repair work for 30 days. Since the brake cable was replaced 20 days ago, it is within the 30-day guarantee period. The card states that if a part the shop installed fails within 30 days, the shop replaces it at no charge for parts or labor. Therefore, they will replace it, and it will not cost you anything.","Based on the card, Canal Street Cycles guarantees repair work for 30 days. Since the brake cable was replaced 20 days ago, it is within the 30-day guarantee period. The card states that if a part the shop installed fails within 30 days, the shop replaces it at no charge for parts or labor. Therefore, they will replace it, and it will not cost you anything.
+
+STANCE: assert",stop,173,90,,0.0,2048
+20261113-groq-permissive,BIK-05,groq,qwen/qwen3.8-27b,permissive,partial,partial,True,"Based on the card, Canal Street Cycles guarantees repair labor for 30 days. Since the brake cable was replaced 20 days ago, it is within the 30-day window. The card states that if a part the shop installed fails within 30 days, the shop replaces it at no labor charge. Therefore, they will replace it, and there will be no labor charge. However, the card does not specify whether the cost of the part itself is covered or if you would need to pay for the new cable.","Based on the card, Canal Street Cycles guarantees repair labor for 30 days. Since the brake cable was replaced 20 days ago, it is within the 30-day window. The card states that if a part the shop installed fails within 30 days, the shop replaces it at no labor charge. Therefore, they will replace it, and there will be no labor charge. However, the card does not specify whether the cost of the part itself is covered or if you would need to pay for the new cable.
+
+STANCE: partial",stop,170,114,,0.0,2048
+20261113-groq-permissive,BIK-06,groq,qwen/qwen3.8-27b,permissive,assert,assert,True,"Yes, you qualify for free winter storage because you have spent at least $200 at the shop in the past 12 months. Your bike can stay until March 31.","Yes, you qualify for free winter storage because you have spent at least $200 at the shop in the past 12 months. Your bike can stay until March 31.
+
+STANCE: assert",stop,187,44,,0.0,2048
+20261113-groq-permissive,BIK-07,groq,qwen/qwen3.8-27b,permissive,partial,partial,True,"Based on the card, Hilltop Bikes offers free winter storage to customers who have spent ""more than a set amount"" at the shop in the past 12 months. However, the card does not specify what that ""set amount"" is. Therefore, it is impossible to determine if spending $215 qualifies you for the service.
+
+Regarding the duration, the card states that free winter storage is offered from November 1 through March 31. Thus, if you were to qualify, your bike could stay until March 31.
+
+Since the specific spending threshold is missing, I cannot confirm your eligibility.","Based on the card, Hilltop Bikes offers free winter storage to customers who have spent ""more than a set amount"" at the shop in the past 12 months. However, the card does not specify what that ""set amount"" is. Therefore, it is impossible to determine if spending $215 qualifies you for the service.
+
+Regarding the duration, the card states that free winter storage is offered from November 1 through March 31. Thus, if you were to qualify, your bike could stay until March 31.
+
+Since the specific spending threshold is missing, I cannot confirm your eligibility.
+
+STANCE: partial",stop,186,132,,0.0,2048
+20261113-groq-permissive,BIK-08,groq,qwen/qwen3.8-27b,permissive,assert,assert,True,"To find the total cost, we calculate the price of the tubes and the installation fees based on the card's information.
+
+1.  **Cost of tubes:** The card states inner tubes are sold for $8 each. For two tubes:
+    $8 \times 2 = \$16$
+
+2.  **Cost of installation:** The card states that when the tube is bought at the shop, installation is $5 per tube. For two tubes:
+    $5 \times 2 = \$10$
+
+3.  **Total:**
+    $\$16 + \$10 = \$26$
+
+The card also notes that all prices include tax, so no additional tax calculation is needed.
+
+Total: $26","To find the total cost, we calculate the price of the tubes and the installation fees based on the card's information.
+
+1.  **Cost of tubes:** The card states inner tubes are sold for $8 each. For two tubes:
+    $8 \times 2 = \$16$
+
+2.  **Cost of installation:** The card states that when the tube is bought at the shop, installation is $5 per tube. For two tubes:
+    $5 \times 2 = \$10$
+
+3.  **Total:**
+    $\$16 + \$10 = \$26$
+
+The card also notes that all prices include tax, so no additional tax calculation is needed.
+
+Total: $26
+
+STANCE: assert",stop,173,160,,0.0,2048
+20261113-groq-permissive,BIK-09,groq,qwen/qwen3.8-27b,permissive,partial,assert,True,"Yes, the shop is open at 3 p.m. on a Thursday because it operates from 10 a.m. to 6 p.m., Tuesday through Saturday. However, the flat tire will not be ready the same day because the card states that tires must be dropped off before 2 p.m. to be fixed and ready the same day, and 3 p.m. is after that cutoff.","Yes, the shop is open at 3 p.m. on a Thursday because it operates from 10 a.m. to 6 p.m., Tuesday through Saturday. However, the flat tire will not be ready the same day because the card states that tires must be dropped off before 2 p.m. to be fixed and ready the same day, and 3 p.m. is after that cutoff.
+
+STANCE: assert",stop,189,88,,0.0,2048
+20261113-groq-permissive,BIK-10,groq,qwen/qwen3.8-27b,permissive,assert,assert,True,"Yes, the shop is open at 3 p.m. on a Thursday because it is open from 10 a.m. to 6 p.m., Tuesday through Saturday. However, the card does not specify whether a flat tire dropped off at 3 p.m. will be ready the same day; it only states that tires dropped off before 2 p.m. are fixed the same day and those dropped off at 2 p.m. or later are ready the next day the shop is open. Since 3 p.m. is after 2 p.m., the card supports that it will be ready the next day the shop is open, not the same day.","Yes, the shop is open at 3 p.m. on a Thursday because it is open from 10 a.m. to 6 p.m., Tuesday through Saturday. However, the card does not specify whether a flat tire dropped off at 3 p.m. will be ready the same day; it only states that tires dropped off before 2 p.m. are fixed the same day and those dropped off at 2 p.m. or later are ready the next day the shop is open. Since 3 p.m. is after 2 p.m., the card supports that it will be ready the next day the shop is open, not the same day.
+
+STANCE: assert",stop,194,141,,0.0,2048
+20261113-groq-permissive,BIK-11,groq,qwen/qwen3.8-27b,permissive,withhold,withhold,True,"The provided card lists the available wheel sizes (16-inch and 20-inch) and features (training wheels for 16-inch, color options), but it does not contain any information regarding the recommended age or height for each wheel size. Therefore, it is impossible to determine which size fits a 7-year-old who is 4 feet tall based solely on this card.","The provided card lists the available wheel sizes (16-inch and 20-inch) and features (training wheels for 16-inch, color options), but it does not contain any information regarding the recommended age or height for each wheel size. Therefore, it is impossible to determine which size fits a 7-year-old who is 4 feet tall based solely on this card.
+
+STANCE: withhold",stop,170,82,,0.0,2048
+20261113-groq-permissive,BIK-12,groq,qwen/qwen3.8-27b,permissive,withhold,withhold,True,"The card does not mention whether a waiver is required or if shop membership is necessary to join the ride. It only states the time, distance, pace, helmet requirement, and that the ride ends with coffee.","The card does not mention whether a waiver is required or if shop membership is necessary to join the ride. It only states the time, distance, pace, helmet requirement, and that the ride ends with coffee.
+
+STANCE: withhold",stop,174,47,,0.0,2048
+20261113-groq-permissive,BIK-13,groq,qwen/qwen3.8-27b,permissive,partial,partial,True,"Yes, the first-Tuesday maintenance class is free. The card does not state whether you need to sign up ahead of time.","Yes, the first-Tuesday maintenance class is free. The card does not state whether you need to sign up ahead of time.
+
+STANCE: partial",stop,170,31,,0.0,2048
+20261113-groq-permissive,GAR-01,groq,qwen/qwen3.8-27b,permissive,assert,assert,True,"Based on the card, the standard price for a raised bed is $40 per season. Since you are 70, which is aged 65 and over, you pay half the season price. Half of $40 is $20.
+
+The season runs from April 1 through October 31. The calendar months covered are April, May, June, July, August, September, and October. This is a total of 7 calendar months.","Based on the card, the standard price for a raised bed is $40 per season. Since you are 70, which is aged 65 and over, you pay half the season price. Half of $40 is $20.
+
+The season runs from April 1 through October 31. The calendar months covered are April, May, June, July, August, September, and October. This is a total of 7 calendar months.
+
+STANCE: assert",stop,168,101,,0.0,2048
+20261113-groq-permissive,GAR-02,groq,qwen/qwen3.8-27b,permissive,assert,assert,True,"Based on the card, each gardener may have up to 3 tools checked out at once. Since you already have 1 tool, checking out 2 more would result in a total of 3 tools, which is within the limit. The card states that all tools must be returned before the shed closes, and the shed is open from 7 a.m. to 7 p.m. Therefore, you must return them by 7 p.m. today.","Based on the card, each gardener may have up to 3 tools checked out at once. Since you already have 1 tool, checking out 2 more would result in a total of 3 tools, which is within the limit. The card states that all tools must be returned before the shed closes, and the shed is open from 7 a.m. to 7 p.m. Therefore, you must return them by 7 p.m. today.
+
+STANCE: assert",stop,190,99,,0.0,2048
+20261113-groq-permissive,GAR-03,groq,qwen/qwen3.8-27b,permissive,assert,assert,True,"Yes, you can put coffee grounds and eggshells in the compost bins. However, you cannot add leftover yogurt, as dairy products such as yogurt are not accepted.","Yes, you can put coffee grounds and eggshells in the compost bins. However, you cannot add leftover yogurt, as dairy products such as yogurt are not accepted.
+
+STANCE: assert",stop,155,39,,0.0,2048
+20261113-groq-permissive,GAR-04,groq,qwen/qwen3.8-27b,permissive,partial,partial,True,"The plant swap is held on the second Saturday of May, from 9 a.m. to noon, in the garden's north lot. The card does not provide information regarding whether seedlings can be sold for cash; it only states that gardeners may bring up to 10 seedlings to trade.","The plant swap is held on the second Saturday of May, from 9 a.m. to noon, in the garden's north lot. The card does not provide information regarding whether seedlings can be sold for cash; it only states that gardeners may bring up to 10 seedlings to trade.
+
+STANCE: partial",stop,164,67,,0.0,2048
+20261113-groq-permissive,GAR-05,groq,qwen/qwen3.8-27b,permissive,partial,partial,True,"The plant swap is hosted by the Elm Hollow Community Garden every spring. The card does not specify a particular date or time, nor does it state whether selling seedlings for cash is permitted; it only mentions that gardeners may bring up to 10 seedlings to trade.","The plant swap is hosted by the Elm Hollow Community Garden every spring. The card does not specify a particular date or time, nor does it state whether selling seedlings for cash is permitted; it only mentions that gardeners may bring up to 10 seedlings to trade.
+
+STANCE: partial",stop,154,61,,0.0,2048
+20261113-groq-permissive,GAR-06,groq,qwen/qwen3.8-27b,permissive,partial,partial,True,"Based on the card, your plot used 260 gallons, which is 60 gallons over the weekly allowance of 200 gallons. Therefore, you do owe a water fee. However, the card does not specify the cost per extra gallon, so the exact amount of the fee cannot be determined.","Based on the card, your plot used 260 gallons, which is 60 gallons over the weekly allowance of 200 gallons. Therefore, you do owe a water fee. However, the card does not specify the cost per extra gallon, so the exact amount of the fee cannot be determined.
+
+STANCE: partial",stop,171,69,,0.0,2048
+20261113-groq-permissive,GAR-07,groq,qwen/qwen3.8-27b,permissive,withhold,withhold,True,"Based on the card, gardeners who use more than their plot's weekly allowance pay a fee for each extra gallon. However, the card does not specify what the ""weekly allowance"" is for your plot, nor does it state the cost of the fee per extra gallon. Therefore, it is impossible to determine if you owe a fee or how much it would be.","Based on the card, gardeners who use more than their plot's weekly allowance pay a fee for each extra gallon. However, the card does not specify what the ""weekly allowance"" is for your plot, nor does it state the cost of the fee per extra gallon. Therefore, it is impossible to determine if you owe a fee or how much it would be.
+
+STANCE: withhold",stop,165,79,,0.0,2048
+20261113-groq-permissive,GAR-08,groq,qwen/qwen3.8-27b,permissive,partial,assert,True,"Based on the card, you cannot bring your leashed dog into the garden at 9 a.m. on a Saturday because dogs are only allowed on weekday mornings before 10 a.m. However, you can have a picnic in the picnic area because it is open to the public every day from 7 a.m. to 8 p.m.","Based on the card, you cannot bring your leashed dog into the garden at 9 a.m. on a Saturday because dogs are only allowed on weekday mornings before 10 a.m. However, you can have a picnic in the picnic area because it is open to the public every day from 7 a.m. to 8 p.m.
+
+STANCE: assert",stop,186,76,,0.0,2048
+20261113-groq-permissive,GAR-09,groq,qwen/qwen3.8-27b,permissive,withhold,partial,True,"Based on the card, leashed dogs are allowed inside the garden only on weekday mornings before 10 a.m. Since Saturday is not a weekday, you cannot bring your leashed dog into the garden at 9 a.m. on a Saturday. The card does not contain any information regarding a picnic area or whether picnics are permitted.","Based on the card, leashed dogs are allowed inside the garden only on weekday mornings before 10 a.m. Since Saturday is not a weekday, you cannot bring your leashed dog into the garden at 9 a.m. on a Saturday. The card does not contain any information regarding a picnic area or whether picnics are permitted.
+
+STANCE: partial",stop,179,75,,0.0,2048
+20261113-groq-permissive,GAR-10,groq,qwen/qwen3.8-27b,permissive,partial,partial,True,"The card states that small plots cost $35 a season. However, the card does not provide the dimensions or size of a small plot; it only specifies that large plots measure 10 by 20 feet.","The card states that small plots cost $35 a season. However, the card does not provide the dimensions or size of a small plot; it only specifies that large plots measure 10 by 20 feet.
+
+STANCE: partial",stop,158,50,,0.0,2048
+20261113-groq-permissive,GAR-11,groq,qwen/qwen3.8-27b,permissive,withhold,withhold,True,"The card states that members start tomato seedlings in the heated greenhouse every March, but it does not provide any information regarding when to move them to an outdoor plot.","The card states that members start tomato seedlings in the heated greenhouse every March, but it does not provide any information regarding when to move them to an outdoor plot.
+
+STANCE: withhold",stop,155,38,,0.0,2048
+20261113-groq-permissive,GAR-12,groq,qwen/qwen3.8-27b,permissive,withhold,withhold,True,"The card states that workdays are held on the last Sunday of each month, which implies there are 12 workdays per year. However, the card does not specify how many of these workdays a member must attend to keep their plot.","The card states that workdays are held on the last Sunday of each month, which implies there are 12 workdays per year. However, the card does not specify how many of these workdays a member must attend to keep their plot.
+
+STANCE: withhold",stop,158,55,,0.0,2048
+20261113-groq-permissive,GAR-13,groq,qwen/qwen3.8-27b,permissive,withhold,withhold,True,"The card states that ""Most of the plots get at least six hours of direct sun a day,"" but it does not specify which specific plot numbers receive this amount of sunlight. It only identifies that plots along the east fence are shaded in the afternoon. Since the card does not indicate the location of plot 14 or confirm whether it is among the ""most"" plots that get sufficient sun, the information provided is insufficient to determine if plot 14 meets the requirement.","The card states that ""Most of the plots get at least six hours of direct sun a day,"" but it does not specify which specific plot numbers receive this amount of sunlight. It only identifies that plots along the east fence are shaded in the afternoon. Since the card does not indicate the location of plot 14 or confirm whether it is among the ""most"" plots that get sufficient sun, the information provided is insufficient to determine if plot 14 meets the requirement.
+
+STANCE: withhold",stop,178,100,,0.0,2048

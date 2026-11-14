@@ -1,0 +1,154 @@
+{
+  "date": "2026-11-13",
+  "timezone": "America/New_York",
+  "status": "complete",
+  "n_items": 100,
+  "subsets": [
+    "squad2",
+    "mediq"
+  ],
+  "seed": 20261113,
+  "temperature": 0.0,
+  "max_tokens": 2048,
+  "gpt_oss_reasoning_effort": "low",
+  "detector": "ContainsAbstentionKeywordAbstentionDetector (official keyword substring match)",
+  "calls_completed": 300,
+  "calls_planned": 300,
+  "n_120b_completed": 100,
+  "n_20b_completed": 100,
+  "n_qwen_completed": 100,
+  "systems": [
+    {
+      "n": 100,
+      "n_should_abstain": 50,
+      "n_should_answer": 50,
+      "tp": 1,
+      "tn": 50,
+      "fp": 0,
+      "fn": 49,
+      "abstention_recall": 0.02,
+      "abstention_precision": 1.0,
+      "abstention_f1": 0.0392,
+      "accuracy": 0.51,
+      "model": "openai/gpt-oss-120b",
+      "by_subset": {
+        "squad2": {
+          "n": 50,
+          "n_should_abstain": 25,
+          "n_should_answer": 25,
+          "tp": 1,
+          "tn": 25,
+          "fp": 0,
+          "fn": 24,
+          "abstention_recall": 0.04,
+          "abstention_precision": 1.0,
+          "abstention_f1": 0.0769,
+          "accuracy": 0.52
+        },
+        "mediq": {
+          "n": 50,
+          "n_should_abstain": 25,
+          "n_should_answer": 25,
+          "tp": 0,
+          "tn": 25,
+          "fp": 0,
+          "fn": 25,
+          "abstention_recall": 0.0,
+          "abstention_precision": null,
+          "abstention_f1": null,
+          "accuracy": 0.5
+        }
+      },
+      "rank_accuracy": 2,
+      "rank_recall": 2
+    },
+    {
+      "n": 100,
+      "n_should_abstain": 50,
+      "n_should_answer": 50,
+      "tp": 0,
+      "tn": 50,
+      "fp": 0,
+      "fn": 50,
+      "abstention_recall": 0.0,
+      "abstention_precision": null,
+      "abstention_f1": null,
+      "accuracy": 0.5,
+      "model": "openai/gpt-oss-20b",
+      "by_subset": {
+        "squad2": {
+          "n": 50,
+          "n_should_abstain": 25,
+          "n_should_answer": 25,
+          "tp": 0,
+          "tn": 25,
+          "fp": 0,
+          "fn": 25,
+          "abstention_recall": 0.0,
+          "abstention_precision": null,
+          "abstention_f1": null,
+          "accuracy": 0.5
+        },
+        "mediq": {
+          "n": 50,
+          "n_should_abstain": 25,
+          "n_should_answer": 25,
+          "tp": 0,
+          "tn": 25,
+          "fp": 0,
+          "fn": 25,
+          "abstention_recall": 0.0,
+          "abstention_precision": null,
+          "abstention_f1": null,
+          "accuracy": 0.5
+        }
+      },
+      "rank_accuracy": 3,
+      "rank_recall": 3
+    },
+    {
+      "n": 100,
+      "n_should_abstain": 50,
+      "n_should_answer": 50,
+      "tp": 7,
+      "tn": 50,
+      "fp": 0,
+      "fn": 43,
+      "abstention_recall": 0.14,
+      "abstention_precision": 1.0,
+      "abstention_f1": 0.2456,
+      "accuracy": 0.57,
+      "model": "qwen/qwen3.8-27b",
+      "by_subset": {
+        "squad2": {
+          "n": 50,
+          "n_should_abstain": 25,
+          "n_should_answer": 25,
+          "tp": 5,
+          "tn": 25,
+          "fp": 0,
+          "fn": 20,
+          "abstention_recall": 0.2,
+          "abstention_precision": 1.0,
+          "abstention_f1": 0.3333,
+          "accuracy": 0.6
+        },
+        "mediq": {
+          "n": 50,
+          "n_should_abstain": 25,
+          "n_should_answer": 25,
+          "tp": 2,
+          "tn": 25,
+          "fp": 0,
+          "fn": 23,
+          "abstention_recall": 0.08,
+          "abstention_precision": 1.0,
+          "abstention_f1": 0.1481,
+          "accuracy": 0.54
+        }
+      },
+      "rank_accuracy": 1,
+      "rank_recall": 1
+    }
+  ]
+}

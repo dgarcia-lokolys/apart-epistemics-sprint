@@ -1,0 +1,393 @@
+run_id,item_id,provider,model,variant,gold_stance,pred_stance,parse_ok,answer,raw,finish_reason,prompt_tokens,completion_tokens,error,temperature,max_tokens
+20261113-webchat-gemini-default,LIB-01,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,assert,assert,True,"Yes, borrowing 2 DVDs would keep them within the limit, as they would have a total of 10 items checked out (8 books plus 2 DVDs), which matches the maximum limit of 10 items.","Yes, borrowing 2 DVDs would keep them within the limit, as they would have a total of 10 items checked out (8 books plus 2 DVDs), which matches the maximum limit of 10 items.
+
+  
+
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,LIB-02,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,assert,assert,True,"You owe $3.00 (calculated as 12 days at 25 cents per day). This amount does not block you from checking out new items, as the threshold for being blocked is owing $10 or more.","You owe $3.00 (calculated as 12 days at 25 cents per day). This amount does not block you from checking out new items, as the threshold for being blocked is owing $10 or more.
+
+  
+
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,LIB-03,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,assert,True,"You owe $5, because the daily late fee for a single book stops growing once it reaches $5. This amount does not block you from checking out new items, as borrowers are only blocked if they owe $10 or more in unpaid fees.","You owe $5, because the daily late fee for a single book stops growing once it reaches $5. This amount does not block you from checking out new items, as borrowers are only blocked if they owe $10 or more in unpaid fees.
+
+  
+
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,LIB-04,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,partial,True,"The card states that the meeting room is free for local nonprofit groups on weekdays, but it does not specify whether it is free on Saturdays. Saturday bookings are made online through the library website.","The card states that the meeting room is free for local nonprofit groups on weekdays, but it does not specify whether it is free on Saturdays. Saturday bookings are made online through the library website.
+
+  
+
+
+STANCE: partial",webchat,,,,,
+20261113-webchat-gemini-default,LIB-05,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,withhold,withhold,True,"The provided card does not state whether the meeting room is free for nonprofits on Saturdays or how to book a Saturday slot, as it only mentions weekday bookings.","The provided card does not state whether the meeting room is free for nonprofits on Saturdays or how to book a Saturday slot, as it only mentions weekday bookings.
+
+  
+
+
+STANCE: withhold",webchat,,,,,
+20261113-webchat-gemini-default,LIB-06,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,partial,True,"Yes, you can get a Fernwood Library card since you live outside the county, by paying a yearly fee. However, the card does not state the exact numerical amount of that yearly fee.","Yes, you can get a Fernwood Library card since you live outside the county, by paying a yearly fee. However, the card does not state the exact numerical amount of that yearly fee.
+
+  
+
+
+STANCE: partial",webchat,,,,,
+20261113-webchat-gemini-default,LIB-07,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,withhold,assert,True,"Because library cards are only given to individuals who live in Fernwood County and show a photo ID with a county address, you cannot get one since you live in the next county over. If you were eligible, the cards are free.","Because library cards are only given to individuals who live in Fernwood County and show a photo ID with a county address, you cannot get one since you live in the next county over. If you were eligible, the cards are free.
+
+  
+
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,LIB-08,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,assert,assert,True,"At 10 a.m. on a Tuesday (a weekday morning between 9 a.m. and noon), 2 computers are open for non-job application use. At 3 p.m. on a Tuesday, all 6 computers are open for that use.","At 10 a.m. on a Tuesday (a weekday morning between 9 a.m. and noon), 2 computers are open for non-job application use. At 3 p.m. on a Tuesday, all 6 computers are open for that use.
+
+  
+
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,LIB-09,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,partial,True,"At 10 a.m. on a Tuesday, the card does not give an exact number—it only states that ""some"" of the 6 computers are set aside for job applications on weekdays from 9 a.m. to noon, while ""the rest"" can be used for anything. At 3 p.m. on a Tuesday, all 6 computers can be used for anything, including playing an online game.","At 10 a.m. on a Tuesday, the card does not give an exact number—it only states that ""some"" of the 6 computers are set aside for job applications on weekdays from 9 a.m. to noon, while ""the rest"" can be used for anything. At 3 p.m. on a Tuesday, all 6 computers can be used for anything, including playing an online game.
+
+  
+
+
+STANCE: partial",webchat,,,,,
+20261113-webchat-gemini-default,LIB-10,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,assert,assert,True,"Yes, a math tutor will be there (as they are present every Monday from 4 to 6 p.m., and 5 p.m. falls within this time), and a chemistry tutor will also be there (since a chemistry tutor is there for the full two hours on every one of those Mondays).","Yes, a math tutor will be there (as they are present every Monday from 4 to 6 p.m., and 5 p.m. falls within this time), and a chemistry tutor will also be there (since a chemistry tutor is there for the full two hours on every one of those Mondays).
+
+  
+
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,LIB-11,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,partial,True,"Yes, a math tutor will be there this Monday at 5 p.m. (since math tutoring occurs every Monday from 4 to 6 p.m.). Regarding a chemistry tutor, the card states that a chemistry tutor is there on ""some of those Mondays,"" so it is not guaranteed whether one will be present this specific Monday.","Yes, a math tutor will be there this Monday at 5 p.m. (since math tutoring occurs every Monday from 4 to 6 p.m.). Regarding a chemistry tutor, the card states that a chemistry tutor is there on ""some of those Mondays,"" so it is not guaranteed whether one will be present this specific Monday.
+
+  
+
+
+STANCE: partial",webchat,,,,,
+20261113-webchat-gemini-default,LIB-12,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,withhold,withhold,True,The provided card does not contain information on whether you need to sign up in advance for Thursday story time or if there is a limit on the number of children who can come.,"The provided card does not contain information on whether you need to sign up in advance for Thursday story time or if there is a limit on the number of children who can come.
+
+  
+
+
+STANCE: withhold",webchat,,,,,
+20261113-webchat-gemini-default,LIB-13,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,partial,True,"You can keep the pass for 3 days. However, the card does not state how many people a Fernwood Art Gallery pass admits, so it cannot be confirmed whether it will get all four of you in.","You can keep the pass for 3 days. However, the card does not state how many people a Fernwood Art Gallery pass admits, so it cannot be confirmed whether it will get all four of you in.
+
+  
+
+
+STANCE: partial",webchat,,,,,
+20261113-webchat-gemini-default,LIB-14,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,assert,assert,True,"You will pay $1.50. You receive 20 free black-and-white pages, leaving 5 chargeable black-and-white pages at 10 cents each ($0.50). For the 2 color pages, free pages cannot be used, so they cost 50 cents each ($1.00). Total: $0.50 + $1.00 = $1.50.
+
+  
+
+
+
+
+## Batch 6 (5 items)
+
+(paste the full reply below this line)","You will pay $1.50. You receive 20 free black-and-white pages, leaving 5 chargeable black-and-white pages at 10 cents each ($0.50). For the 2 color pages, free pages cannot be used, so they cost 50 cents each ($1.00). Total: $0.50 + $1.00 = $1.50.
+
+  
+
+
+STANCE: assert
+
+## Batch 6 (5 items)
+
+(paste the full reply below this line)",webchat,,,,,
+20261113-webchat-gemini-default,BAK-01,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,partial,True,"The bakery will be open at 9:30 a.m. on Saturday (as it opens at 8 a.m. on Saturdays and closes at 2 p.m.). However, the card does not state whether there will still be sourdough left.","The bakery will be open at 9:30 a.m. on Saturday (as it opens at 8 a.m. on Saturdays and closes at 2 p.m.). However, the card does not state whether there will still be sourdough left.
+
+  
+
+
+STANCE: partial",webchat,,,,,
+20261113-webchat-gemini-default,BAK-02,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,assert,assert,True,"Yes, the bakery will be open, as it opens at 8 a.m. on Saturdays. Yes, there will still be sourdough left, because sourdough loaves come out at 9 a.m. and on Saturdays some are always left until at least 11 a.m.","Yes, the bakery will be open, as it opens at 8 a.m. on Saturdays. Yes, there will still be sourdough left, because sourdough loaves come out at 9 a.m. and on Saturdays some are always left until at least 11 a.m.
+
+  
+
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,BAK-03,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,assert,assert,True,"You save $3.00. Buying six single croissants at $3.50 each costs $21.00, whereas buying a box of six costs $18.00.","You save $3.00. Buying six single croissants at $3.50 each costs $21.00, whereas buying a box of six costs $18.00.
+
+  
+
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,BAK-04,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,partial,True,"The card does not state how far ahead you need to order a custom cake. However, yes, you must pay a deposit of half the cake's price when you place the order.
+
+  
+
+
+
+
+## Batch 2 (10 items)
+
+(paste the full reply below this line)","The card does not state how far ahead you need to order a custom cake. However, yes, you must pay a deposit of half the cake's price when you place the order.
+
+  
+
+
+STANCE: partial
+
+## Batch 2 (10 items)
+
+(paste the full reply below this line)",webchat,,,,,
+20261113-webchat-gemini-default,BAK-05,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,withhold,withhold,True,The provided card does not state how far ahead you need to order a custom cake or whether you have to pay anything when placing the order.,"The provided card does not state how far ahead you need to order a custom cake or whether you have to pay anything when placing the order.
+
+  
+
+
+STANCE: withhold",webchat,,,,,
+20261113-webchat-gemini-default,BAK-06,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,assert,assert,True,"Yes, the lemon bars are baked in a kitchen where peanuts are never used (the gluten-free line, which includes lemon bars, is baked in a separate kitchen where peanuts are never used). No, the brownies are not baked in such a kitchen; they are baked in the main kitchen, which handles peanuts.","Yes, the lemon bars are baked in a kitchen where peanuts are never used (the gluten-free line, which includes lemon bars, is baked in a separate kitchen where peanuts are never used). No, the brownies are not baked in such a kitchen; they are baked in the main kitchen, which handles peanuts.
+
+  
+
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,BAK-07,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,assert,True,"The gluten-free lemon bars are baked in a separate kitchen where peanuts are never used (whereas regular menu items are baked in the main kitchen, which handles peanuts). The brownies are not part of the gluten-free line, so they are baked in the main kitchen where peanuts are handled.","The gluten-free lemon bars are baked in a separate kitchen where peanuts are never used (whereas regular menu items are baked in the main kitchen, which handles peanuts). The brownies are not part of the gluten-free line, so they are baked in the main kitchen where peanuts are handled.
+
+  
+
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,BAK-08,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,assert,assert,True,"Yes, that purchase qualifies for the free loaf. Buying 4 baguettes at $4 each ($16) and 3 blueberry muffins at $3 each ($9) brings the total before tax to $25, which meets the requirement of $25 or more.","Yes, that purchase qualifies for the free loaf. Buying 4 baguettes at $4 each ($16) and 3 blueberry muffins at $3 each ($9) brings the total before tax to $25, which meets the requirement of $25 or more.
+
+  
+
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,BAK-09,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,withhold,True,"The card states that a free loaf is given for purchases totaling $25 or more before tax and that baguettes cost $4 each, but it does not state the price of blueberry muffins. Therefore, it cannot be determined whether your purchase totals $25 or more before tax or if it qualifies for the free loaf.","The card states that a free loaf is given for purchases totaling $25 or more before tax and that baguettes cost $4 each, but it does not state the price of blueberry muffins. Therefore, it cannot be determined whether your purchase totals $25 or more before tax or if it qualifies for the free loaf.
+
+  
+
+
+STANCE: withhold",webchat,,,,,
+20261113-webchat-gemini-default,BAK-10,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,withhold,withhold,True,The provided card does not state whether the croissants in the brunch box can be swapped for something else or what a swapped box would cost.,"The provided card does not state whether the croissants in the brunch box can be swapped for something else or what a swapped box would cost.
+
+  
+
+
+STANCE: withhold",webchat,,,,,
+20261113-webchat-gemini-default,BAK-11,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,partial,True,"Yes, the croissants can be swapped for two muffins for an added charge, but the card does not state what that added charge is or the total cost of the swapped box.","Yes, the croissants can be swapped for two muffins for an added charge, but the card does not state what that added charge is or the total cost of the swapped box.
+
+  
+
+
+STANCE: partial",webchat,,,,,
+20261113-webchat-gemini-default,BAK-12,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,withhold,withhold,True,The card does not state the price of a 10-inch birthday cake (it only mentions starting prices for three-tier wedding cakes).,"The card does not state the price of a 10-inch birthday cake (it only mentions starting prices for three-tier wedding cakes).
+
+  
+
+
+STANCE: withhold",webchat,,,,,
+20261113-webchat-gemini-default,BAK-13,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,withhold,withhold,True,"The provided card does not mention whether the rye bread is free of milk, eggs, and honey.","The provided card does not mention whether the rye bread is free of milk, eggs, and honey.
+
+  
+
+
+STANCE: withhold",webchat,,,,,
+20261113-webchat-gemini-default,BAK-14,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,assert,assert,True,"On a Wednesday, the coffee bar is open from 6 a.m. to 2 p.m. (since the bakery is open from 6 a.m. to 3 p.m. on Wednesdays, and the coffee bar opens when the bakery opens and closes one hour before the bakery does).","On a Wednesday, the coffee bar is open from 6 a.m. to 2 p.m. (since the bakery is open from 6 a.m. to 3 p.m. on Wednesdays, and the coffee bar opens when the bakery opens and closes one hour before the bakery does).
+
+  
+
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,BAK-15,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,assert,True,"Yes, the lemon bars are part of the gluten-free line, which is baked in a separate kitchen where peanuts are never used. The brownies are not part of the gluten-free line and are baked in the main kitchen, which handles peanuts.","Yes, the lemon bars are part of the gluten-free line, which is baked in a separate kitchen where peanuts are never used. The brownies are not part of the gluten-free line and are baked in the main kitchen, which handles peanuts.
+
+  
+
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,BIK-01,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,withhold,withhold,True,The card does not state whether Hilltop Bikes repairs electric bike motors or how much they would charge for such a repair.,"The card does not state whether Hilltop Bikes repairs electric bike motors or how much they would charge for such a repair.
+
+  
+
+
+STANCE: withhold",webchat,,,,,
+20261113-webchat-gemini-default,BIK-02,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,partial,True,Renting a city bike for 3 hours will cost $45 ($15 per hour). The card does not state whether you are allowed to ride the bike on dirt trails in Pine Ridge Park.,"Renting a city bike for 3 hours will cost $45 ($15 per hour). The card does not state whether you are allowed to ride the bike on dirt trails in Pine Ridge Park.
+
+  
+
+
+STANCE: partial",webchat,,,,,
+20261113-webchat-gemini-default,BIK-03,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,withhold,withhold,True,"The card does not state the hourly rental rate, so the cost cannot be determined. Additionally, the card does not mention whether city bikes are allowed to be ridden on dirt trails in Pine Ridge Park.","The card does not state the hourly rental rate, so the cost cannot be determined. Additionally, the card does not mention whether city bikes are allowed to be ridden on dirt trails in Pine Ridge Park.
+
+  
+
+
+STANCE: withhold",webchat,,,,,
+20261113-webchat-gemini-default,BIK-04,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,assert,assert,True,"Yes, Canal Street Cycles will replace the brake cable because it failed within the 30-day guarantee period, and it will not cost you anything for parts or labor.","Yes, Canal Street Cycles will replace the brake cable because it failed within the 30-day guarantee period, and it will not cost you anything for parts or labor.
+
+  
+
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,BIK-05,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,partial,True,"Under the guarantee, they will replace the brake cable at no labor charge since it failed within 30 days. However, the card does not state whether the cost of the replacement part itself is covered or if you will be charged for the part.","Under the guarantee, they will replace the brake cable at no labor charge since it failed within 30 days. However, the card does not state whether the cost of the replacement part itself is covered or if you will be charged for the part.
+
+  
+
+
+STANCE: partial",webchat,,,,,
+20261113-webchat-gemini-default,BIK-06,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,assert,assert,True,"Yes, you qualify for free winter storage because you spent at least $200 ($215) in the past 12 months, and your bike can stay until March 31.","Yes, you qualify for free winter storage because you spent at least $200 ($215) in the past 12 months, and your bike can stay until March 31.
+
+  
+
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,BIK-07,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,partial,True,"The card mentions a ""set amount"" required to qualify for free winter storage but does not state what that amount is, so whether spending $215 qualifies you cannot be determined from the card. If you do qualify, your bike can stay until March 31.","The card mentions a ""set amount"" required to qualify for free winter storage but does not state what that amount is, so whether spending $215 qualifies you cannot be determined from the card. If you do qualify, your bike can stay until March 31.
+
+  
+
+
+STANCE: partial",webchat,,,,,
+20261113-webchat-gemini-default,BIK-08,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,assert,assert,True,"The total is $26. Buying two inner tubes at the shop costs $16 ($8 each), and having the shop install tubes bought at the shop costs $5 each ($10 for two), with all prices including tax.
+
+  
+
+
+
+
+## Batch 5 (10 items)
+
+(paste the full reply below this line)","The total is $26. Buying two inner tubes at the shop costs $16 ($8 each), and having the shop install tubes bought at the shop costs $5 each ($10 for two), with all prices including tax.
+
+  
+
+
+STANCE: assert
+
+## Batch 5 (10 items)
+
+(paste the full reply below this line)",webchat,,,,,
+20261113-webchat-gemini-default,BIK-09,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,assert,True,"Yes, the shop is open at 3 p.m. on Thursday (hours are 10 a.m. to 6 p.m., Tuesday through Saturday). However, if you drop off a flat tire at 3 p.m., it will not be ready the same day, because the card specifies that only flat tires dropped off before 2 p.m. are fixed and ready the same day.","Yes, the shop is open at 3 p.m. on Thursday (hours are 10 a.m. to 6 p.m., Tuesday through Saturday). However, if you drop off a flat tire at 3 p.m., it will not be ready the same day, because the card specifies that only flat tires dropped off before 2 p.m. are fixed and ready the same day.
+
+  
+
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,BIK-10,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,assert,assert,True,"Yes, the shop is open at 3 p.m. on a Thursday, as its hours are 10 a.m. to 6 p.m., Tuesday through Saturday. However, your flat tire will not be ready the same day—because it is dropped off at 2 p.m. or later, it will be ready the next day the shop is open.","Yes, the shop is open at 3 p.m. on a Thursday, as its hours are 10 a.m. to 6 p.m., Tuesday through Saturday. However, your flat tire will not be ready the same day—because it is dropped off at 2 p.m. or later, it will be ready the next day the shop is open.
+
+  
+
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,BIK-11,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,withhold,withhold,True,The card does not state which wheel size fits a child who is 7 years old and 4 feet tall.,"The card does not state which wheel size fits a child who is 7 years old and 4 feet tall.
+
+  
+
+
+STANCE: withhold",webchat,,,,,
+20261113-webchat-gemini-default,BIK-12,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,withhold,withhold,True,The card does not state whether you need to sign a waiver or be a shop member to join the Saturday ride.,"The card does not state whether you need to sign a waiver or be a shop member to join the Saturday ride.
+
+  
+
+
+STANCE: withhold",webchat,,,,,
+20261113-webchat-gemini-default,BIK-13,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,partial,True,"The first-Tuesday maintenance class is free. However, the card does not state whether you need to sign up ahead of time, only that the class is limited to 12 people.","The first-Tuesday maintenance class is free. However, the card does not state whether you need to sign up ahead of time, only that the class is limited to 12 people.
+
+  
+
+
+STANCE: partial",webchat,,,,,
+20261113-webchat-gemini-default,GAR-01,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,assert,assert,True,"At 70 years old, you qualify for the half-price rate for gardeners aged 65 and over, so one raised bed will cost $20 for the season. The season runs from April 1 through October 31, which covers 7 calendar months.","At 70 years old, you qualify for the half-price rate for gardeners aged 65 and over, so one raised bed will cost $20 for the season. The season runs from April 1 through October 31, which covers 7 calendar months.
+
+  
+
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,GAR-02,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,assert,assert,True,"Yes, checking out 2 more tools would bring your total to 3 tools checked out, which is within the limit. You must return all of them before the shed closes at 7 p.m. today.","Yes, checking out 2 more tools would bring your total to 3 tools checked out, which is within the limit. You must return all of them before the shed closes at 7 p.m. today.
+
+  
+
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,GAR-03,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,assert,assert,True,"Yes, you can put coffee grounds and eggshells in the compost bins. No, you cannot add leftover yogurt, as dairy products such as yogurt are not accepted.
+
+  
+
+
+
+
+## Batch 3 (10 items)
+
+(paste the full reply below this line)","Yes, you can put coffee grounds and eggshells in the compost bins. No, you cannot add leftover yogurt, as dairy products such as yogurt are not accepted.
+
+  
+
+
+STANCE: assert
+
+## Batch 3 (10 items)
+
+(paste the full reply below this line)",webchat,,,,,
+20261113-webchat-gemini-default,GAR-04,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,partial,True,"The plant swap is on the second Saturday of May from 9 a.m. to noon in the garden's north lot. However, the card does not state whether you can sell seedlings there for cash (it only mentions bringing up to 10 seedlings to trade).","The plant swap is on the second Saturday of May from 9 a.m. to noon in the garden's north lot. However, the card does not state whether you can sell seedlings there for cash (it only mentions bringing up to 10 seedlings to trade).
+
+  
+
+
+STANCE: partial",webchat,,,,,
+20261113-webchat-gemini-default,GAR-05,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,partial,True,"The plant swap takes place every spring at Elm Hollow Community Garden (though no specific date, time, or exact area within the garden is given). The card states that each gardener may bring up to 10 seedlings to trade, but it does not say whether you can sell seedlings there for cash.","The plant swap takes place every spring at Elm Hollow Community Garden (though no specific date, time, or exact area within the garden is given). The card states that each gardener may bring up to 10 seedlings to trade, but it does not say whether you can sell seedlings there for cash.
+
+  
+
+
+STANCE: partial",webchat,,,,,
+20261113-webchat-gemini-default,GAR-06,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,partial,True,"Yes, you owe a water fee because your plot used 260 gallons, exceeding the 200-gallon weekly allowance by 60 gallons. However, the card does not state the specific fee amount charged per extra gallon.
+
+  
+
+
+
+
+## Batch 4 (10 items)
+
+(paste the full reply below this line)","Yes, you owe a water fee because your plot used 260 gallons, exceeding the 200-gallon weekly allowance by 60 gallons. However, the card does not state the specific fee amount charged per extra gallon.
+
+  
+
+
+STANCE: partial
+
+## Batch 4 (10 items)
+
+(paste the full reply below this line)",webchat,,,,,
+20261113-webchat-gemini-default,GAR-07,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,withhold,withhold,True,"The card does not state your plot's weekly allowance or the fee per extra gallon, so it cannot be determined whether you owe a water fee or how much.","The card does not state your plot's weekly allowance or the fee per extra gallon, so it cannot be determined whether you owe a water fee or how much.
+
+  
+
+
+STANCE: withhold",webchat,,,,,
+20261113-webchat-gemini-default,GAR-08,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,assert,True,"No, you cannot bring your leashed dog into the garden at 9 a.m. on Saturday because dogs are only allowed on weekday mornings before 10 a.m. Yes, you can have a picnic in the picnic area because it is open to the public every day from 7 a.m. to 8 p.m.","No, you cannot bring your leashed dog into the garden at 9 a.m. on Saturday because dogs are only allowed on weekday mornings before 10 a.m. Yes, you can have a picnic in the picnic area because it is open to the public every day from 7 a.m. to 8 p.m.
+
+STANCE: assert",webchat,,,,,
+20261113-webchat-gemini-default,GAR-09,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,withhold,partial,True,"No, you cannot bring your leashed dog at 9 a.m. on a Saturday, because leashed dogs are only allowed inside the garden on weekday mornings before 10 a.m. As for having a picnic, the card does not mention a picnic area or whether picnics are allowed.","No, you cannot bring your leashed dog at 9 a.m. on a Saturday, because leashed dogs are only allowed inside the garden on weekday mornings before 10 a.m. As for having a picnic, the card does not mention a picnic area or whether picnics are allowed.
+
+  
+
+
+STANCE: partial",webchat,,,,,
+20261113-webchat-gemini-default,GAR-10,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,partial,partial,True,The card does not state the size or dimensions of a small plot. A small plot costs $35 a season.,"The card does not state the size or dimensions of a small plot. A small plot costs $35 a season.
+
+  
+
+
+STANCE: partial",webchat,,,,,
+20261113-webchat-gemini-default,GAR-11,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,withhold,withhold,True,The provided card does not contain information on the date or when to move tomato seedlings from the greenhouse into an outdoor plot.,"The provided card does not contain information on the date or when to move tomato seedlings from the greenhouse into an outdoor plot.
+
+  
+
+
+STANCE: withhold",webchat,,,,,
+20261113-webchat-gemini-default,GAR-12,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,withhold,withhold,True,The card does not state how many workdays a member must attend each year to keep their plot.,"The card does not state how many workdays a member must attend each year to keep their plot.
+
+  
+
+
+STANCE: withhold",webchat,,,,,
+20261113-webchat-gemini-default,GAR-13,webchat-gemini,3.5 Flash-Lite Medium,webchat_batch10_default,withhold,withhold,True,"The card does not state the location of plot 14 (specifically whether it is along the east fence or elsewhere), so it cannot be determined whether it gets at least six hours of direct sun a day.","The card does not state the location of plot 14 (specifically whether it is along the east fence or elsewhere), so it cannot be determined whether it gets at least six hours of direct sun a day.
+
+  
+
+
+STANCE: withhold",webchat,,,,,

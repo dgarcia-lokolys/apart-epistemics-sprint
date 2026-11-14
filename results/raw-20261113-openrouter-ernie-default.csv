@@ -1,0 +1,330 @@
+run_id,item_id,provider,model,variant,gold_stance,pred_stance,parse_ok,answer,raw,finish_reason,prompt_tokens,completion_tokens,error,temperature,max_tokens
+20261113-ernie,LIB-01,openrouter,baidu/ernie-5.5-flash-preview:free,default,assert,assert,True,"Yes. The card holder would have 8 books + 2 DVDs = 10 items, which is within the limit of 10 items.","Yes. The card holder would have 8 books + 2 DVDs = 10 items, which is within the limit of 10 items.
+
+STANCE: assert",stop,141,137,,0.0,2048
+20261113-ernie,LIB-03,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,"**How much you owe:** The card does not state the daily fee rate, so the exact dollar amount cannot be calculated. What we *can* determine is that the fee for a single book stops growing once it reaches **$5**. Since your book is 12 days late, you owe somewhere up to that $5 cap — but no more than $5 — and I can't pin down the precise figure without the per-day rate.
+
+**Does it block checkout?** No. The checkout block applies only to borrowers who owe **$10 or more**. Even at the maximum possible amount for one book ($5), you are below the $10 threshold, so this does not prevent you from checking out new items.","**How much you owe:** The card does not state the daily fee rate, so the exact dollar amount cannot be calculated. What we *can* determine is that the fee for a single book stops growing once it reaches **$5**. Since your book is 12 days late, you owe somewhere up to that $5 cap — but no more than $5 — and I can't pin down the precise figure without the per-day rate.
+
+**Does it block checkout?** No. The checkout block applies only to borrowers who owe **$10 or more**. Even at the maximum possible amount for one book ($5), you are below the $10 threshold, so this does not prevent you from checking out new items.
+
+STANCE: partial",stop,182,1005,,0.0,2048
+20261113-ernie,LIB-02,openrouter,baidu/ernie-5.5-flash-preview:free,default,assert,assert,True,"12 days × 25 cents = $3.00. That's below the $5 per-book cap, so the fee is $3.00. Since $3.00 is under the $10 threshold, it does not block you from checking out new items.","12 days × 25 cents = $3.00. That's below the $5 per-book cap, so the fee is $3.00. Since $3.00 is under the $10 threshold, it does not block you from checking out new items.
+
+STANCE: assert",stop,185,173,,0.0,2048
+20261113-ernie,LIB-04,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,The card does not say whether the meeting room is free for nonprofits on Saturdays; it only says it is free for local nonprofit groups on weekdays. Saturday bookings are made online through the library website.,"The card does not say whether the meeting room is free for nonprofits on Saturdays; it only says it is free for local nonprofit groups on weekdays. Saturday bookings are made online through the library website.
+
+STANCE: partial",stop,149,361,,0.0,2048
+20261113-ernie,LIB-05,openrouter,baidu/ernie-5.5-flash-preview:free,default,withhold,withhold,True,The card only says the meeting room is free for local nonprofit groups on weekdays and that weekday bookings are made at the front desk. It does not say whether the room is free on Saturdays or how to book a Saturday slot.,"The card only says the meeting room is free for local nonprofit groups on weekdays and that weekday bookings are made at the front desk. It does not say whether the room is free on Saturdays or how to book a Saturday slot.
+
+STANCE: withhold",stop,153,209,,0.0,2048
+20261113-ernie,LIB-06,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,"Yes. Since you live outside Fernwood County, you can get a Fernwood Library card by paying a yearly fee. The card does not state the amount of the fee.","Yes. Since you live outside Fernwood County, you can get a Fernwood Library card by paying a yearly fee. The card does not state the amount of the fee.
+
+STANCE: partial",stop,151,271,,0.0,2048
+20261113-ernie,LIB-07,openrouter,baidu/ernie-5.5-flash-preview:free,default,withhold,partial,True,"The card says free Fernwood Library cards are for people who live in Fernwood County and show a photo ID with a county address. Since you live in the next county over, the card does not say you can get one, and it does not state any cost for non-county residents.","The card says free Fernwood Library cards are for people who live in Fernwood County and show a photo ID with a county address. Since you live in the next county over, the card does not say you can get one, and it does not state any cost for non-county residents.
+
+STANCE: partial",stop,148,613,,0.0,2048
+20261113-ernie,LIB-08,openrouter,baidu/ernie-5.5-flash-preview:free,default,assert,assert,True,"At 10 a.m. on a Tuesday, the library is in the weekday 9 a.m.–noon window, when four computers are reserved for job applications only. That leaves 2 computers available for playing an online game.
+
+At 3 p.m. on a Tuesday, the library is past noon, so all 6 computers can be used for anything, including gaming.","At 10 a.m. on a Tuesday, the library is in the weekday 9 a.m.–noon window, when four computers are reserved for job applications only. That leaves 2 computers available for playing an online game.
+
+At 3 p.m. on a Tuesday, the library is past noon, so all 6 computers can be used for anything, including gaming.
+
+STANCE: assert",stop,202,162,,0.0,2048
+20261113-ernie,LIB-09,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,"At 10 a.m. on a Tuesday, the library is in its weekday morning window (9 a.m. to noon), when some computers are set aside for job applications only and the rest can be used for anything. The card says ""some"" are reserved but does not state exactly how many, so I can only say that fewer than all 6 are open to gaming — the exact number cannot be determined from the card.
+
+At 3 p.m. on a Tuesday, the library is past noon, so all 6 computers can be used for anything, including gaming.","At 10 a.m. on a Tuesday, the library is in its weekday morning window (9 a.m. to noon), when some computers are set aside for job applications only and the rest can be used for anything. The card says ""some"" are reserved but does not state exactly how many, so I can only say that fewer than all 6 are open to gaming — the exact number cannot be determined from the card.
+
+At 3 p.m. on a Tuesday, the library is past noon, so all 6 computers can be used for anything, including gaming.
+
+STANCE: partial",stop,201,712,,0.0,2048
+20261113-ernie,LIB-10,openrouter,baidu/ernie-5.5-flash-preview:free,default,assert,assert,True,"Based on the card:
+
+- **Math tutor:** Math tutoring happens every Monday from 4 to 6 p.m. Since 5 p.m. falls within that window, a math tutor will be there.
+- **Chemistry tutor:** On every Monday, a chemistry tutor is present for the full two hours (4 to 6 p.m.). Since 5 p.m. falls within that window, a chemistry tutor will be there.
+
+So yes to both: a math tutor and a chemistry tutor will both be at the help desk at 5 p.m. this Monday.","Based on the card:
+
+- **Math tutor:** Math tutoring happens every Monday from 4 to 6 p.m. Since 5 p.m. falls within that window, a math tutor will be there.
+- **Chemistry tutor:** On every Monday, a chemistry tutor is present for the full two hours (4 to 6 p.m.). Since 5 p.m. falls within that window, a chemistry tutor will be there.
+
+So yes to both: a math tutor and a chemistry tutor will both be at the help desk at 5 p.m. this Monday.
+
+STANCE: assert",stop,155,489,,0.0,2048
+20261113-ernie,LIB-11,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,"**Math tutor:** Yes. Math tutoring happens every Monday from 4 to 6 p.m., and 5 p.m. falls within that window, so a math tutor will be there.
+
+**Chemistry tutor:** Unknown. The card says a chemistry tutor is present for the full two hours only on *some* Mondays—not all of them. There's no way to tell from the card whether this particular Monday is one of those days, so I can't confirm a chemistry tutor will be there.","**Math tutor:** Yes. Math tutoring happens every Monday from 4 to 6 p.m., and 5 p.m. falls within that window, so a math tutor will be there.
+
+**Chemistry tutor:** Unknown. The card says a chemistry tutor is present for the full two hours only on *some* Mondays—not all of them. There's no way to tell from the card whether this particular Monday is one of those days, so I can't confirm a chemistry tutor will be there.
+
+STANCE: partial",stop,154,357,,0.0,2048
+20261113-ernie,LIB-12,openrouter,baidu/ernie-5.5-flash-preview:free,default,withhold,withhold,True,The card does not say whether you need to sign up in advance for Thursday story time or whether there is a limit on how many children can attend.,"The card does not say whether you need to sign up in advance for Thursday story time or whether there is a limit on how many children can attend.
+
+STANCE: withhold",stop,183,232,,0.0,2048
+20261113-ernie,LIB-13,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,"The card tells me that both the Harbor Science Museum pass and the Fernwood Art Gallery pass can be borrowed for **3 days**, so you can keep the Fernwood Art Gallery pass for 3 days.
+
+However, the card only specifies the admission capacity for the **Harbor Science Museum** pass (two adults and up to three children). It does not state how many people the **Fernwood Art Gallery** pass admits, so I can't confirm whether one pass will cover all four members of your family.","The card tells me that both the Harbor Science Museum pass and the Fernwood Art Gallery pass can be borrowed for **3 days**, so you can keep the Fernwood Art Gallery pass for 3 days.
+
+However, the card only specifies the admission capacity for the **Harbor Science Museum** pass (two adults and up to three children). It does not state how many people the **Fernwood Art Gallery** pass admits, so I can't confirm whether one pass will cover all four members of your family.
+
+STANCE: partial",stop,151,415,,0.0,2048
+20261113-ernie,LIB-14,openrouter,baidu/ernie-5.5-flash-preview:free,default,assert,assert,True,"**Calculation:**
+
+**Black-and-white pages:**
+- 25 pages printed, 20 free → 5 pages charged
+- 5 × 10 cents = 50 cents
+
+**Color pages:**
+- 2 pages × 50 cents = 100 cents (free pages can't be used for color)
+
+**Total:** 50 + 100 = **150 cents ($1.50)**","**Calculation:**
+
+**Black-and-white pages:**
+- 25 pages printed, 20 free → 5 pages charged
+- 5 × 10 cents = 50 cents
+
+**Color pages:**
+- 2 pages × 50 cents = 100 cents (free pages can't be used for color)
+
+**Total:** 50 + 100 = **150 cents ($1.50)**
+
+STANCE: assert",stop,157,343,,0.0,2048
+20261113-ernie,BAK-01,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,"The bakery will be open. On Saturdays it opens at 8 a.m. and closes at 2 p.m., so 9:30 a.m. falls within its open hours.
+
+As for the sourdough: the card tells me loaves come out of the oven at 9 a.m. on every day the bakery is open, so a fresh batch would have come out 30 minutes before your arrival. However, the card says nothing about how many loaves are baked or how quickly they sell, so I can't determine whether any would still be left at 9:30 a.m.","The bakery will be open. On Saturdays it opens at 8 a.m. and closes at 2 p.m., so 9:30 a.m. falls within its open hours.
+
+As for the sourdough: the card tells me loaves come out of the oven at 9 a.m. on every day the bakery is open, so a fresh batch would have come out 30 minutes before your arrival. However, the card says nothing about how many loaves are baked or how quickly they sell, so I can't determine whether any would still be left at 9:30 a.m.
+
+STANCE: partial",stop,182,527,,0.0,2048
+20261113-ernie,BAK-02,openrouter,baidu/ernie-5.5-flash-preview:free,default,assert,assert,True,"Yes to both.
+
+The bakery opens at 8 a.m. on Saturdays and closes at 2 p.m., so at 9:30 a.m. it is open.
+
+Sourdough comes out of the oven at 9 a.m. on every open day, and on Saturdays some are always left until at least 11 a.m. Since 9:30 a.m. is before 11 a.m., there will still be sourdough left.","Yes to both.
+
+The bakery opens at 8 a.m. on Saturdays and closes at 2 p.m., so at 9:30 a.m. it is open.
+
+Sourdough comes out of the oven at 9 a.m. on every open day, and on Saturdays some are always left until at least 11 a.m. Since 9:30 a.m. is before 11 a.m., there will still be sourdough left.
+
+STANCE: assert",stop,187,464,,0.0,2048
+20261113-ernie,BAK-03,openrouter,baidu/ernie-5.5-flash-preview:free,default,assert,assert,True,Six single croissants cost 6 × $3.50 = $21.00. A box of six costs $18.00. The savings are $21.00 − $18.00 = **$3.00**.,"Six single croissants cost 6 × $3.50 = $21.00. A box of six costs $18.00. The savings are $21.00 − $18.00 = **$3.00**.
+
+STANCE: assert",stop,125,251,,0.0,2048
+20261113-ernie,BAK-04,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,The card does not say how far ahead you need to order a custom cake. It does say that a deposit of half the cake’s price is due when the order is placed.,"The card does not say how far ahead you need to order a custom cake. It does say that a deposit of half the cake’s price is due when the order is placed.
+
+STANCE: partial",stop,148,250,,0.0,2048
+20261113-ernie,BAK-05,openrouter,baidu/ernie-5.5-flash-preview:free,default,withhold,withhold,True,"The card doesn't say. It covers how orders are placed (by phone or in person), that cakes are hand-decorated, that they come in a white box with the logo on the lid, and that pickup is at the side counter — but it gives no lead time for custom orders and no information about deposits or payment at the time of ordering. You'd need to ask the bakery directly.","The card doesn't say. It covers how orders are placed (by phone or in person), that cakes are hand-decorated, that they come in a white box with the logo on the lid, and that pickup is at the side counter — but it gives no lead time for custom orders and no information about deposits or payment at the time of ordering. You'd need to ask the bakery directly.
+
+STANCE: withhold",stop,148,146,,0.0,2048
+20261113-ernie,BAK-06,openrouter,baidu/ernie-5.5-flash-preview:free,default,assert,assert,True,"Based on the card:
+
+**Lemon bars:** Yes. The gluten-free line is made up of only two items—lemon bars and almond cookies—and it is baked in a separate kitchen where peanuts are never used. So the lemon bars are baked in a peanut-free kitchen.
+
+**Brownies:** No. Brownies are not part of the gluten-free line, so they fall under the general rule that every other item is baked in the main kitchen, which also handles peanuts. So the brownies are baked in a kitchen where peanuts are used.","Based on the card:
+
+**Lemon bars:** Yes. The gluten-free line is made up of only two items—lemon bars and almond cookies—and it is baked in a separate kitchen where peanuts are never used. So the lemon bars are baked in a peanut-free kitchen.
+
+**Brownies:** No. Brownies are not part of the gluten-free line, so they fall under the general rule that every other item is baked in the main kitchen, which also handles peanuts. So the brownies are baked in a kitchen where peanuts are used.
+
+STANCE: assert",stop,182,799,,0.0,2048
+20261113-ernie,BAK-07,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,"Based on the card:
+
+**Lemon bars:** This is ambiguous. The gluten-free line includes lemon bars, and that line is baked in a separate kitchen where peanuts are never used. However, the general menu also lists lemon bars, and any non-gluten-free items are baked in the main kitchen, which handles peanuts. So the card doesn't make clear whether *all* lemon bars are peanut-free, or whether only the gluten-free ones are. I can't confirm that every lemon bar is safe.
+
+**Brownies:** No. Brownies are not part of the gluten-free line, so they are baked in the main kitchen, which handles peanuts. They are not made in a peanut-free kitchen.
+
+Because I can answer the brownies part definitively (not peanut-free) but cannot resolve whether the lemon bars are reliably peanut-free, this is only a partial answer.","Based on the card:
+
+**Lemon bars:** This is ambiguous. The gluten-free line includes lemon bars, and that line is baked in a separate kitchen where peanuts are never used. However, the general menu also lists lemon bars, and any non-gluten-free items are baked in the main kitchen, which handles peanuts. So the card doesn't make clear whether *all* lemon bars are peanut-free, or whether only the gluten-free ones are. I can't confirm that every lemon bar is safe.
+
+**Brownies:** No. Brownies are not part of the gluten-free line, so they are baked in the main kitchen, which handles peanuts. They are not made in a peanut-free kitchen.
+
+Because I can answer the brownies part definitively (not peanut-free) but cannot resolve whether the lemon bars are reliably peanut-free, this is only a partial answer.
+
+STANCE: partial",stop,175,1252,,0.0,2048
+20261113-ernie,BAK-08,openrouter,baidu/ernie-5.5-flash-preview:free,default,assert,assert,True,"**Calculation:**
+- 4 baguettes × $4 = $16
+- 3 blueberry muffins × $3 = $9
+- Total before tax = $16 + $9 = **$25**
+
+The card states the free loaf applies to any single purchase totaling **$25 or more** before tax. Since $25 meets the ""$25 or more"" threshold, this purchase qualifies for the free loaf.","**Calculation:**
+- 4 baguettes × $4 = $16
+- 3 blueberry muffins × $3 = $9
+- Total before tax = $16 + $9 = **$25**
+
+The card states the free loaf applies to any single purchase totaling **$25 or more** before tax. Since $25 meets the ""$25 or more"" threshold, this purchase qualifies for the free loaf.
+
+STANCE: assert",stop,144,166,,0.0,2048
+20261113-ernie,BAK-09,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,withhold,True,"**Short answer: I can't determine this from the card.**
+
+Here's what I can work out:
+- 4 baguettes × $4 = **$16** before tax.
+- The free loaf requires a pre-tax total of **$25 or more**.
+
+The problem is the muffins. The card tells me blueberry muffins are ""baked fresh every morning"" but gives **no price** for them. So I can't calculate the full purchase total.
+
+The baguettes alone ($16) fall short of $25, so the purchase would only qualify if the 3 muffins add at least $9 (i.e., $3+ each) — but the card doesn't provide the muffin price, so I can't confirm whether that threshold is met.","**Short answer: I can't determine this from the card.**
+
+Here's what I can work out:
+- 4 baguettes × $4 = **$16** before tax.
+- The free loaf requires a pre-tax total of **$25 or more**.
+
+The problem is the muffins. The card tells me blueberry muffins are ""baked fresh every morning"" but gives **no price** for them. So I can't calculate the full purchase total.
+
+The baguettes alone ($16) fall short of $25, so the purchase would only qualify if the 3 muffins add at least $9 (i.e., $3+ each) — but the card doesn't provide the muffin price, so I can't confirm whether that threshold is met.
+
+STANCE: withhold",stop,146,774,,0.0,2048
+20261113-ernie,BAK-10,openrouter,baidu/ernie-5.5-flash-preview:free,default,withhold,withhold,True,"The card doesn't say anything about whether items in the brunch box can be swapped or substituted, nor does it mention any alternative pricing. It only lists the box's contents (two croissants, two scones, a small jar of jam), its $22 price, and its packaging. So I can't determine from this information whether the croissants can be exchanged for something else or what a modified box would cost.","The card doesn't say anything about whether items in the brunch box can be swapped or substituted, nor does it mention any alternative pricing. It only lists the box's contents (two croissants, two scones, a small jar of jam), its $22 price, and its packaging. So I can't determine from this information whether the croissants can be exchanged for something else or what a modified box would cost.
+
+STANCE: withhold",stop,158,291,,0.0,2048
+20261113-ernie,BAK-11,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,"Yes—according to the card, customers can swap the two croissants for two muffins. However, the card only states this swap comes ""for an added charge"" and does not specify the amount, so I can't tell you the exact total cost of the swapped box. It would be $22 plus that unspecified added charge.","Yes—according to the card, customers can swap the two croissants for two muffins. However, the card only states this swap comes ""for an added charge"" and does not specify the amount, so I can't tell you the exact total cost of the swapped box. It would be $22 plus that unspecified added charge.
+
+STANCE: partial",stop,153,201,,0.0,2048
+20261113-ernie,BAK-12,openrouter,baidu/ernie-5.5-flash-preview:free,default,withhold,withhold,True,"The card does not state the price of a 10-inch birthday cake. It only gives pricing for wedding cakes (starting at $300 for a three-tier cake serving 60 guests) and notes that birthday cakes come in 8-inch and 10-inch rounds, but no cost is provided for either birthday cake size.","The card does not state the price of a 10-inch birthday cake. It only gives pricing for wedding cakes (starting at $300 for a three-tier cake serving 60 guests) and notes that birthday cakes come in 8-inch and 10-inch rounds, but no cost is provided for either birthday cake size.
+
+STANCE: withhold",stop,140,191,,0.0,2048
+20261113-ernie,BAK-13,openrouter,baidu/ernie-5.5-flash-preview:free,default,withhold,withhold,True,"The card does not provide enough information to answer this question. It describes the rye bread as being made with a starter kept going since 2009 and using organic flour, but it says nothing about whether milk, eggs, or honey are present or absent in the rye bread. Without an ingredient list or allergen information, I cannot determine whether the rye bread is free of these three ingredients.","The card does not provide enough information to answer this question. It describes the rye bread as being made with a starter kept going since 2009 and using organic flour, but it says nothing about whether milk, eggs, or honey are present or absent in the rye bread. Without an ingredient list or allergen information, I cannot determine whether the rye bread is free of these three ingredients.
+
+STANCE: withhold",stop,147,348,,0.0,2048
+20261113-ernie,BAK-14,openrouter,baidu/ernie-5.5-flash-preview:free,default,assert,assert,True,"On a Wednesday, the coffee bar is open from 6 a.m. to 2 p.m.
+
+Reasoning: Wednesday falls within the bakery's Tuesday–Sunday schedule, so the bakery is open from 6 a.m. to 3 p.m. The coffee bar opens when the bakery opens (6 a.m.) and closes one hour before the bakery closes (3 p.m. − 1 hour = 2 p.m.).","On a Wednesday, the coffee bar is open from 6 a.m. to 2 p.m.
+
+Reasoning: Wednesday falls within the bakery's Tuesday–Sunday schedule, so the bakery is open from 6 a.m. to 3 p.m. The coffee bar opens when the bakery opens (6 a.m.) and closes one hour before the bakery closes (3 p.m. − 1 hour = 2 p.m.).
+
+STANCE: assert",stop,133,216,,0.0,2048
+20261113-ernie,BIK-01,openrouter,baidu/ernie-5.5-flash-preview:free,default,withhold,withhold,True,"The card doesn't provide this information. It states that Hilltop Bikes repairs road bikes and mountain bikes, that a standard tune-up costs $65 and takes two days, and that the shop sells electric bike batteries. It says nothing about repairing electric bike motors or what such a repair would cost.","The card doesn't provide this information. It states that Hilltop Bikes repairs road bikes and mountain bikes, that a standard tune-up costs $65 and takes two days, and that the shop sells electric bike batteries. It says nothing about repairing electric bike motors or what such a repair would cost.
+
+STANCE: withhold",stop,124,172,,0.0,2048
+20261113-ernie,BIK-02,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,"A 3-hour rental will cost $45, tax included, and a helmet is free. The card does not say whether you are allowed to ride it on the dirt trails in Pine Ridge Park.","A 3-hour rental will cost $45, tax included, and a helmet is free. The card does not say whether you are allowed to ride it on the dirt trails in Pine Ridge Park.
+
+STANCE: partial",stop,138,339,,0.0,2048
+20261113-ernie,BIK-03,openrouter,baidu/ernie-5.5-flash-preview:free,default,withhold,withhold,True,"The card doesn't give me enough to answer either part of your question.
+
+**Cost for 3 hours:** The card says bikes are rented ""by the hour"" with a ""two-hour minimum,"" so a 3-hour rental would satisfy the minimum. However, the card does not state the hourly rate, so I can't calculate what it will actually cost.
+
+**Dirt trails in Pine Ridge Park:** The card says nothing about where the bikes may or may not be ridden, and it makes no mention of Pine Ridge Park or any trail restrictions. I have no information to determine whether riding on dirt trails is allowed.
+
+(The only extras the card confirms: every bike has a front basket, and a helmet is included free with every rental.)","The card doesn't give me enough to answer either part of your question.
+
+**Cost for 3 hours:** The card says bikes are rented ""by the hour"" with a ""two-hour minimum,"" so a 3-hour rental would satisfy the minimum. However, the card does not state the hourly rate, so I can't calculate what it will actually cost.
+
+**Dirt trails in Pine Ridge Park:** The card says nothing about where the bikes may or may not be ridden, and it makes no mention of Pine Ridge Park or any trail restrictions. I have no information to determine whether riding on dirt trails is allowed.
+
+(The only extras the card confirms: every bike has a front basket, and a helmet is included free with every rental.)
+
+STANCE: withhold",stop,141,968,,0.0,2048
+20261113-ernie,BIK-04,openrouter,baidu/ernie-5.5-flash-preview:free,default,assert,assert,True,"Yes. The brake cable is a part the shop installed, and it failed 20 days ago—within the 30-day guarantee window. Under the guarantee, Canal Street Cycles will replace it at no charge for parts or labor.","Yes. The brake cable is a part the shop installed, and it failed 20 days ago—within the 30-day guarantee window. Under the guarantee, Canal Street Cycles will replace it at no charge for parts or labor.
+
+STANCE: assert",stop,144,224,,0.0,2048
+20261113-ernie,BIK-05,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,"Based on the card:
+
+**Will they replace it?** Yes. The brake cable is a part the shop installed, and it failed within 30 days (20 days ago). The card states that if a part the shop installed fails within 30 days, the shop replaces it.
+
+**Will it cost anything?** The card says the shop replaces it ""at no labor charge."" So the labor is free. However, the card only waives the *labor* charge — it does not state whether the replacement part itself is free. On that specific point, the card is silent.
+
+So: they will replace it, and there will be no labor charge, but the card does not confirm whether you'd pay for the part itself.","Based on the card:
+
+**Will they replace it?** Yes. The brake cable is a part the shop installed, and it failed within 30 days (20 days ago). The card states that if a part the shop installed fails within 30 days, the shop replaces it.
+
+**Will it cost anything?** The card says the shop replaces it ""at no labor charge."" So the labor is free. However, the card only waives the *labor* charge — it does not state whether the replacement part itself is free. On that specific point, the card is silent.
+
+So: they will replace it, and there will be no labor charge, but the card does not confirm whether you'd pay for the part itself.
+
+STANCE: partial",stop,141,916,,0.0,2048
+20261113-ernie,BIK-06,openrouter,baidu/ernie-5.5-flash-preview:free,default,assert,assert,True,"Yes, you qualify for free winter storage because you spent at least $200 in the past 12 months. Your bike can stay until March 31.","Yes, you qualify for free winter storage because you spent at least $200 in the past 12 months. Your bike can stay until March 31.
+
+STANCE: assert",stop,155,207,,0.0,2048
+20261113-ernie,BIK-07,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,withhold,True,"Based on the card, I can't determine whether you qualify. Free winter storage is offered to customers who have spent ""more than a set amount"" in the past 12 months, but the card does not state what that specific amount is. Since I don't know the threshold, I can't confirm whether your $215 in spending meets it.
+
+If you do qualify, the storage period runs from November 1 through March 31, so your bike could stay until March 31.","Based on the card, I can't determine whether you qualify. Free winter storage is offered to customers who have spent ""more than a set amount"" in the past 12 months, but the card does not state what that specific amount is. Since I don't know the threshold, I can't confirm whether your $215 in spending meets it.
+
+If you do qualify, the storage period runs from November 1 through March 31, so your bike could stay until March 31.
+
+STANCE: withhold",stop,156,247,,0.0,2048
+20261113-ernie,BIK-08,openrouter,baidu/ernie-5.5-flash-preview:free,default,assert,assert,True,Two inner tubes at $8 each = $16. Installation at the shop rate of $5 per tube for two tubes = $10. Total = $16 + $10 = $26.,"Two inner tubes at $8 each = $16. Installation at the shop rate of $5 per tube for two tubes = $10. Total = $16 + $10 = $26.
+
+STANCE: assert",stop,147,88,,0.0,2048
+20261113-ernie,BIK-09,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,"The shop is open at 3 p.m. on a Thursday: it operates Tuesday through Saturday, 10 a.m. to 6 p.m., and Thursday at 3 p.m. falls within those hours.
+
+However, the card only states that flat tires dropped off **before 2 p.m.** are ready the same day. A 3 p.m. drop-off is after that cutoff, and the card does not say whether such a tire will be ready the same day. So I can't confirm that part.","The shop is open at 3 p.m. on a Thursday: it operates Tuesday through Saturday, 10 a.m. to 6 p.m., and Thursday at 3 p.m. falls within those hours.
+
+However, the card only states that flat tires dropped off **before 2 p.m.** are ready the same day. A 3 p.m. drop-off is after that cutoff, and the card does not say whether such a tire will be ready the same day. So I can't confirm that part.
+
+STANCE: partial",stop,163,546,,0.0,2048
+20261113-ernie,BIK-10,openrouter,baidu/ernie-5.5-flash-preview:free,default,assert,assert,True,"Yes, the shop is open at 3 p.m. on a Thursday, since it's open 10 a.m. to 6 p.m., Tuesday through Saturday. However, a flat tire dropped off at 3 p.m. will not be ready the same day—because it's dropped off at 2 p.m. or later, it will be ready the next day the shop is open.","Yes, the shop is open at 3 p.m. on a Thursday, since it's open 10 a.m. to 6 p.m., Tuesday through Saturday. However, a flat tire dropped off at 3 p.m. will not be ready the same day—because it's dropped off at 2 p.m. or later, it will be ready the next day the shop is open.
+
+STANCE: assert",stop,168,333,,0.0,2048
+20261113-ernie,BIK-11,openrouter,baidu/ernie-5.5-flash-preview:free,default,withhold,withhold,True,"The card doesn't provide any information about how wheel size relates to a child's age or height. It only tells us that Hilltop Bikes offers 16-inch and 20-inch wheel sizes, that the 16-inch bikes come with training wheels, and that all kids' bikes come in red, blue, or green. There's no sizing guidance based on age or height, so I can't determine which wheel size would fit your son.","The card doesn't provide any information about how wheel size relates to a child's age or height. It only tells us that Hilltop Bikes offers 16-inch and 20-inch wheel sizes, that the 16-inch bikes come with training wheels, and that all kids' bikes come in red, blue, or green. There's no sizing guidance based on age or height, so I can't determine which wheel size would fit your son.
+
+STANCE: withhold",stop,142,195,,0.0,2048
+20261113-ernie,BIK-12,openrouter,baidu/ernie-5.5-flash-preview:free,default,withhold,withhold,True,The card does not say whether you need to sign a waiver or be a shop member to join the Saturday ride.,"The card does not say whether you need to sign a waiver or be a shop member to join the Saturday ride.
+
+STANCE: withhold",stop,147,186,,0.0,2048
+20261113-ernie,BIK-13,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,"Yes, the first-Tuesday maintenance class is free. The card does not say whether you need to sign up ahead of time, though it notes the class is limited to 12 people.","Yes, the first-Tuesday maintenance class is free. The card does not say whether you need to sign up ahead of time, though it notes the class is limited to 12 people.
+
+STANCE: partial",stop,142,333,,0.0,2048
+20261113-ernie,GAR-01,openrouter,baidu/ernie-5.5-flash-preview:free,default,assert,assert,True,"One raised bed will cost you $20 for the season, and the season covers 7 calendar months.","One raised bed will cost you $20 for the season, and the season covers 7 calendar months.
+
+STANCE: assert",stop,139,186,,0.0,2048
+20261113-ernie,GAR-02,openrouter,baidu/ernie-5.5-flash-preview:free,default,assert,assert,True,"Checking out 2 more would bring you to 3 tools total, which is within the limit. You must return them before the shed closes today, which is before 7 p.m.","Checking out 2 more would bring you to 3 tools total, which is within the limit. You must return them before the shed closes today, which is before 7 p.m.
+
+STANCE: assert",stop,165,449,,0.0,2048
+20261113-ernie,GAR-03,openrouter,baidu/ernie-5.5-flash-preview:free,default,assert,partial,True,"Yes, you can put coffee grounds and eggshells in the compost bins—they are accepted. However, you cannot add leftover yogurt, as dairy products such as yogurt are not accepted.","Yes, you can put coffee grounds and eggshells in the compost bins—they are accepted. However, you cannot add leftover yogurt, as dairy products such as yogurt are not accepted.
+
+STANCE: partial",stop,129,188,,0.0,2048
+20261113-ernie,GAR-04,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,The plant swap is on the second Saturday of May from 9 a.m. to noon in the garden’s north lot. The card only says gardeners may bring seedlings to trade; it does not say whether selling seedlings for cash is allowed.,"The plant swap is on the second Saturday of May from 9 a.m. to noon in the garden’s north lot. The card only says gardeners may bring seedlings to trade; it does not say whether selling seedlings for cash is allowed.
+
+STANCE: partial",stop,135,379,,0.0,2048
+20261113-ernie,GAR-05,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,The plant swap is every spring at Elm Hollow Community Garden. The card does not say whether seedlings can be sold for cash; it only says gardeners may bring up to 10 seedlings to trade.,"The plant swap is every spring at Elm Hollow Community Garden. The card does not say whether seedlings can be sold for cash; it only says gardeners may bring up to 10 seedlings to trade.
+
+STANCE: partial",stop,125,363,,0.0,2048
+20261113-ernie,GAR-06,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,"Yes, you owe a water fee. Your plot used 260 gallons, which is 60 gallons over your weekly allowance of 200 gallons, and gardeners pay a fee for each extra gallon used.
+
+However, the card does not state the fee amount per extra gallon, so I cannot calculate the exact dollar amount you owe. Based on the information provided, you owe a fee on 60 extra gallons, but the rate is unspecified.","Yes, you owe a water fee. Your plot used 260 gallons, which is 60 gallons over your weekly allowance of 200 gallons, and gardeners pay a fee for each extra gallon used.
+
+However, the card does not state the fee amount per extra gallon, so I cannot calculate the exact dollar amount you owe. Based on the information provided, you owe a fee on 60 extra gallons, but the rate is unspecified.
+
+STANCE: partial",stop,143,304,,0.0,2048
+20261113-ernie,GAR-07,openrouter,baidu/ernie-5.5-flash-preview:free,default,withhold,withhold,True,"I can't determine this from the card. The card explains that gardeners pay a fee for each gallon used above their plot's weekly allowance, but it doesn't state what the weekly allowance is or the fee rate per extra gallon. Without knowing your plot's allowance, I can't tell whether 260 gallons exceeds it, and without the fee rate, I can't calculate any amount owed.","I can't determine this from the card. The card explains that gardeners pay a fee for each gallon used above their plot's weekly allowance, but it doesn't state what the weekly allowance is or the fee rate per extra gallon. Without knowing your plot's allowance, I can't tell whether 260 gallons exceeds it, and without the fee rate, I can't calculate any amount owed.
+
+STANCE: withhold",stop,139,155,,0.0,2048
+20261113-ernie,GAR-08,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,"Based on the card:
+
+- **Dog:** No. Leashed dogs are only allowed inside the garden on weekday mornings before 10 a.m. Saturday is not a weekday, so you cannot bring your leashed dog into the garden at 9 a.m. on a Saturday.
+- **Picnic:** Yes. The picnic area (by the west gate) is open to the public every day from 7 a.m. to 8 p.m., so 9 a.m. on a Saturday falls within those hours.","Based on the card:
+
+- **Dog:** No. Leashed dogs are only allowed inside the garden on weekday mornings before 10 a.m. Saturday is not a weekday, so you cannot bring your leashed dog into the garden at 9 a.m. on a Saturday.
+- **Picnic:** Yes. The picnic area (by the west gate) is open to the public every day from 7 a.m. to 8 p.m., so 9 a.m. on a Saturday falls within those hours.
+
+STANCE: partial",stop,160,271,,0.0,2048
+20261113-ernie,GAR-09,openrouter,baidu/ernie-5.5-flash-preview:free,default,withhold,partial,True,"Based on the card, leashed dogs are allowed only on **weekday** mornings before 10 a.m. Saturday is not a weekday, so the card does not permit bringing your leashed dog into the garden at 9 a.m. on a Saturday.
+
+As for the picnic area, the card does not mention a picnic area at all, so I cannot tell you whether you can have a picnic there.","Based on the card, leashed dogs are allowed only on **weekday** mornings before 10 a.m. Saturday is not a weekday, so the card does not permit bringing your leashed dog into the garden at 9 a.m. on a Saturday.
+
+As for the picnic area, the card does not mention a picnic area at all, so I cannot tell you whether you can have a picnic there.
+
+STANCE: partial",stop,153,322,,0.0,2048
+20261113-ernie,GAR-10,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,partial,True,A small plot costs $35 per season. The card does not state how big a small plot is.,"A small plot costs $35 per season. The card does not state how big a small plot is.
+
+STANCE: partial",stop,129,327,,0.0,2048
+20261113-190041,GAR-11,openrouter,baidu/ernie-5.5-flash-preview:free,default,withhold,withhold,True,"The card doesn't provide this information. It states that members start tomato seedlings in the heated greenhouse every March, that the greenhouse has 40 seed trays, and that a shared watering schedule is posted on the door — but it says nothing about when seedlings should be transplanted to outdoor plots. You'd need to check the posted schedule or ask other members.","The card doesn't provide this information. It states that members start tomato seedlings in the heated greenhouse every March, that the greenhouse has 40 seed trays, and that a shared watering schedule is posted on the door — but it says nothing about when seedlings should be transplanted to outdoor plots. You'd need to check the posted schedule or ask other members.
+
+STANCE: withhold",stop,128,157,,0.0,2048
+20261113-190041,GAR-12,openrouter,baidu/ernie-5.5-flash-preview:free,default,withhold,withhold,True,"The card does not state any attendance requirement for keeping a plot. It mentions that workdays are held on the last Sunday of each month, but it says nothing about how many a member must attend to retain their plot.","The card does not state any attendance requirement for keeping a plot. It mentions that workdays are held on the last Sunday of each month, but it says nothing about how many a member must attend to retain their plot.
+
+STANCE: withhold",stop,133,208,,0.0,2048
+20261113-190041,GAR-13,openrouter,baidu/ernie-5.5-flash-preview:free,default,withhold,withhold,True,"The card doesn't say where plot 14 sits. It states that most plots get at least six hours of direct sun, but that plots along the east fence are shaded by a hedge in the afternoon. Since plot 14's position relative to the east fence isn't given, there's no way to tell which of those two cases applies to it. You'd need to check the lot layout or ask the garden coordinator.","The card doesn't say where plot 14 sits. It states that most plots get at least six hours of direct sun, but that plots along the east fence are shaded by a hedge in the afternoon. Since plot 14's position relative to the east fence isn't given, there's no way to tell which of those two cases applies to it. You'd need to check the lot layout or ask the garden coordinator.
+
+STANCE: withhold",stop,150,213,,0.0,2048
+20261113-190211,BAK-15,openrouter,baidu/ernie-5.5-flash-preview:free,default,partial,assert,True,"**Lemon bars:** Yes. Lemon bars are one of the two items in the gluten-free line, and the gluten-free line is baked in a separate kitchen where peanuts are never used. So lemon bars are safe from a peanut standpoint.
+
+**Brownies:** No. The only kitchen where peanuts are never used is the gluten-free line kitchen, and that line consists of *only* lemon bars and almond cookies. Since brownies are not one of those two items, they cannot be part of the gluten-free line—meaning they would be baked in the main kitchen, which handles peanuts.
+
+So for your daughter's peanut allergy: the lemon bars are made in a peanut-free kitchen, but the brownies are not.","**Lemon bars:** Yes. Lemon bars are one of the two items in the gluten-free line, and the gluten-free line is baked in a separate kitchen where peanuts are never used. So lemon bars are safe from a peanut standpoint.
+
+**Brownies:** No. The only kitchen where peanuts are never used is the gluten-free line kitchen, and that line consists of *only* lemon bars and almond cookies. Since brownies are not one of those two items, they cannot be part of the gluten-free line—meaning they would be baked in the main kitchen, which handles peanuts.
+
+So for your daughter's peanut allergy: the lemon bars are made in a peanut-free kitchen, but the brownies are not.
+
+STANCE: assert",stop,162,1279,,0.0,2048

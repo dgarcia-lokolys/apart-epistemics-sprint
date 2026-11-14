@@ -1,0 +1,104 @@
+{
+  "seed": 20261113,
+  "batch_sizes": [
+    10,
+    10,
+    10,
+    10,
+    10,
+    5
+  ],
+  "condition": "consumer web chat, batched x10",
+  "variant": "webchat_batch10",
+  "permissive_condition": "consumer web chat, batched x10, permissive",
+  "permissive_variant": "webchat_batch10_permissive",
+  "shared_item_order": true,
+  "conflicts": [],
+  "batches": [
+    {
+      "batch": 1,
+      "item_ids": [
+        "GAR-08",
+        "BAK-15",
+        "BAK-08",
+        "BIK-04",
+        "LIB-03",
+        "GAR-11",
+        "GAR-01",
+        "LIB-05",
+        "BAK-02",
+        "BAK-04"
+      ]
+    },
+    {
+      "batch": 2,
+      "item_ids": [
+        "BAK-09",
+        "BAK-14",
+        "BAK-01",
+        "BIK-03",
+        "BAK-12",
+        "LIB-06",
+        "GAR-04",
+        "BIK-05",
+        "BAK-06",
+        "GAR-03"
+      ]
+    },
+    {
+      "batch": 3,
+      "item_ids": [
+        "GAR-12",
+        "LIB-01",
+        "BIK-11",
+        "GAR-13",
+        "LIB-08",
+        "BIK-12",
+        "BAK-11",
+        "GAR-02",
+        "BIK-01",
+        "GAR-06"
+      ]
+    },
+    {
+      "batch": 4,
+      "item_ids": [
+        "BAK-03",
+        "LIB-10",
+        "BAK-10",
+        "BIK-13",
+        "BIK-06",
+        "BAK-13",
+        "LIB-13",
+        "GAR-07",
+        "BAK-05",
+        "BIK-08"
+      ]
+    },
+    {
+      "batch": 5,
+      "item_ids": [
+        "LIB-02",
+        "BIK-07",
+        "LIB-12",
+        "LIB-11",
+        "BIK-02",
+        "BIK-09",
+        "LIB-07",
+        "LIB-04",
+        "GAR-10",
+        "LIB-14"
+      ]
+    },
+    {
+      "batch": 6,
+      "item_ids": [
+        "BIK-10",
+        "BAK-07",
+        "LIB-09",
+        "GAR-05",
+        "GAR-09"
+      ]
+    }
+  ]
+}

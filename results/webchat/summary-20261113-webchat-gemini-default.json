@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "date": "2026-11-13",
+    "timezone": "America/New_York",
+    "n_items": 55,
+    "frozen_hash": "b700b889ec5e95c455850bad2e9d1f46f17885136f97d0456f594719ff841c43",
+    "temperature": "n/a (consumer web chat)",
+    "max_tokens": "n/a (consumer web chat)",
+    "variant": "webchat_batch10_default",
+    "systems": [
+      "webchat-gemini:3.5 Flash-Lite Medium"
+    ],
+    "notes": [
+      "consumer web chat, batched x10",
+      "Founder-run free-tier web chat, default packet wording, batched x10. No temperature control. Prompt variant: default."
+    ],
+    "raw_files": [
+      "results/webchat/raw-20261113-webchat-gemini-default.csv"
+    ],
+    "judge_file": "",
+    "judge_model": "",
+    "condition": "consumer web chat, batched x10",
+    "service": "gemini",
+    "template": "webchat/reply-template-gemini.md",
+    "prompt_variant": "default",
+    "parse_qc": {
+      "missing": [],
+      "extra": [],
+      "unparseable": [],
+      "empty_body": [],
+      "order_ok": true,
+      "order_diverge": null,
+      "model_name": "3.5 Flash-Lite Medium",
+      "date": "",
+      "n_found": 55,
+      "n_expected": 55
+    },
+    "rankings_changed": null
+  },
+  "systems": [
+    {
+      "provider": "webchat-gemini",
+      "model": "3.5 Flash-Lite Medium",
+      "variant": "webchat_batch10_default",
+      "n_rows": 55,
+      "n_success": 55,
+      "n_error": 0,
+      "parse_ok": 55,
+      "parse_ok_rate": 1.0,
+      "binary_correct": 49,
+      "binary_accuracy": 0.8909,
+      "three_way_correct": 47,
+      "three_way_accuracy": 0.8545,
+      "over_claim": 7,
+      "under_claim": 1,
+      "over_claim_rate": 0.1273,
+      "under_claim_rate": 0.0182,
+      "confusion_by_gold": {
+        "withhold": {
+          "withhold": 14,
+          "assert": 1,
+          "partial": 1
+        },
+        "partial": {
+          "assert": 5,
+          "partial": 16,
+          "withhold": 1
+        },
+        "assert": {
+          "assert": 17
+        }
+      },
+      "judge_n": 0,
+      "actual_stance_accuracy": null,
+      "partial_items": 22,
+      "partial_pass": 0,
+      "partial_pass_rate": null,
+      "assert_items_judged": 17,
+      "assert_hedge": 0,
+      "assert_hedge_rate": null,
+      "gap_naming_recall": null,
+      "strict_three_way_correct": null,
+      "strict_three_way_accuracy": null
+    }
+  ]
+}
